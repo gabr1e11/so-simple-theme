@@ -1,7 +1,7 @@
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
 	    <ul>
-      {% for link in site.data.navigation %}
+      	  {% for link in site.data.navigation[page.lang] %}
 		    {% if link.url contains 'http' %}
 		        {% assign domain = '' %}
 		        {% else %}
@@ -9,27 +9,34 @@
 		    {% endif %}
 		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
 		  {% endfor %}
+		  {% if page.lang == 'es' %}
+		    <li><a href="{{ domain }}">English</a></li>
+		  {% else %}
+		    <li><a href="{{ domain }}/bitacora/">Español</a></li>
+		  {% endif %}
+		  	
 	    </ul>
 	</nav>
 </div><!-- /.navigation-wrapper -->
 
-{% include browser-upgrade.html %}
-
-{% if page.image.feature %}<header class="masthead">
-	{% if site.logo != null %}
+{% if page.image.feature %} <!-- Logo with featured image -->
+	<header class="masthead">
+		{% if site.logo != null %}
+			<div class="wrap">
+				<a href="{{ site.url }}/" class="site-logo" rel="home" title="{{ site.title[page.lang] }}"><img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title[page.lang] }} logo" class="animated fadeInDown"></a>
+			</div>
+		{% endif %}
+	</header><!-- /.masthead -->
+	{% else %}                  <!-- Logo without featured image -->
+	<header class="masthead">
 		<div class="wrap">
-			<a href="{{ site.url }}/" class="site-logo" rel="home" title="{{ site.title }}"><img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title }} logo" class="animated fadeInDown"></a>
+      		{% if site.logo != null %}
+  				<a href="{{ site.url }}/" class="site-logo" rel="home" title="{{ site.title[page.lang] }}"><img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title[page.lang] }} logo" class="animated fadeInDown"></a>
+      		{% endif %}
+      		<h1 class="site-title animated fadeIn"><a href="{{ site.url }}/">{{ site.title[page.lang] }}</a></h1>
+			<h2 class="site-description animated fadeIn" itemprop="description">{{ site.description[page.lang] }}</h2>
 		</div>
-	{% endif %}
-</header><!-- /.masthead -->
-{% else %}<header class="masthead">
-	<div class="wrap">
-      {% if site.logo != null %}
-  		<a href="{{ site.url }}/" class="site-logo" rel="home" title="{{ site.title }}"><img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title }} logo" class="animated fadeInDown"></a>
-      {% endif %}
-      <h1 class="site-title animated fadeIn"><a href="{{ site.url }}/">{{ site.title }}</a></h1>
-		<h2 class="site-description animated fadeIn" itemprop="description">{{ site.description }}</h2>
-	</div>
-</header><!-- /.masthead -->{% endif %}
+	</header><!-- /.masthead -->
+{% endif %}
 
 <div class="js-menu-screen menu-screen"></div>
