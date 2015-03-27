@@ -3,6 +3,8 @@ id: 22
 title: Camera movement and premature optimization
 author: rcano
 layout: post
+image:
+  feature: feature-header.jpg
 categories:
   - Programming
 ---

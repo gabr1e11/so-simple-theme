@@ -18,25 +18,3 @@
 	    </ul>
 	</nav>
 </div><!-- /.navigation-wrapper -->
-
-{% if page.image.feature %} <!-- Logo with featured image -->
-	<header class="masthead">
-		{% if site.logo != null %}
-			<div class="wrap">
-				<a href="{{ site.url }}/" class="site-logo" rel="home" title="{{ site.title[page.lang] }}"><img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title[page.lang] }} logo" class="animated fadeInDown"></a>
-			</div>
-		{% endif %}
-	</header><!-- /.masthead -->
-	{% else %}                  <!-- Logo without featured image -->
-	<header class="masthead">
-		<div class="wrap">
-      		{% if site.logo != null %}
-  				<a href="{{ site.url }}/" class="site-logo" rel="home" title="{{ site.title[page.lang] }}"><img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title[page.lang] }} logo" class="animated fadeInDown"></a>
-      		{% endif %}
-      		<h1 class="site-title animated fadeIn"><a href="{{ site.url }}/">{{ site.title[page.lang] }}</a></h1>
-			<h2 class="site-description animated fadeIn" itemprop="description">{{ site.description[page.lang] }}</h2>
-		</div>
-	</header><!-- /.masthead -->
-{% endif %}
-
-<div class="js-menu-screen menu-screen"></div>
