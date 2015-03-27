@@ -1,0 +1,10 @@
+en:
+  created: "Published on the"
+  author: "by"
+  description: "Personal website, made with real pieces of code: articles about Jekyll, Raspberry Pi, R..."
+  search_placeholder: What are you looking for?
+es:
+  created: "Publié le"
+  author: "par"
+  description: "Site personnel, avec des vrais bouts de code dedans : articles sur Jekyll, Raspberry Pi, R..."
+  search_placeholder: ¿Qué estas buscando?
