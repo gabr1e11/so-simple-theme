@@ -4,17 +4,11 @@
       	  {% for link in site.data.navigation[page.lang] %}
 		    {% if link.url contains 'http' %}
 		        {% assign domain = '' %}
-		        {% else %}
+		    {% else %}
 		        {% assign domain = site.url %}
 		    {% endif %}
 		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
 		  {% endfor %}
-		  {% if page.lang == 'es' %}
-		    <li><a href="{{ domain }}">English</a></li>
-		  {% else %}
-		    <li><a href="{{ domain }}/bitacora/">Español</a></li>
-		  {% endif %}
-		  	
 	    </ul>
 	</nav>
 </div><!-- /.navigation-wrapper -->
