@@ -1,3 +1,4 @@
+#
 # Site navigation links
 #
 en:
@@ -6,9 +7,15 @@ en:
 
     - title: About
       url: /about/
+
+    - title: Español
+      url: /bitacora/
 es:
     - title: Blog
       url: /bitacora/
 
     - title: Sobre mi
       url: /sobremi/
+
+    - title: English
+      url: /
