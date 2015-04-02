@@ -1,115 +1,42 @@
 ---
-id: 53
-title: 'Aún te espero&#8230;'
+title: 'Aún te espero...'
 author: rcano
 layout: post
 categories:
   - Songs
 ---
-Una preciosa canción de [Riverside][1] titulada <a href="http://www.youtube.com/watch?v=peDCmsJB1AA" target="_blank">&#8220;Conceiving you&#8221;</a> con la que me siento muy identificado. Del disco Second Life Syndrome. Muy recomendado si os gusta el Progresivo Ambiental&#8221;.
 
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>&nbsp;I’ve been watching you</i></span>
-</div>
+Una preciosa canción de [Riverside][1] titulada [Conceiving you][2] con la que
+me siento muy identificado. Del disco Second Life Syndrome. Muy recomendado si
+os gusta el Progresivo Ambiental.
 
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Not waiting for the right moment to make the first move</i></span>
-</div>
+*I’ve been watching you*  
+*Not waiting for the right*  
+*moment to make the first move*  
+  
+*Do you want to know*  
+*Why I keep avoiding your eyes*  
+*And why I’m running away?*  
+*It’s crazy, I know*  
 
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Do you want to know</i></span>
-</div>
+*I’ve been conceiving you for too long*  
 
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Why I keep avoiding your eyes</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>And why I’m running away?</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>It’s crazy, I know</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>I’ve been conceiving you for too long</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Or maybe I’m destined to be alone?</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Or maybe there’s someone who will understand</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>That I’m not able to share my world?</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>I’m still running away</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>It’s crazy, I know</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>I’ve been conceiving you for too long</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>If only I could change all things around</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Still conceiving you all along…</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>I’ve been conceiving you for too long</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>If only I could change all things around</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>I’ve been conceiving you for too long</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>I’ve grown used to that</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Still conceiving you all along…</i></span>
-</div>
+*Or maybe I’m destined to be alone?*  
+*Or maybe there’s someone who will understand*  
+*That I’m not able to share my world?*  
+*I’m still running away*  
+*It’s crazy, I know*  
+  
+*I’ve been conceiving you for too long*  
+*If only I could change all things around*  
+*Still conceiving you all along...*  
+  
+*I’ve been conceiving you for too long*  
+*If only I could change all things around*  
+*I’ve been conceiving you for too long*  
+*I’ve grown used to that*  
+  
+*Still conceiving you all along...*  
 
  [1]: http://www.riverside.art.pl/
+ [2]: http://www.youtube.com/watch?v=peDCmsJB1AA
