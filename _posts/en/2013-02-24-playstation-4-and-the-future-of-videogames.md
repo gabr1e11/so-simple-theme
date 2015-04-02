@@ -1,5 +1,4 @@
 ---
-id: 25
 title: PlayStation 4 and the future of videogames
 author: rcano
 layout: post
@@ -16,7 +15,13 @@ graphic cards. An increase of memory, form 512MB to 8GB will easy the data
 transaction of the new generation of entertainment devices, being this memory
 of the GDDR5 type.
 
-Amazing?? No, not really. Nothing that a rather not-so-much bunch of bucks cannot buy in the high-end PC market. However it is not the machine itself what attracted my attention to the so expected Sony's new videoconsole: it was the technical demos and in-progress videogames I could see during the online presentation. Not because these reflect what is coming with the PS4, but because they reflect what is coming in the upcoming years for us, the gamers -- the hardcore gamers -- and it is absolutely delicious.
+Amazing?? No, not really. Nothing that a rather not-so-much bunch of bucks
+cannot buy in the high-end PC market. However it is not the machine itself what
+attracted my attention to the so expected Sony's new videoconsole: it was the
+technical demos and in-progress videogames I could see during the online
+presentation. Not because these reflect what is coming with the PS4, but
+because they reflect what is coming in the upcoming years for us, the gamers --
+the hardcore gamers -- and it is absolutely delicious.
 
 First, the tech demo from [Quantic Dream](http://www.quanticdream.com/)
 showing off the level of quality for character acting. For the first time,

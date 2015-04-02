@@ -12,10 +12,10 @@ While writing the first bits and bytes of my 'I-want-to-learn-OpenGL' engine I
 stamped myself against the camera implementation. As a first approach I was
 trying to implement one of those fancy FPS walking cameras.
 
-I'm currently using the [GLM Library](http://glm.g-truc.net/), which tries to add back all the functionality
-present in previous versions of OpenGL and GLUT to the new GLSL pipeline. Things
-like rotations, translation, perspective and orthogonal projections are
-available in the library.
+I'm currently using the [GLM Library](http://glm.g-truc.net/), which tries to
+add back all the functionality present in previous versions of OpenGL and GLUT
+to the new GLSL pipeline. Things like rotations, translation, perspective and
+orthogonal projections are available in the library.
 
 When thinking about how to implement the camera movement, my first approach was
 to use a look_at vector that would serve both as the direction of the camera (so
