@@ -1,5 +1,4 @@
 ---
-id: 24
 title: CSS, Blogger and Simple template transparency
 author: rcano
 layout: post

@@ -20,9 +20,9 @@ vida le va dando para aprovecharlas al máximo.
 Esta es la historia que cuenta la historia de alguien que nunca tuvo fe en su
 propia vida:
 
->Nunca tuve fe en mi filosofia&#8221
-
-*Héroes del Silencio*
+>Nunca tuve fe en mi filosofia...
+>
+> -- <cite>Héroes del Silencio</cite>
 
 Ahora si, porque no soy el que fui, ni seré el que soy, aunque sigo siendo el
 mismo.

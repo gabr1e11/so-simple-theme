@@ -1,231 +1,64 @@
 ---
-id: 43
 title: Sácalo de tu mente
 author: rcano
 layout: post
 categories:
   - Songs
 ---
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Me muero lentamente</i></span>
-</div>
 
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>entre palabras y aguijones</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>No creí que el mundo fuese</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>a girar al revés</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Es un sitio tan sombrío</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>el que me espera en mi cobijo</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Tanto tiempo en mi espuma</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>de palabras y poesías</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Y no he sabido que la vida</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>nunca es fiel</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Tanto he perdido</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>sin haber jugado</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Que empiezo a entender</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>que esto no va de mí</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>No va de intentar</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>ni va de querer</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>No va de seguir</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>ni tampoco de amar</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Simplemente no irá</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Y si el mundo se para</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>solo quiero olvidar</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>el porqué estoy aquí</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Mis versos devanados</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>ponen música y palabras</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>y no se yo que piruetas</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>para poderme ser sincero</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>En mi mismo encuentro frío</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>y no hay sol que arda más vivo</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Tanto tiempo en mi niebla</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>de bruma y rumor sordo</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>que no he entendido que la gota</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>encuentra el mar</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>solo un segundo después de nacer</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Tanto he perdido</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>sin haber jugado</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>que empiezo a entender</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>que esto no va de mí</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>No va de intentar</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>ni va de querer</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>No va de seguir</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>ni tampoco de amar</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i><br /></i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Simplemente no irá</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>Y si el mundo se para</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>solo quiero olvidar</i></span>
-</div>
-
-<div style="text-align: center;">
-  <span style="font-family: Times, 'Times New Roman', serif;"><i>el porqué estoy aquí</i></span>
-</div>
+*Me muero lentamente*  
+*entre palabras y aguijones*  
+*No creí que el mundo fuese*  
+*a girar al revés*  
+  
+*Es un sitio tan sombrío*  
+*el que me espera en mi cobijo*  
+  
+*Tanto tiempo en mi espuma*  
+*de palabras y poesías*  
+*Y no he sabido que la vida*  
+*nunca es fiel*  
+  
+*Tanto he perdido*  
+*sin haber jugado*  
+*Que empiezo a entender*  
+*que esto no va de mí*  
+  
+*No va de intentar*  
+*ni va de querer*  
+*No va de seguir*  
+*ni tampoco de amar*  
+  
+*Simplemente no irá*  
+*Y si el mundo se para*  
+*solo quiero olvidar*  
+*el porqué estoy aquí*  
+  
+*Mis versos devanados*  
+*ponen música y palabras*  
+*y no se yo que piruetas*  
+*para poderme ser sincero*  
+  
+*En mi mismo encuentro frío*  
+*y no hay sol que arda más vivo*  
+  
+*Tanto tiempo en mi niebla*  
+*de bruma y rumor sordo*  
+*que no he entendido que la gota*  
+*encuentra el mar*  
+*solo un segundo después de nacer*  
+  
+*Tanto he perdido*  
+*sin haber jugado*  
+*que empiezo a entender*  
+*que esto no va de mí*  
+  
+*No va de intentar*  
+*ni va de querer*  
+*No va de seguir*  
+*ni tampoco de amar*  
+   
+*Simplemente no irá*  
+*Y si el mundo se para*  
+*solo quiero olvidar*  
+*el porqué estoy aquí*  
