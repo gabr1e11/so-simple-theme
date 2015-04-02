@@ -20,9 +20,9 @@ Then click on **Customize. **This will bring the template customization page.
 Click then in **Advance**, go to the bottom of the new categories pane and
 click on **Add CSS**. Here you can add the following lines:
 
-````css
+{% highlight css %}
 background-color: rgba(255, 255, 255, 0.7);
-```
+{% endhighlight %}
 
 Change the **255** values to the RGB values you want for the background and
 the **0.7** to the alpha setting you prefer (from **0.0** to **1.0**). Click
