@@ -9,52 +9,100 @@
 {% include navigation.html %}
 
 <div id="main" role="main">
-  <article class="hentry">
-    {% if page.image.feature %}
-	<div class="entry-feature-header">
-	    <img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title[page.lang] }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>
-		{% if page.image.credit %}
-		    <p class="image-credit">Image credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>
+ 	<article class="hentry">
+
+		<!-- Featured image -->
+		{% if page.image.feature %}
+			<div class="entry-feature-header">
+				<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title[page.lang] }}">
+				{% if page.image.credit %}
+					<p class="image-credit">
+						Image credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>
+					</p>
+				{% endif %}
+			</div>
 		{% endif %}
-	</div>
-	{% endif %}
-    <div class="entry-wrapper">
-      <header class="entry-header">
-        <h1 class="entry-title" style="margin-left: 3em; padding-bottom: 0.5em;">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}</h1>{% endif %}
-      </header>
-      <footer class="entry-meta">
-		{% assign author = site.owner %}
-        {% if author.avatar contains 'http' %}
-          <img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
-        {% else %}
-          <img src="{{ site.url }}/images/{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
-        {% endif %}
-        <span class="author vcard">By <span class="fn">{{ author.name }}</span></span>
-        <span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-calendar-o"></i> {{ page.date | date: "%B %d, %Y" }}</time></span>
-        {% if page.modified %}<span class="entry-date date modified"><time datetime="{{ page.modified }}"><i class="fa fa-pencil"></i> {{ page.modified | date: "%B %d, %Y" }}</time></span>{% endif %}
-        {% if (site.owner.disqus-shortname and page.comments) or site.comments %}<span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>{% endif %}
-        {% if page.share %}{% include social-share.html %}{% endif %}
-        {% if page.ads == true %}{% include ad-sidebar.html %}<!-- /.google-ads -->{% endif %}
-      </footer>
-      <div class="entry-content">
-        {{ content }}
-        {% if (site.owner.disqus-shortname and page.comments) or site.comments %}
-          <div id="disqus_thread"></div><!-- /#disqus_thread -->
-          {% include disqus-comments.html %}
-        {% endif %}
-      </div><!-- /.entry-content -->
-    </div><!-- /.entry-wrapper -->
-    <nav class="pagination" role="navigation">
-      {% if page.previous %}
-        <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title[page.lang] }}">Previous</a>
-      {% endif %}
-      {% if page.next %}
-        <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title[page/lang] }}">Next</a>
-      {% endif %}
-    </nav><!-- /.pagination -->
-  </article>
+
+		<div class="entry-wrapper">
+			<!-- Post title -->
+			<header class="entry-header">
+				<h1 class="entry-title" style="margin-left: 3em; padding-bottom: 0.5em;">
+					{% if page.headline %}
+						{{ page.headline }}
+					{% else %}
+						{{ page.title }}
+					{% endif %}
+				</h1>
+			</header>
+
+			<!-- Post information -->
+			<footer class="entry-meta">
+				<!-- Avatar -->
+				<img src="{{ site.url }}/images/{{ site.owner.avatar}}" class="bio-photo" alt="{{ site.owner.name }} bio photo"></a>
+
+				<!-- Author name -->
+				<span class="author vcard">
+					{{ translations[page.lang].by }}
+					<span class="fn">
+						{{ author.name }}
+					</span>
+				</span>
+
+				<!-- Publish date -->
+				<span class="entry-date date published">
+					<time datetime="{{ page.date | date_to_xmlschema }}">
+						<i class="fa fa-calendar-o"></i>
+						{{ page.date | date: "%B %d, %Y" }}
+					</time>
+				</span>
+
+				<!-- Modified date -->
+				{% if page.modified %}
+					<span class="entry-date date modified">
+						<time datetime="{{ page.modified }}">
+							<i class="fa fa-pencil"></i>
+							{{ page.modified | date: "%B %d, %Y" }}
+						</time>
+					</span>
+				{% endif %}
+
+				<!-- Comments section -->
+				{% if (site.owner.disqus-shortname and page.comments) or site.comments %}
+					<span class="entry-comments">
+						<i class="fa fa-comment-o"></i>
+						<a href="#disqus_thread">Comment</a>
+					</span>
+				{% endif %}
+
+				<!-- Social sharing -->
+				{% include social-share.html %}
+			</footer>
+
+			<!-- Post content -->
+			<div class="entry-content">
+				{{ content }}
+
+				<!-- Show comments -->
+				{% if (site.owner.disqus-shortname and page.comments) or site.comments %}
+					<div id="disqus_thread"></div><!-- /#disqus_thread -->
+					{% include disqus-comments.html %}
+				{% endif %}
+		  	</div><!-- /.entry-content -->
+		</div><!-- /.entry-wrapper -->
+
+		<!-- Pagination -->
+    	<nav class="pagination" role="navigation">
+      		{% if page.previous %}
+        		<a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous</a>
+      		{% endif %}
+      		{% if page.next %}
+        		<a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next</a>
+      		{% endif %}
+    	</nav><!-- /.pagination -->
+	</article>
 </div><!-- /#main -->
 
+<!-- Page footer -->
 <div class="footer-wrapper">
   <footer role="contentinfo" class="entry-wrapper">
     {% include footer.html %}
