@@ -26,14 +26,14 @@ momentos más cálidos de mi vida y me permite volver a acariciar en mi mente
 aquellas mariposas que hace ya demasiado aleteaban en mi estómago en ocasiones.
 Espero poder usar estos versos alguna vez para hablar con mi musa:
 
-*Clavo mi mirada en el instinto  
-Entre la espada y la pared y obligo  
-A escribir amargos versos que no cuentan  
-Más que un intento de expresar sentimientos  
-Cobarde y cuerdo, sin locura no hay triunfo  
-Sin mi musa no hay futuro  
-Sin amor tan solo hay humo  
-Que se esfuma entre cortinas de vapor  
+*Clavo mi mirada en el instinto*  
+*Entre la espada y la pared y obligo*  
+*A escribir amargos versos que no cuentan*  
+*Más que un intento de expresar sentimientos*  
+*Cobarde y cuerdo, sin locura no hay triunfo*  
+*Sin mi musa no hay futuro*  
+*Sin amor tan solo hay humo*  
+*Que se esfuma entre cortinas de vapor*  
   
-Consiento vivir mi vida solo con una condición  
-Vivir por ti y vivir por ella o morir por las dos*
+*Consiento vivir mi vida solo con una condición*  
+*Vivir por ti y vivir por ella o morir por las dos*
