@@ -9,33 +9,21 @@
 {% include navigation.html %}
 
 <div id="main" role="main">
-  <article class="entry">
-    {% if page.image.feature %}
-	<div class="entry-feature-header">
-		<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title[page.lang] }}">
-		{% if page.image.credit %}
-			<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>
-		{% endif %}
-		{% include masthead.html %}
-	</div>
-	{% endif %}
-    <div class="entry-wrapper">
-      <header class="entry-header">
-        <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title[page.lang] }}</h1>{% endif %}
-      </header>
-      <div class="entry-content">
-        {{ content }}
-      </div><!-- /.entry-content -->
-    </div><!-- /.entry-wrapper -->
-  </article>
+	<article class="entry">
+
+		{% include heading.html %}
+
+    	<div class="entry-wrapper">
+			{% include page-title.html %}
+
+			<div class="entry-content">
+        		{{ content }}
+      		</div><!-- /.entry-content -->
+    	</div><!-- /.entry-wrapper -->
+  	</article>
 </div><!-- /#main -->
 
-<div class="footer-wrapper">
-  <footer role="contentinfo" class="entry-wrapper">
-    {% include footer.html %}
-  </footer>
-</div><!-- /.footer-wrapper -->
-
+{% include footer.html %}
 {% include scripts.html %}
 
 </body>

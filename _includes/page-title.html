@@ -1,0 +1,13 @@
+<!-- Page title for main page and posts -->
+
+<header class="entry-header">
+	<h1 class="entry-title">
+		{% if page.headline %}
+			{{ page.headline }}
+		{% elsif page.title[page.lang] %}
+			{{ page.title[page.lang] }}
+		{% else %}
+			{{ page.title }}
+		{% endif %}
+	</h1>
+</header>

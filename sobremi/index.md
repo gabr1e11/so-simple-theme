@@ -1,11 +1,31 @@
 ---
-id: 174
-title: About
+title: Sobre mí
 author: rcano
-layout: page
+lang: es
+layout: about
 ---
-[<img class=" wp-image-162  alignleft" title="Roberto Cano" src="http://www.robertocano.es/wp-content/uploads/2015/02/Ro-214x300.jpg" alt="Roberto Cano" width="250" height="350" />][1]
 
-I was born in Madrid in 1980. My family lived in a couple of suburbs of this big city until they decided to move away to the lovely Canary Islands. There, under the warm sun and driven by my never-ending search for knowledge I found the two first true loves of my life, somehow intertwined: computers and videogames. I was the proud owner of an Atari 2600 and a ZX Spectrum +2A. I learned to get myself lost in the digital worlds of the videogames, and to dive even deeper in the mathematic world of the programming languages. Years later I was bound to return to Madrid. At the capital again, my passion for computers and anything technology related settled, leading me to study Computer Science at the *Universidad Autónoma de Madrid*. Around those times I found my third and final true love: music. I started learning guitar and singing with some high-school friends, having my own band for a while. Since then I&#8217;ve always found peace and shelter on those intellectual hideouts, allowing me to learn, grow and create. Nowadays I&#8217;m an expat living in Amsterdam, one of the most vibrant cities I know. I still strive for learning and creating, enjoying and understanding the world around me. In this blog you can find scattered bits and pieces from all this corners of my head, sometimes sane, sometimes not. Welcome.
+Nací en Madrid en el año 1980. Viví unos años en un par de suburbios de la
+ciudad hasta que mi familia se mudó a las Islas Canarias. Allí, bañado por el
+sol isleño empecé a adquirir mi inquietud por descubrir y mi pasión por los
+ordenadores y los videojuegos.
 
- [1]: http://www.robertocano.es/wp-content/uploads/2015/02/Ro.jpg
+Fue entonces cuando tuve el placer de poseer una Atari 2600 y recibí mi primer
+ordenador, un ZX Spectrum +2A. Aprendí a disfrutar con los universos digitales
+que me ofrecían los videojuegos y a sumergirme en los mundos matemáticos que me
+ofrecían los lenguajes de programación. 
+
+Años más tarde volvía a la ciudad que me vio nacer dónde mi vocación por los
+ordenadores quedó completamente asentada llevándome a estudiar Ingeniería
+Informática en la Universidad Autónoma de Madrid. Por esa época descubrí además
+la tercera gran pasión de mi vida: la música. Empecé a aprender guitarra y
+canto, y toqué en un par de bandas con amigos del instituto.
+
+A partir de ese momento me he ido recogiendo en cualquiera de mis tres hogares
+intelectuales para crecer, aprender y crear. A día de hoy vivo en Ámsterdam,
+una de las ciudades más vibrantes que he tenido el gusto de conocer, y sigo
+buscando aprender y crear, disfrutar y entender el mundo a mi alrededor. En
+este blog podrás encontrar retazos de todos estos rincones de mi cabeza, a
+veces cuerda, a veces loca.
+
+Te doy la bienvenida.
