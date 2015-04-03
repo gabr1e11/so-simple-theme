@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="{{ page.lang }}">
+<head>
+{% include head.html %}
+</head>
+
+<body id="post">
+
+{% include navigation.html %}
+
+<div id="main" role="main">
+ 	<article class="hentry">
+		<div class="entry-wrapper">
+			{% include page-title.html %}
+
+			<!-- Post information -->
+			<footer class="entry-meta">
+				<!-- Avatar -->
+				<img src="{{ site.url }}/images/{{ site.owner.avatar}}" class="bio-photo" alt="{{ site.owner.name }} bio photo"></a>
+
+				<!-- Author name -->
+				<span class="author vcard">
+					<span class="fn">
+						{{ site.owner.name }}
+					</span>
+				</span>
+			</footer>
+
+			<!-- Post content -->
+			<div class="entry-content">
+				{{ content }}
+		  	</div><!-- /.entry-content -->
+		</div><!-- /.entry-wrapper -->
+	</article>
+</div><!-- /#main -->
+
+{% include footer.html %}
+{% include scripts.html %}
+
+</body>
+</html>

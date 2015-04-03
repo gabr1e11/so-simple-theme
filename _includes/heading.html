@@ -1,0 +1,16 @@
+<!-- Heading section of the web including the page featured image
+     and in case of the main page, the logo, title and description -->
+
+<!-- Featured image -->
+{% if page.image.feature %}
+<div class="entry-feature-header">
+	<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image animated fadeIn" alt="{{ page.title[page.lang] }}">
+	{% if page.image.credit %}
+		<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>
+	{% endif %}
+
+	{% if page.type == 'pages' %}
+		{% include masthead.html %}
+	{% endif %}
+</div>
+{% endif %}
