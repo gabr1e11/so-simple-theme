@@ -12,8 +12,9 @@ search_omit: true
 	  {% if post.layout == 'post' %}
 	    <li><article>
 		  <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
-		    <span class="entry-date">
-		      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+			<span class="entry-date">
+			  {% assign month = post.date | date: "%B" %}
+			  <time datetime="{{ post.date | date_to_xmlschema }}">{{ site.data.translations[page.lang][month] }} {{ post.date | date: " %d, %Y" }}</time>
 			</span>
 		  </a>
         </article></li>
