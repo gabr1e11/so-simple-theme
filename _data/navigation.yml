@@ -9,10 +9,10 @@ en:
       url: /about/
 
     - title: Español
-      url: /bitacora/
+      url: /es/
 es:
     - title: Blog
-      url: /bitacora/
+      url: /es/
 
     - title: Sobre mi
       url: /sobremi/

@@ -20,6 +20,16 @@
         		{{ content }}
       		</div><!-- /.entry-content -->
     	</div><!-- /.entry-wrapper -->
+
+		<!-- Pagination -->
+    	<nav class="pagination" role="navigation">
+      		{% if paginator.previous_page %}
+        		<a href="{{ site.url }}{{ paginator.previous_page_path }}" class="btn">Previous</a>
+      		{% endif %}
+      		{% if paginator.next_page %}
+        		<a href="{{ site.url }}{{ paginator.next_page_path }}" class="btn">Next</a>
+      		{% endif %}
+    	</nav><!-- /.pagination -->
   	</article>
 </div><!-- /#main -->
 
