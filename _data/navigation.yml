@@ -8,6 +8,9 @@ en:
     - title: About
       url: /about/
 
+    - title: Search
+      url: /search/
+
     - title: Español
       url: /es/
 es:
@@ -16,6 +19,9 @@ es:
 
     - title: Sobre mi
       url: /sobremi/
+
+    - title: Buscar
+      url: /buscar/
 
     - title: English
       url: /

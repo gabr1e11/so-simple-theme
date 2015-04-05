@@ -1,0 +1,28 @@
+---
+sitemap: false
+---
+
+[
+{% assign output_comma = false %}
+{% for post in site.categories.es %}
+  {% if post.title != null and post.title != empty and post.search_omit != true %}
+    {% if output_comma %},{% endif %}{
+      "title"			: {{ post.title | jsonify }},
+      "link"			: "{{ site.url }}{{ post.url }}",
+      "excerpt"		: ""
+    }
+	{% assign output_comma = true %}
+  {% endif %}
+{% endfor %}
+
+{% for page in site.pages %}
+  {% if page.layout != 'none' and page.layout != 'none' and page.title != null and page.title != empty and page.search_omit != true and page.lang == 'es' %}
+    {% if output_comma %},{% endif %}{
+      "title"			: {{ page.title | jsonify }},
+      "link"			: "{{ site.url }}{{ page.url | replace: 'index.html', '' }}",
+      "excerpt"		: ""
+    }
+	{% assign output_comma = true %}
+  {%endif%}
+{% endfor %}
+]
