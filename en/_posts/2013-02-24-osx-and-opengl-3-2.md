@@ -1,6 +1,5 @@
 ---
 title: OSX and OpenGL 3.2
-author: rcano
 layout: post
 image:
   feature: OpenGL_logo.jpg

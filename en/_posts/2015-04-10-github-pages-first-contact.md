@@ -44,11 +44,12 @@ can have a better control of the weight of the site.
 
 In a follow up post I shall explain how to set up your own Jekyll website with multilanguage and search engine.
 
- [1][http://www.twitter.com]
- [2][http://www.youtube.com]
- [3][http://www.linkedin.com]
- [4][http://www.github.com]
- [5][http://www.stackoverflow.com]
- [6][http://www.enriquerecarte.com]
- [7][http://www.jekyllrb.com]
- [8][http://en.wikipedia.org/wiki/Markdown]
+ [1]: http://www.twitter.com
+ [2]: http://www.youtube.com
+ [3]: http://www.linkedin.com
+ [4]: http://www.github.com
+ [5]: http://www.stackoverflow.com
+ [6]: http://www.enriquerecarte.com
+ [7]: http://www.jekyllrb.com
+ [8]: http://en.wikipedia.org/wiki/Markdown
+
