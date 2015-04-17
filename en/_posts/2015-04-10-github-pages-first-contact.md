@@ -30,19 +30,19 @@ it is always overpaid for the use I make of it. Also it always brings a little b
 always tried to use CMSs (Content Management Systems) like Joomla or more recently WordPress. Although these two
 products are great and have a big and active community around it is like using sledgehammers to crack nuts.
 
-So I really welcomed when my friend Enrique was explaining to me how to prepare a GitHub pages site using [Jekyll][7],
+So I really welcomed it when my friend Enrique was explaining to me how to prepare a GitHub pages site using [Jekyll][7],
 how it is automatically compiled when uploaded, and how to associate an already owned domain name to it through
 the CNAME file. I should not go into much detail in this post as I'm preparing a more technical post about
 Jekyll and all the steps I've done to bring my site live, but it has been a really pleasant experience.
 
-There are two things I love about the Jekyll and GitHub pages approach. First, that the source pages follows the
+There are two things I love about the Jekyll and GitHub pages approach. First, that the source pages follow the
 [MarkDown][8] format that will allow me to port my site to any future technology as it is just plain ASCII
 with some extra headers for the FrontMatter engine. And second that the final website is just a static website
 that will work on any webserver of the world. No need for PHP, databases or *fancy* stuff. Yeah, ok, I know,
 "how fancy is a database nowadays" you may say. However I prefer it this way. It is fast, easy to serve and I
 can have a better control of the weight of the site.
 
-In a follow up post I shall explain how to set up your own Jekyll website with multilanguage and search engine.
+In a follow-up post I shall explain how to set up your own Jekyll website with multilanguage and search engine.
 
  [1]: http://www.twitter.com
  [2]: http://www.youtube.com
