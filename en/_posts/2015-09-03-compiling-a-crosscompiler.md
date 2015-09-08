@@ -18,10 +18,10 @@ I've revived the project and I'm currently working on it in my spare time. As a 
 emulator I decided that it would be a feasible and achievable sub-project to just write the main
 processor emulator.
 
-To do so not only I need to write the emulating code itself but, most important, I need exectuables
+To do so not only I need to write the emulating code itself but, most important, I need executables
 to test the emulator with.
 
-Hence the necessity to have a SH cross-compiler to compile test code and test the emulator with it.
+Hence the necessity to have an SH cross-compiler to compile test code and test the emulator with it.
 
 > But why don't you just download the cross-compiler??
 
@@ -37,13 +37,13 @@ For the first two keep on reading. For the third....well, keep on reading.....
 A long long time and space ago in a galaxy far far away[^4] there were machines that could execute binary code: we called them
 computers. And the binary code was written manually by yet another kind of machine: the humans. To do so the humans used
 a language called assembly, a collection of mnemonics and parameters that translated straight into binary. Life was good and simple,
-except that humans spent humongous amounts of time to write this code, until they realized that they could use the computers to do the
+except that humans spent humongous amounts of time writing this code, until they realized that they could use the computers to do the
 work for them: the first compiler was born! [^5]
 
-These very first compilers ever written were done using assembly. Later on in history the programmers realized that once
-they had the first compiler for a certain language (let's say C), they could rewrite the compiler in the same language
+These very first compilers were written using assembly. Later on in history the programmers realized that once
+they had the first compiler for a certain language (let's say C), they could rewrite the compiler using the same language
 the compiler was aimed to compile from. This lead to self-hosted compilers!! There have been plenty of them and one of
-the most usual ones is GCC, the GNU C compiler, which was written originally in C, and later in C++.
+the most famous ones is GCC, the GNU C compiler, which was written originally in C, and recently rewritten in C++.
 
 The GCC collection of compilers is the biggest and greatest ever thanks to its layered architecture. This allows
 GCC to be compiled using GCC to generate any compiler for almost any known CPU architecture.
@@ -75,7 +75,7 @@ This will install the gcc and g++ compiler into /usr/local/bin.
 
 ## Prepare the filesystem and grab the required sources
 
-To compile GCC we will need to download 3 different source packages: GCC, binutils and newlib. Instead of newlib you
+To compile GCC we will need to download 3 different source packages: *GCC*, *binutils* and *newlib*. Instead of newlib you
 can use glibc but this guide uses newlib. Also to grab the sources I use wget. If you don't have wget you can install
 it with:
 
@@ -90,7 +90,7 @@ you can choose any of your own as far as you keep it consistent.
     sudo mkdir -p /opt/cross/gcc-sh/
 
 Adjust the permission of the newly created directories as needed so you can enter, write and read them. Now switch to the
-src directory and download the packages we need:
+*src* directory and download the packages we need:
 
     cd /opt/cross/src/
     wget ftp://sourceware.org/pub/binutils/releases/binutils-2.24.tar.gz
@@ -116,7 +116,9 @@ And last but not least download all required GCC pre-requisites:
 
 ## Export all required variables
 
-You need to export some variables for the compilation of the packages to work:
+You need to export some variables for the compilation of the packages to work. I'm assuming you are
+working on Mac and the paths for CC, CXX, CPP and LD are the paths where Homebrew install the
+compiler. In Ubuntu you don't need to export those, only PREFIX and PATH:
 
     export CC=/usr/local/bin/gcc-4.8
     export CXX=/usr/local/bin/g++-4.8
@@ -127,7 +129,7 @@ You need to export some variables for the compilation of the packages to work:
 
 ## Generate the compilation scripts and compile!
 
-We will use make to compile the packages. A common option for make is -j which tells make how many parallel
+We will use *make* to compile the packages. A common option for make is -j which tells make how many parallel
 processes to spawn in order to compile the code. Adjust that number to your machine's number of processors.
 If your machine has more than one virtual/physical processor I suggest to use the maximum number of processors
 minus 1, so you can continue doing other things while the compilation proceeds. In the examples below I will
@@ -141,7 +143,7 @@ In Mac you can use sysctl:
 
     sysctl -n hw.ncpu
 
-Now, the three packages we've downloaded make use of the configure tool to generate the compilation scripts
+Now, the three packages we've downloaded make use of the *configure* tool to generate the compilation scripts
 for the machine where the package will be compiled. To do this we switch to the corresponding build
 directory and generate the scripts there: 
 
@@ -158,7 +160,7 @@ use this stripped-off version to cross-compile newlib and then compile a full GC
     make -j8 all install
 
 It is important to disable libssp for GCC as this library is quite big and will cause GCC compilation to break for SH
-alleging some size_t symbol being missed.
+alleging some *size_t* symbol being missed.
 
 OK, now we can proceed to cross-compile newlib with the bootstrapped compiler:
 
