@@ -6,9 +6,9 @@ SITE=`pwd`
 
 echo "\n[Updating master...]\n"
 cd /tmp/
-rm -rf robcgabriell
-git clone git@github.com:gabr1e11/robcgabriell.git
-cd robcgabriell
+rm -rf gabr1e11.github.io
+git clone git@github.com:gabr1e11/gabr1e11.github.io.git
+cd gabr1e11.github.io
 git checkout master
 git pull
 cp -rf $SITE/_site/* .
