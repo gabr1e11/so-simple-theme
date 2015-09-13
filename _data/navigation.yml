@@ -13,15 +13,15 @@ en:
 
     - title: Español
       url: /es/
-es:
-    - title: Blog
-      url: /es/
-
-    - title: Sobre mi
-      url: /sobremi/
-
-    - title: Buscar
-      url: /buscar/
-
-    - title: English
-      url: /
+#es:
+#    - title: Blog
+#      url: /es/
+#
+#    - title: Sobre mi
+#      url: /sobremi/
+#
+#    - title: Buscar
+#      url: /buscar/
+#
+#    - title: English
+#      url: /
