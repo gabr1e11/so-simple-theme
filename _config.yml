@@ -1,0 +1,70 @@
+# Site wide configuration
+title:
+    en: Roberto Cano Blog
+    es: Blog de Roberto Cano
+description:
+    en: Eclectic blog about what not
+    es: Blog ecléctico con un poco de todo
+logo: bio-photo.jpg
+url: http://www.robertocano.es
+#url: http://localhost:4000
+paginate_per_category: 10
+paginate_root_category: en
+comments: true
+search: true
+
+# Jekyll configuration
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  use_coderay: false
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+# Languages
+defaults:
+  -
+    scope:
+      path: en
+    values:
+      lang: en
+#  -
+#    scope:
+#      path: es
+#    values:
+#      lang: es
+
+# Site owner
+owner:
+  name: Roberto Cano
+  avatar: bio-photo.jpg
+  email: gabr1e11@hotmail.com
+  disqus-shortname: robertocano
+  twitter: robersoca
+  facebook: #
+  github: gabr1e11
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: robertocano
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot: 
+  bing-verify:
