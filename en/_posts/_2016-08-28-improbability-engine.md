@@ -13,7 +13,7 @@ Hey! I'm back! Thanks, thanks, don't need to applaude. I know, I know. It's been
 I've been extremely busy in these months, some good things and some bad have happened during this
 period. Luckyly the good ones are kicking the bad ones asses!
 
-I've unluckyly been preempted and disregarded a bit too much my blog. But I'm back![^2]
+I've unluckyly been preempted and disregarded a bit too much my blog. But I'm back! [^2]
 
 Or at least I'm trying. I'm doing so many things lately that I don't actually have much time
 to edit this blog as often as it deserves, but I will try to at least update it ever 2 or 3 months,
@@ -62,17 +62,17 @@ FROM SCRATCH!
 > That sounds difficult, sir!
 
 Well, it is, and it is not. It is just not a very efficient thing to do. But it was a lot of fun.
-Remember those were the times of Quake and ID Software, and software rendering were still a thing,
+Remember those were the times of Quake and ID Software, and software rendering was still a thing,
 and assembler ruled the game scene. So we tried to learn the basics: Bresenham algorithm,
 perspective correction, flat and gouraud lighting, BSPs, portals. However for some reason I got
 preempted again by one of the most importants events in my life: I started working in a company!
 
-And the works was completely unrelated to games, although was really amazing, writing real-time
+And the work was completely unrelated to games, although it was really amazing, writing real-time
 software for a radar company in Spain!
 
-And then now, when I'm approaching my golden years, retirement lies ahead of me and youth seems
+And then now that I'm approaching my golden years and retirement lies ahead of me, my youth seems
 nothing but a summer daydream that melted away like a strawberry icecream left alone in the sun[^5],
-I've decided to write my own engine!
+so I've decided to write my own engine!
 
 > Why?
 
@@ -82,7 +82,7 @@ Why not?
 
 The thing is that it is fun, I'm learning a lot and I may even try to write a game some day!
 
-# To the point...or should I say: vertex
+# To the point...or should I say vertex
 
 I started writing the engine around February this year. I had some code I was working on before,
 which I also used to write an entry in this blog about OpenGL. I used that code as starting point
@@ -96,12 +96,27 @@ In any case, **BIG DISCLAIMER**:
     development, so take my words as what they are: amazing! But unexperienced. It may help you
     though to ally some doubts you may have or some technical problem you may find.
 
-Now to the real stuff.
+# Hello, 3D world!
+
+I've started my work
 
 
+
+
+
+
+First of all you should know that all the code I'm going to refer to during this article is available
+in my GitHub repo [3Dengine][1]. I've been adding a lot of stuff so I may simplify the code here to
+make it more palatable.
+
+If you want a very first introductory tutorial on setting up a GLFW and OpenGL in Mac OS X you can
+find my previous tutorial [here][2]
 
 
 ------------------
+
+ [1]: http://github.com/gabr1e11/3Dengine/
+ [2]: http://www.robertocano.es/en/osx-and-opengl-3-2/
 
  [^1]: "What" what?
  [^2]: Do NOT trust me, I may disappear again like the subtle breeze of summer days that flirts with your naked neck and then flees
