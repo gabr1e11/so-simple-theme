@@ -20,7 +20,7 @@ of fun and logic.
 
 While romping at this site like a burglar in an abandoned gold mine, I saw it: THE CHALLENGE. Well,
 the uppercase letters where not there, buts its Unicode lowercase counterparts were. A new challenge
-had started just few hours before, and it went by the name of Titanium[^1].
+had started just few hours before, and it went by the name of Titanium[^1]
 
 There were other tests, yes, but they belonged to the past, their petty trials paled in comparison
 with this new behemoth that questioned the very nature of the human mind[^2].
@@ -128,7 +128,9 @@ Oh, jeez, yeah.
 
     SPOILER ALERT!!!
 
-The answer is: sliding window! This is how this works. Because the matching parenthesis
+The answer is: sliding window!
+
+This is how this works: because the matching parenthesis
 must form a valid parenthesis sequence, and a valid sequence is defined as:
 
 * It is empty
@@ -145,19 +147,25 @@ Flipping any of the parenthesis in the original sequence to match the new parent
 will unmatch another parenthesis (because they come in pairs).
 
 Now we have blocks of matched parenthesis followed by one or more unmatched parenthesis.
-Every 2 consecutive unmatched parenthesis can be matched by flipping one of them (think
-about it, otherwise they would already be matched, 2 consecutive unmatched parenthesis
-must be the same symbol twice, so flipping one of them would make them match). Any
-parenthesis right after or right before a matched block can be matched either with a
+Every 2 consecutive unmatched parenthesis can be matched by flipping one or two of them,
+depending on the unmatched configuration:
+
+    ))
+    ((
+    )(
+
+For the first 2 cases a single flip will do, while for the third case you need 2 flips.
+Any parenthesis right after or right before a matched block can be matched either with a
 consecutive unmatched parenthesis or with a parenthesis at the other side of the matched
 block. In the end the idea is to find a sequence of matched blocks divided by unmatch
-blocks that we can fix with the limited number of flips and get the longest sequence
-of matched parenthesis.
+blocks that we can fix with the limited number of flips we are given and get the longest
+sequence of matched parenthesis.
 
-Let me try to illustrate this with an example:
-
-    (())()abc()((()))
-
+The only caveat with this problem is that we cannot use a direct approach to solve it. For
+example you may think that the best approach is to get the biggest matched blocks and try to
+merge them together by flipping and matching the unmatched blocks between them. However
+the location of big matched blocks is random in the sequence and it is not easy to determine
+which 
 
 ------------------
 
