@@ -161,11 +161,193 @@ block. In the end the idea is to find a sequence of matched blocks divided by un
 blocks that we can fix with the limited number of flips we are given and get the longest
 sequence of matched parenthesis.
 
-The only caveat with this problem is that we cannot use a direct approach to solve it. For
-example you may think that the best approach is to get the biggest matched blocks and try to
-merge them together by flipping and matching the unmatched blocks between them. However
-the location of big matched blocks is random in the sequence and it is not easy to determine
-which 
+The only caveat with this problem is that it is not a local one. We cannot just some fancy
+heuristic like trying to find the longest matched blocks and try to join them by flipping
+the unmatched blocks. The main reason is that local information surrounding a matched or
+unmatched block does not give us all the information we need to know if the block should
+be part of the final solution.
+
+Due to this we need to analyze the whole string to understand which blocks are going to be
+part of the longest streak of matched parentheis. However one thing is true: the streak
+must be consecutive, as this is one of the premises of the problem.
+
+Thus, the solution is a sliding window. We'll start analyzing from the first symbol in the
+string and then see how many consecutive symbols we can get by flipping the unmatched blocks,
+and we will save that number. Then we will start from the second symbols, and do the same
+operation, saving the number. Then the third and so on, until we actually have the maximum
+number of consecutive symbols achievable with the limited number of flips we have.
+
+Easy, right?
+
+Remember the next function gets called after 'markedMatched' and S will contain 'X' symbols
+where matched parenthesis are found.
+
+    int findLongestStreak(string &S, int maxFlips) {
+        int maxStreak = -1; /* Per problem requirements, return -1 if no possible solution found */
+
+        for (i=0; i<S.length(); ++i) {
+            int edits = maxFlips;
+            int prevSymbol = '';
+            int streak = 0;
+
+            for (j=i; j<S.size(); ++j) {
+                /* Matched block */
+                if (S[i] = 'X') {
+                    streak++;
+                    continue;
+                }
+                /* Found an unmatched parenthesis but
+                   we are out of edits, end the loop */
+                if (edits == 0) {
+                    break;
+                }
+                /* Same parenthesis symbol twice means we only
+                   need one edit to transform it into a matched
+                   parenthesis:
+
+                   )) -> ()
+                   (( -> ()
+
+                   Remember it does not matter if the parenthesis
+                   is consecutive or there is a matched block in
+                   between
+                */
+                if (prevSymbol == S[i]) {
+                    edits--;
+                    streak += 2;
+                    prevSymbol = -1;
+                    continue;
+                }
+                /* Special case, will only happen once in the whole
+                   loop, when the unmatched parenthesis change from ')'
+                   to '('. In this case we need 2 edits to match them,
+                   so we can only do it if we have 2 edits left */
+                if (prevSymbol == ')' && S[i] == '(') {
+                    if (edits < 2) {
+                        break;
+                    }
+                    edits -= 2;
+                    streak += 2;
+                    prevSymbol = -1;
+                    continue;
+                }
+                /* Rest of cases, no edit needed */
+                prevSymbol = S[i];
+            }
+
+            if (streak > maxStreak) {
+                maxStreak = streak;
+            }
+        }
+        return maxStreak;
+    }
+
+And *et voilà*, that will return the correct solution! Easy peasy! Peanuts!
+
+> Wow!
+
+Yeah! Wow! So you were wondering, did this awarded me my golden Codility award....no way!
+
+> Why?
+
+Well, problem were cycles! Not like the cycles problem found in graph algorithms. But rather
+CPU cycles. My program was too slow for codility to award me a golden thingy. Dear reader,
+come with me for the final journey into the realm of the pure fast. Let's optimize this shit
+together!
+
+# Of when I squeezed the jiffies out of my code...
+
+This part was the most interesting so far for me, as I had to optimize both the algorithm
+itself and also the code.
+
+> What does that mean, dear Lord of the Pings?
+
+When you design an algorithm there are usually 2 parts: the algorithm itself and its implementation.
+Typically the algorithm is measured using the big-O notation mentioned above. That binds the algorithm
+to a certain order of execution, but not to a real time of execution. That can be only measured when
+the code is written in certain language, compiled with certain compiler using specific optimizations
+and run in a specific computer. Nowadays we could say that using a good compiler an a modern CPU should
+yield similar results independant of the compiler and the CPU (disregarding the CPU speed of course, which
+will have a direct impact in execution time, and also cache levels and sizes). In general this can be
+measured in CPU cycles that come directly from how the compiler lays down the instructions. Then certain
+things like locality of the algorithm can speed up things by making a good use of the cache.
+
+We won't go as far as to analyze cache usage, but I definitely had to optimize both the algorithm to
+gather information that could reduce the number of iteration in succesive passes, and also the code
+itself to make a more efficient use of memory accesses.
+
+Here we go, you ready?[^6]
+
+## Algorithm optimization
+
+So this was the thing with my algorithm. On first pass I was analyzing the input string to find the
+matched blocks. While doing so I was marking the matched parenthesis with a 'X', remember? Then on the
+second pass I was basically adding up those 'X' together to count the number of consecutive matched
+parenthesis in a block. What if instead I saved directly the amount of matched parenthesis in a block?
+Then on second pass I'd have less iterations and less additions. That should improve things a little!
+
+To do so I'd need an extra array to store the new values. At this point I was deeming negligible memory
+writes and reads compared to the number of iterations. It seems I was right in this particular case,
+and I guess in average, although I didn't have time to perform a deep analysis on this.
+
+    void markedMatched(string &S, std::stack<int> &st)
+    {
+        int streak = 0;
+
+        for (int i=0; i<S.length(); ++i) {
+            /* We only increase the streak when a close parenthesis is
+               found in the input string, and only if it matches an opening
+               parenthesis in the top of the stack */
+            if (st.size() > 0 && st.top() == '(' && S[i] == ')') {
+                streak -= 2;
+                st.pop();
+            } else {
+                if (streak != 0) {
+                    st.push(streak);
+                    streak = 0;
+                }
+                st.push(S[i]);
+            }
+        }
+    }
+
+Now we have something slightly better than 'X' in the output stack. However it is still not too
+much optimized. The problem here is that if we have a lot of consecutive '()' then we will end
+up with a lot of consecutive '-2' on the stack. We can do better.
+
+> By the way, why -2?
+
+Well, that is called variable substitution. Because we are already using positive integers for
+symbols like '(' and ')', we need a different range to represent actual streaks of matched
+parenthesis, and negative numbers are just perfect, as we can add them normally and we will need
+just a final negation to make the result positive.
+
+To try to consolidate all those long sequences of '-2' and similar subgroups of matched parenthesis
+we just have to realize that once we finish a subgroup, there can be only a previous subgroup that
+we can add up to make a supergroup, because groups of the way groups of matching parenthesis are
+defined. So we just need to check once we match a group, if there was a previous group streak saved
+in the stack:
+
+    void markedMatched(string &S, std::stack<int> &st)
+    {
+        int streak = 0;
+
+        for (int i=0; i<S.length(); ++i) {
+            /* We only increase the streak when a close parenthesis is
+               found in the input string, and only if it matches an opening
+               parenthesis in the top of the stack */
+            if (st.size() > 0 && st.top() == '(' && S[i] == ')') {
+                streak -= 2;
+                st.pop();
+            } else {
+                if (streak != 0) {
+                    st.push(streak);
+                    streak = 0;
+                }
+                st.push(S[i]);
+            }
+        }
+    }
 
 ------------------
 
@@ -177,3 +359,4 @@ which
  [^3]: Yeah, sure!
  [^4]: If you are not familiar you can check one of many articles explaining it, like this one: http://web.mit.edu/16.070/www/lecture/big_o.pdf
  [^5]: If you get less than that number, you are doing something really wrong!
+ [^6]: Still reading at this point? My congratulations! And condolences. Yeah, who figures!
