@@ -1,5 +1,5 @@
 ---
-title: Golden titanium alchemy
+title: Golden titanium alchemy - Algorithm (1/2)
 layout: post
 image:
   feature: Codility.jpg
@@ -18,8 +18,12 @@ aground on the most peculiar island I had ever seen on my numerous sea adventure
 A seemingly paradisiacal oasis for programmers that challenged my senses and my understanding
 of fun and logic.
 
-While romping at this site like a burglar in an abandoned gold mine, I saw it: THE CHALLENGE. Well,
-the upper case letters were not there, buts its Unicode lower case counterparts were. A new challenge
+While romping at this site like a burglar in an abandoned gold mine, I saw it:
+
+**\~\~THE CHALLENGE\~\~**
+{: style="font-size: 200%;" :}
+
+Well, the upper case letters were not there, buts its Unicode lower case counterparts were. A new challenge
 had started just few hours before, and it went by the name of Titanium[^1]
 
 There were other tests, yes, but they belonged to the past, their petty trials paled in comparison
@@ -44,19 +48,28 @@ The problem? Parent matching.
 Well, sorry, parenthesis matching. I was just trying to shorten the story[^3]. The problem consisted
 on matching a sequence of parenthesis given as an input, along a maximum number of swaps that could be
 performed on the input string. The swaps could be used to maximize the matchings. The implemented
-function should return correctly the maximum number of matched parenthesis that the procedure could
+function should return correctly the maximum number of matched parenthesis that the algorithm could
 achieve by using the given number of swaps. It is important to note that the function should return
 the maximum number of matched parenthesis, and not matched pairs (which in the end turns to be the
 number of pairs multiplied by 2).
 
-> How can you tackle such an overly complicated task?
+> How could you tackle such an overly complicated task?
 
 Good question! Rather easily. At least the first part, the parenthesis matching. It turns out that apart
 from a correct output, the function must also comply with space and time complexity constraints (big-O
 notation). Both were bound by O(N), meaning it should run on linear time[^4] and use an amount of
 memory linearly proportional to the number of input parenthesis.
 
-So let's tackle the first part first.
+So let's tackle the first part first. But before, a big disclaimer from our sponsors:
+
+---
+**I have NOT, listen carefully, NOT tested the snippets of code provided here. The only snippet
+that works is the last one of the part 2 of this article, which is the one presented
+for Codility. The rest are coming from the top of my head, like little lice jumping out
+of me. I tried to be as close to bug free as possible, but you may need to fix something
+there. So no complaints!**
+{: style="font-size: 120%;" :}
+---
 
 # Parenthesis matching or how much did I miss my stack
 
@@ -123,13 +136,14 @@ want to try by yourself, stop reading NOW!
 
 > Now?
 
-NOW!! Flee, you fools!
+**NOW!! Flee, you fools!**
 
 > But now, now?
 
 Oh, jeez, yeah.
 
-    SPOILER ALERT!!!
+**SPOILER ALERT!!!**
+{: style="font-size: 120%;" :}
 
 The answer is: sliding window!
 
@@ -153,22 +167,20 @@ Now we have blocks of matched parenthesis followed by one or more unmatched pare
 Every 2 consecutive unmatched parenthesis can be matched by flipping one or two of them,
 depending on the unmatched configuration:
 
-    ))
-    ((
-    )(
+    )) --> 1 flip  --> ()
+    (( --> 1 flip  --> ()
+    )( --> 2 flips --> ()
 
 For the first 2 cases a single flip will do, while for the third case you need 2 flips.
 Any parenthesis right after or right before a matched block can be matched either with a
 consecutive unmatched parenthesis or with a parenthesis at the other side of the matched
-block. In the end the idea is to find a sequence of matched blocks divided by unmatch
+block. In the end the idea is to find a sequence of matched blocks divided by unmatched
 blocks that we can fix with the limited number of flips we are given and get the longest
 sequence of matched parenthesis.
 
-The only caveat with this problem is that it is not a local one. We cannot just some fancy
-heuristic like trying to find the longest matched blocks and try to join them by flipping
-the unmatched blocks. The main reason is that local information surrounding a matched or
-unmatched block does not give us all the information we need to know if the block should
-be part of the final solution.
+The only caveat with this problem is that it is not a local one. The main reason is that
+local information surrounding a matched or unmatched block does not give us all the information
+we need to know if the block should be part of the final solution or not.
 
 Due to this we need to analyse the whole string to understand which blocks are going to be
 part of the longest streak of matched parenthesis. However one thing is true: the streak
@@ -187,7 +199,8 @@ where matched parenthesis are found.
 
 ```cpp
 int findLongestStreak(string &S, int maxFlips) {
-    int maxStreak = -1; /* Per problem requirements, return -1 if no possible solution found */
+    int maxStreak = -1; /* Per problem requirements, return -1 if no
+                           possible solution is found */
 
     for (i=0; i<S.length(); ++i) {
         int edits = maxFlips;
@@ -271,9 +284,8 @@ For that you'll need to read the continuation in a follow-up article!
  [1]: http://www.codility.com
  [2]: https://codility.com/programmers/task/brackets_rotation/
 
- [^1]: Only me or the this 2 syllables 'tit' and 'anium' sound funny to anybody else?
+ [^1]: Is it only me or the this 2 syllables 'tit' and 'anium' sound rather funny?
  [^2]: Yeah, well, actually there are other challenges in Codility that are REALLY crazy, but I have to sell it, right?
  [^3]: Yeah, sure!
  [^4]: If you are not familiar you can check one of many articles explaining it, like this one: http://web.mit.edu/16.070/www/lecture/big_o.pdf
  [^5]: If you get less than that number, you are doing something really wrong!
- [^6]: Still reading at this point? My congratulations! And condolences. Yeah, who figures!

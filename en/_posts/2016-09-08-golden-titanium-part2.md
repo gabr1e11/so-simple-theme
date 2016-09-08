@@ -1,5 +1,5 @@
 ---
-title: Golden titanium alchemy
+title: Golden titanium alchemy - Optimization (2/2)
 layout: post
 image:
   feature: Codility.jpg
@@ -18,26 +18,20 @@ itself and also the code.
 
 > What does that mean, dear Lord of the Pings?
 
-When you design an algorithm there are usually 2 parts: the algorithm itself and its implementation.
-Typically the algorithm is measured using the big-O notation mentioned above. That binds the algorithm
+When you design an algorithm there are usually two parts: the algorithm itself and its implementation.
+Typically the algorithm is measured using the big-O notation mentioned above, which binds the algorithm
 to a certain order of execution, but not to a real time of execution. That can be only measured when
 the code is written in certain language, compiled with certain compiler using specific optimizations
-and run in a specific computer. Nowadays we could say that using a good compiler and a modern CPU should
-yield similar results independent of the compiler and the CPU (disregarding the CPU speed of course, which
-will have a direct impact in execution time, and also cache levels and sizes). In general this can be
-measured in CPU cycles that come directly from how the compiler lays down the instructions. Then certain
-things like locality of the algorithm can speed up things by making a good use of the cache.
+and run in a specific computer, with a particular CPU[^1].Nowadays we could say that using a good compiler
+and a modern CPU should yield similar results, but specifics like CPU speed, cache levels and sizes, instruction
+set, etc... can have an impact on the final measured time. For example things like locality of the algorithm
+can speed up things by making a good use of the cache.
 
 We won't go as far as to analyse cache usage, but I definitely had to optimize both the algorithm to
-gather information that could reduce the number of iteration in successive passes, and also the code
-itself to make a more efficient use of memory accesses.
+gather information that could reduce the number of iteration in successive passes, and the code to
+make a more efficient use of function calls and memory accesses.
 
-Here we go, you ready?[^6]
-
---------------------------
-SECOND PART
---------------------------
-
+Here we go, you ready?
 
 ## Algorithm optimization
 
@@ -94,7 +88,7 @@ To try to consolidate all those long sequences of '-2' and similar subgroups of 
 we just have to realize that once we finish a subgroup, there can be only a previous subgroup that
 we can add up to make a supergroup, just because of the way groups of matching parenthesis are
 defined. So we just need to check once we match a group, if there was a previous group streak saved
-in the stack:
+in the stack, if so add it to the current streak and remove it from the stack:
 
 ```cpp
 void markedMatched(string &S, std::stack<int> &st)
@@ -217,13 +211,14 @@ And TA-DA! Code super optimized! Right? RIGHT?
 
 The thing is: no. I mean it is more optimized, for sure, but still not passing from
 Codility Silver award. What else could we do to improve this? Well, as I mentioned
-previously, we've optimized the algorithm. Now we can optimize the code itself. For
-that I've measured certain parts of the code using some timing functions. A profiler
-typically gives you times per function, but in this case that is not that much interesting.
-It is initially to identify which function of the 2 we have is causing the bottleneck[^1]. In
-any case as you will see I ended up optimizing both, as the type of optimization was similar.
+previously, we've optimized the algorithm. Now we can optimize the code itself.
 
-# And I was trying to use C++
+In order to do that I had to analyse the timing of the different part of the algorithm.
+You can do that using your favourite profiles or instrumenting the code yourself. By doing
+so I learned 2 things: which function of the 2 we have is impacting the performance more[^2],
+and which specifics bits of code are bringing down performance.
+
+# And I was trying to use C++...
 
 Indeed I wanted to use C++ for the solution just to demonstrate my versatility in such 
 indomitable language. However after a bit of profiling I realized that using a custom
@@ -243,13 +238,14 @@ Otherwise we'd need to manage reallocations of the memory, incurring in memory c
 we are lucky and we know exactly the maximum size of the stack, which is exactly the size of the
 input string.
 
-Also, and just in case you see it the code if you analyse it carefully, the stack implementation
-I will use will have always one extra element to the left of the first element. This is just so
-we don't have to take into account when the stack is empty. The algorithm will just pick up that
-extra value, which is initialized with a proper value, and do the right thing.
+Also, and just in case you are a picky programmer that checks every dot and comma in the code,
+the stack implementation I will use has one extra element to the left of the first element.
+This is just because in the algorithm we are looking at position 'i-1' for the iteration 'i',
+so by having that extra element we don't need to have an extra flag that will be checked at
+every iteration to know if 'i==0', saving us some precious cycles[^3].
 
 Now I will show the final algorithm, the one that won the award (almost). You'll excuse me if
-the step from the previous shown code to this one is to steep, but otherwise the article would
+the step from the previous shown code to this one is too steep, but otherwise the article would
 take ages!
 
 Let's do it!
@@ -264,14 +260,13 @@ int solution(string &S, int K)
 {
     int size = S.length();
 
-    /* Stack buffer we will then refer from the 'st'
-       variable which is a pointer into it. Please notice
+    /* Stack buffer for the stack data. We will point to this
+       buffer with the 'st' stack pointer. Please notice
        we allocate one extra byte to use it as a default
        initial value for the algorithm, then we initialize that
        extra value to 0 which is useful for the algorithm (see below)  */
     int stbuf[size+1];
     stbuf[0] = 0;
-
 
     /* 'st' is the pointer into the stack, instead of an index.
        This way we avoid indexing the stack pointer to get the value */
@@ -364,26 +359,31 @@ int solution(string &S, int K)
                 break;
             }
 
-            /* Lucky us! We still have edits left. In this case we found the same
-               bracket twice, either '((' or '))' so we only need 1 edit to fix it */
+            /* Lucky us! We still have edits left. In this case we found
+               the same bracket twice, either '((' or '))' so we only need
+               1 edit to fix it */
             if (*st == prevBracket) {
-                length +=2;                /* By editing one parenthesis we have 2 more matched parenthesis */
+                length +=2;                /* By editing one parenthesis we have
+                                              2 more matched parenthesis */
                 edits--;
-                prevBracket = MATCH_PAREN; /* And remember we've matched it, so we don't try to match it again */
+                prevBracket = MATCH_PAREN; /* And remember we've matched it, so
+                                              we don't try to match it again */
             } else if (prevBracket == RIGHT_PAREN && *st == LEFT_PAREN) {
                 /* In this case we found two different unmatched parenthesis,
-                   so ')(', we need 2 edits to match them, if we don't have that many
-                   we are done with this window */
+                   so ')(', we need 2 edits to match them, if we don't have that
+                   many we are done with this window */
                 if (edits < 2) {
                     break;
                 }
-                /* Otherwise same case as in the 'if' part, except we subtract 2 edits */
+                /* Otherwise same case as in the 'if' part,
+                   except we subtract 2 edits */
                 length +=2;
                 edits -= 2;
                 prevBracket = MATCH_PAREN;
             } else {
-                /* For the case when we don't have a previous parenthesis, so only
-                   the first time we find an unmatched parenthesis in a sliding window */
+                /* For the case when we don't have a previous parenthesis,
+                   so only the first time we find an unmatched parenthesis
+                   in a sliding window */
                 prevBracket = *st;
             }
         }
@@ -393,7 +393,8 @@ int solution(string &S, int K)
             maxLength = length;
         }
 
-        /* If we've reached the last position no point on continuing processing */
+        /* If we've reached the last position no point
+           on continuing processing */
         if (st == st_end) {
             break;
         }
@@ -411,9 +412,9 @@ Ha! Nop....
 
 > Nop??
 
-NOP[^2]
+NOP[^4]
 
-According to Codility, we still get a Silver award. Whaaaaat!?[^3]
+According to Codility, we still get a Silver award. Whaaaaat!?[^5]
 
 # About pragmatism
 
@@ -444,12 +445,18 @@ Now we got the Gold, baby!
 Hope you've enjoyed the article. I must confess it's taken more time for me to write the article than to write the
 code! But I found the experience a nice learning one, and I thought I should share it.
 
+You can always browse through my Codility repo for the Titanium challenge [here][2]. There are several snapshots
+that may reflect what I've explained here. You can also browse any of my other projects.
+
 Keep up the good work!
 
 ------------------
 
- [1]: en/golden-titanium-part1/
+ [1]: {{site.url}}/en/golden-titanium-part1/
+ [2]: http://github.com/gabr1e11/codility/tree/master/titanium
 
- [^1]: Quick answer: the first function, although for certain cases with longer number of swaps, the second is also taking some time.
- [^2]: NO Pun intended....
- [^3]: Whaaaaat!?
+ [^1]: Cosmic rays can also influence your results! Beware!
+ [^2]: Quick answer: the first function, although for certain cases with longer number of swaps, the second is also taking some time.
+ [^3]: Sorry, no Gollum joke here!
+ [^4]: NO Pun intended....
+ [^5]: Whaaaaat!?
