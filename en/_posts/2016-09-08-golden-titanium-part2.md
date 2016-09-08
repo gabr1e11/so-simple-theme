@@ -267,7 +267,7 @@ int solution(string &S, int K)
     /* Stack buffer we will then refer from the 'st'
        variable which is a pointer into it. Please notice
        we allocate one extra byte to use it as a default
-       init value for the algorithm, then we initialize that
+       initial value for the algorithm, then we initialize that
        extra value to 0 which is useful for the algorithm (see below)  */
     int stbuf[size+1];
     stbuf[0] = 0;
@@ -295,7 +295,7 @@ int solution(string &S, int K)
        using our new pointer based strings and stacks, and the if condition
        inside the for is reversed */
     for (; str != str_end; ++str) {
-        /* Quick comment, at the beggining of the algorithm 'st' points to the
+        /* Quick comment, at the beginning of the algorithm 'st' points to the
            extra value in the stack, which is initialized to 0. This way the
            if condition will be true for the first iteration, which is OK because
            we cannot have matching parenthesis with only one parenthesis */
@@ -359,7 +359,7 @@ int solution(string &S, int K)
                 continue;
             }
             /* Ops, we found an unmatched parenthesis but we are out of edits, so
-               break the loop and analyze the result */
+               break the loop and analyse the result */
             if (edits == 0) {
                 break;
             }
@@ -377,7 +377,7 @@ int solution(string &S, int K)
                 if (edits < 2) {
                     break;
                 }
-                /* Otherwise same case as in the 'if' part, except we substract 2 edits */
+                /* Otherwise same case as in the 'if' part, except we subtract 2 edits */
                 length +=2;
                 edits -= 2;
                 prevBracket = MATCH_PAREN;
@@ -388,7 +388,7 @@ int solution(string &S, int K)
             }
         }
 
-        /* Analyze the length and see if it is a maximum */
+        /* Analyse the length and see if it is a maximum */
         if (length > maxLength) {
             maxLength = length;
         }
