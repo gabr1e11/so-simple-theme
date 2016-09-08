@@ -50,7 +50,7 @@
 				{% endif %}
 
 				<!-- Comments section -->
-				{% if (site.owner.disqus-shortname and page.comments) or site.comments %}
+				{% if site.owner.disqus-shortname and page.comments or site.comments %}
 					<span class="entry-comments">
 						<i class="fa fa-comment-o"></i>
 						<a href="#disqus_thread">Comment</a>
@@ -66,7 +66,7 @@
 				{{ content }}
 
 				<!-- Show comments -->
-				{% if (site.owner.disqus-shortname and page.comments) or site.comments %}
+				{% if site.owner.disqus-shortname and page.comments or site.comments %}
 					<div id="disqus_thread"></div><!-- /#disqus_thread -->
 					{% include disqus-comments.html %}
 				{% endif %}
