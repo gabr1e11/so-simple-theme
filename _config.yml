@@ -6,8 +6,8 @@ description:
     en: Eclectic blog about what not
     es: Blog ecléctico con un poco de todo
 logo: bio-photo.jpg
-#url: http://www.robertocano.es
-url: http://localhost:4000
+url: http://www.robertocano.es
+#url: http://localhost:4000
 paginate_per_category: 10
 paginate_root_category: en
 paginate: 10
