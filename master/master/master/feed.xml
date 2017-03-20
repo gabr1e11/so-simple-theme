@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text"></title>
+<generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://www.robertocano.es/feed.xml" />
+<link rel="alternate" type="text/html" href="http://www.robertocano.es" />
+<updated>2015-05-01T21:24:21+02:00</updated>
+<id>http://www.robertocano.es/</id>
+<author>
+  <name>Roberto Cano</name>
+  <uri>http://www.robertocano.es/</uri>
+  <email>roberto.cano@gmail.com</email>
+</author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[My own multilanguage Jekyll website (I)]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/multilanguage-jekyll-website_I/" />
+  <id>http://www.robertocano.es/en/multilanguage-jekyll-website_I</id>
+  <published>2015-04-17T00:00:00+02:00</published>
+  <updated>2015-04-17T00:00:00+02:00</updated>
+  <author>
+    <name>Roberto Cano</name>
+    <uri>http://www.robertocano.es</uri>
+    <email>roberto.cano@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;a-very-long-introduction&quot;&gt;A very long introduction&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll is an open source program, written in Ruby by Tom Preston-Werner,
+GitHub’s co-founder. Jekyll is a simple, blog-aware, static site generator for
+personal, project, or organization sites. Instead of using databases, Jekyll takes
+the content, renders Markdown or Textile and Liquid templates, and produces a
+complete, static website ready to be served by Apache HTTP Server, Nginx or another
+web server. Jekyll is the engine behind GitHub Pages, a GitHub feature that allows
+users to host websites based on their GitHub repositories.&lt;/p&gt;
+
+  &lt;p&gt;– &lt;cite&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Jekyll_%28software%29&quot;&gt;Wikipedia&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Well, that saved me a whole paragraph in this post! Couldn’t really find better words
+to describe Jekyll. A really interesting and simple tool to build websites from mere
+ASCII files. &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hey! Like HTML, PHP and Javascript!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ok, ok, you got me. Indeed, most of web technologies are based on &lt;em&gt;ASCII&lt;/em&gt; files, apart
+from Databases for example. Anyway the beauty of Jekyll is that the ASCII files are
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt; files that follow a minimal set of rules to format text. This rules are
+such that the bare ASCII file, without the parsing, is still quite readable. It is
+similar to &lt;a href=&quot;http://en.wikipedia.org/wiki/Help:Wiki_markup&quot;&gt;Wiki Markup&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Jekyll is great, easy to use, even a baby can set it up, it is fast, simple, and generates
+custom static pages that can be trimmed down to a minimum if needed. Piece of cake!&lt;/p&gt;
+
+&lt;p&gt;However, as always that something related to the web comes into my hands, I found a big
+issue: design. I may not be a good designer&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; but I know how a good design looks like.
+Most importantly, I know how I like my website. Thus the first thing I did was to try
+to find a suitable design for my minimalistic idea of a blog. Googling around I
+stumbled upon a very neat and pretty Jekyll design called &lt;a href=&quot;https://mmistakes.github.io/so-simple-theme/&quot;&gt;So Simple&lt;/a&gt; from desginer
+&lt;a href=&quot;https://mademistakes.com/about/&quot;&gt;Michael Rose&lt;/a&gt;. I fell immediately in love with it and decided that it was going
+to be the new Look&amp;amp;Feel for my site.&lt;/p&gt;
+
+&lt;h1 id=&quot;setting-up-your-first-jekyll-website&quot;&gt;Setting up your first Jekyll website&lt;/h1&gt;
+
+&lt;p&gt;So let’s say you’ve found, like me, a neat, cool and usable theme for Jekyll&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; and you
+want to start using it. The first thing you need to do is install Jekyll itself. You can
+do that by opening a shell and executing the following lines:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install bundler  &lt;span class=&quot;c&quot;&gt;# This install the bundler utility that eases dependency solving for Ruby&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone git@github.com:mmistakes/so-simple-theme.git &lt;span class=&quot;c&quot;&gt;# For the So Simple theme using SSH&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;so-simple-theme
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle install &lt;span class=&quot;c&quot;&gt;# To install the Ruby dependencies specified in the Gemfile file. You may need sudo here.&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve  &lt;span class=&quot;c&quot;&gt;# To serve the website at http://localhost:4000&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Done! You have your new website up and running in your machine! Go to &lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt;
+and check it out. Neat, right!? Well, true, nobody can see your website right now, but you do. Play around
+and check all the nice things that come with the theme you’ve selected. If you need to stop the server just go
+to the shell and Ctrl-C it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What hellish jargon is all this &lt;strong&gt;shell&lt;/strong&gt;, &lt;strong&gt;sudo&lt;/strong&gt;, &lt;strong&gt;git&lt;/strong&gt;, &lt;strong&gt;website&lt;/strong&gt;, &lt;strong&gt;jargon&lt;/strong&gt;??&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Oh, wait. I didn’t disclaim that. Let’s do it now:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;DISCLAIMER&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;em&gt;This blog is mainly aimed to advanced users and/or/xor developers&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;em&gt;with broad experience in Linux-ish systems that have been able to&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;em&gt;solve the conundrums of the shell and have suffered early installations&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;em&gt;of Linux distros in their flesh. I deny all liability related to a&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;em&gt;misunderstanding and/or misuse of the instructions contained in this post.&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;em&gt;Besides: &lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;.&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;I feel better now. Let’s continue. Now that we have a theme on our hands that we can serve
+from our own machine, what next? Well, it will depend on your theme of choice, but typically
+the first thing you want is to edit the _config.yml file. This file contains the Jekyll site
+configuartion. Things like the Blog’s name, server URL where the site will be hosted, type of
+Markdown languge and other goodies are found here.&lt;/p&gt;
+
+&lt;p&gt;Then you typically have the _posts directory. This one contains the posts for your blog.
+Inside this directory you may find some more directories: these are the categories of
+your posts. And then inside the posts themselves. There are other interesting directories
+at the root level:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;_layouts - Containing HTML files with the layout of your different pages&lt;/li&gt;
+  &lt;li&gt;_includes - Containing some more HTML files that are directly included in other HTML files (things like headers and footers)&lt;/li&gt;
+  &lt;li&gt;_data - Containing some valuable YAML data that can be used in your site to customize stuff&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All this files, and templates, and layouts, and YAML data are mixed and shaked together and then
+compiled into your final site.&lt;/p&gt;
+
+&lt;p&gt;Check out the website you’ve downloaded, read the instructions and play around with it. You can always
+build and serve the pages locally before you publish them.&lt;/p&gt;
+
+&lt;p&gt;In follow-up posts I will explain how to add multi-language features to your site, how to publish it
+in GitHub pages, how to add a custom domain and how to cook the best beef stew&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;!!&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!!!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Hint: I’m not. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;If you intend to setup a Jekyll site from scratch please follow this &lt;a href=&quot;http://jekyllrb.com/docs/quickstart/&quot;&gt;tutorial&lt;/a&gt;. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;Don’t expect everything I say to be true &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/multilanguage-jekyll-website_I/&quot;&gt;My own multilanguage Jekyll website (I)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on April 17, 2015.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[GitHub pages first contact]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/github-pages-first-contact/" />
+  <id>http://www.robertocano.es/en/github-pages-first-contact</id>
+  <published>2015-04-10T00:00:00+02:00</published>
+  <updated>2015-04-10T00:00:00+02:00</updated>
+  <author>
+    <name>Roberto Cano</name>
+    <uri>http://www.robertocano.es</uri>
+    <email>roberto.cano@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Blogs and blogging is basically what is all about lately in the web. I’ve found that even certain news
+media try to convey a sense of proximity with the reader by using a more personal and blog-like approach.
+Nowadays it is important to have an on-line presence in places like &lt;a href=&quot;http://www.twitter.com&quot;&gt;Twitter&lt;/a&gt;, &lt;a href=&quot;http://www.youtube.com&quot;&gt;YouTube&lt;/a&gt; or &lt;a href=&quot;http://www.linkedin.com&quot;&gt;Linkedin&lt;/a&gt;,
+and if you are a developer it is equally important to be present in &lt;a href=&quot;http://www.github.com&quot;&gt;GitHub&lt;/a&gt; and &lt;a href=&quot;http://www.stackoverflow.com&quot;&gt;Stack Overflow&lt;/a&gt; for
+example.&lt;/p&gt;
+
+&lt;p&gt;The best way to complement this is of course to have your own personal blog where you may have a more intimate
+space where to publish more concrete and developed ideas.&lt;/p&gt;
+
+&lt;p&gt;I’ve always had my own blog or website where I’ve been dumping this and that (mainly that…) as a form of
+self-expression and mainly as a way of tracking the things that I’ve been doing over time. Sometimes memory
+is ephemeral.&lt;/p&gt;
+
+&lt;p&gt;Without knowing about the existence of my personal blog a esteemed friend of mine was recently sharing
+with me that he was starting a new blog &lt;a href=&quot;http://www.enriquerecarte.com&quot;&gt;Enrique Recarte Blog&lt;/a&gt;. He is an acomplished developer and architect
+now tasting the goodies and baddies of London’s busy life. Our conversation was quite interesting and he introduced
+me to the unknown-until-then GitHub pages service.&lt;/p&gt;
+
+&lt;p&gt;I’ve been often paying for hosting services to host my website, and although it is usually not expensive,
+it is always overpaid for the use I make of it. Besides it always brings a little bit of overengineering as I
+tend to use CMSs (Content Management Systems) like Joomla or more recently WordPress. Although these two
+products are great and have a big and active community around it, it is like using sledgehammers to crack nuts.&lt;/p&gt;
+
+&lt;p&gt;So I really welcomed it when my friend Enrique was explaining to me how to prepare a GitHub pages site using &lt;a href=&quot;http://www.jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;,
+how it is automatically compiled when uploaded, and how to associate an already owned domain name to it through
+the CNAME file. I should not go into much detail in this post as I’m preparing a more technical post about
+Jekyll and all the steps I’ve followed to bring my site live, but it has been a really pleasant experience.&lt;/p&gt;
+
+&lt;p&gt;There are two things I love about Jekyll and the GitHub pages approach. First, that the source pages follow the
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Markdown&quot;&gt;MarkDown&lt;/a&gt; format that will allow me to port my site to any future technology as it is just plain ASCII
+with some extra headers for the FrontMatter engine. And second that the final website is just a static website
+that will work on any webserver of the world. No need for PHP, databases or &lt;em&gt;fancy&lt;/em&gt; stuff. Yeah, ok, I know,
+“how fancy a database is nowadays” you may say. However I prefer it this way. It is fast, easy to serve and I
+can have a better control of the weight of the site.&lt;/p&gt;
+
+&lt;p&gt;In a follow-up post I shall explain how to set up your own Jekyll website with multilanguage and a search engine.&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/github-pages-first-contact/&quot;&gt;GitHub pages first contact&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on April 10, 2015.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[En la panza del Mekaro]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/es/en-la-panza-del-mekaro/" />
+  <id>http://www.robertocano.es/es/en-la-panza-del-mekaro</id>
+  <published>2014-02-02T00:00:00+01:00</published>
+  <updated>2014-02-02T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Amaneció sentado, apoyado contra la mugrienta pared de un viejo y sucio
+refugio. El húmedo aroma a cloaca trepaba por las paredes y escapaba por un
+pequeño orificio horadado a ras de techo. A través del agujero se intuían a lo
+lejos los primeros despuntes del amanecer.&lt;/p&gt;
+
+&lt;p&gt;En la pared opuesta un sinfín de tuberías tejían un burdo entramado que
+resonaba a intervalos regulares y dejaba escapar por los recodos un continuo
+rocío de agua. Las gotas resbalaban suavemente por la pared y bañaban los
+adoquines que adornaban la mayor parte del suelo.&lt;/p&gt;
+
+&lt;p&gt;Gabriell se levantó y sintió como su cuerpo entumecido chirriaba y crujía a
+medida que se incorporaba. ¿Cuánto tiempo habría estado en aquel lugar?&lt;/p&gt;
+
+&lt;p&gt;Lo último que recordaba era aquel viejo buslizador hiperbárico y su insistente
+vaivén a 5 por 4.&lt;/p&gt;
+
+&lt;p&gt;De repente, mientras se encontraba sumergido en su memoria a corto plazo,
+Gabriell se dio cuenta de un pequeño detalle que había pasado por alto. Se le
+heló la sangre de inmediato: aquel lugar no tenía puerta alguna de entrada.
+Observó con detenimiento la estancia: el enjambre de tuberías de la pared
+opuesta, el suelo salpicado de adoquines, la pared en la que había estado
+apoyado quien sabe cuantas horas, la insulsa pared de su derecha y el tragaluz
+que coronaba la pared de la izquierda, tan pequeño que solo un globerg podría
+entrar a través de el. Pero ningún signo de algo que se pareciera ni
+remotamente a una puerta o trampilla.&lt;/p&gt;
+
+&lt;p&gt;Gabriell decidió cerrar los ojos y concentrarse en los sonidos que emanaban de
+aquel calabozo y en los que se deslizaban sutilmente por la única conexión con
+el exterior: gorgoteos, reflujos de agua, algún chirrido metálico espontáneo
+proveniente de la red de tuberías, su respiración un tanto agitada y el latir
+de su corazón. Más allá de aquella habitación no parecía haber nada más. Quizás
+se encontrara en medio de un desierto, en una llanura infinita sin signos de
+vida. Quizás estaba en un pueblo abandonado, campamento de muchos de los grupos
+rebeldes que eran expulsados de la Unión.&lt;/p&gt;
+
+&lt;p&gt;No sabía dónde estaba, cómo había llegado allí ni como salir de aquel inmundo
+sitio. Sin embargo Gabriell no perdió la calma. Si alguien le había encerrado
+allí y no le había matado aún, era porque le necesitaban vivo y, de un momento
+a otro, le harían saber porqué.&lt;/p&gt;
+
+&lt;p&gt;Continuará…(o no)&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/es/en-la-panza-del-mekaro/&quot;&gt;En la panza del Mekaro&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 02, 2014.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Lucky Lindy and the biggest hop of all]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/lucky-lindy-and-the-biggest-hop-of-all/" />
+  <id>http://www.robertocano.es/en/lucky-lindy-and-the-biggest-hop-of-all</id>
+  <published>2014-01-19T00:00:00+01:00</published>
+  <updated>2014-01-19T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Hi, dear old friend. Long time no see (again). This time, as always, because my
+daily duties took over my online presence and didn’t have time to update my
+personal diary. It is, however, more than OK, as it has been one of the most
+productive periods of the last years.&lt;/p&gt;
+
+&lt;p&gt;Where should I start? Well, after I stopped writing, just after my Japan trip
+(which was amazing!) I’ve been extremely busy…having fun! The summer in
+Holland was unusually good, temperature around 22 degrees, almost no rain at all
+and sun everywhere!&lt;/p&gt;
+
+&lt;p&gt;I couldn’t resist to such weather and I was just jumping from party to party.
+Spending all evenings (from Monday to Sunday) in places like the Roest,
+Brouwerij Het Ij, Hanekes Boom, Vondelpark, Amsterdamse Bos. And by the end of
+the summer 2 of the most amazing events of all summer: the Bloemendal 80s, 90s
+and 2000s party and the Edelweiss festival. They were both magic and revealing.
+I really enjoyed them. I love to dance, and I didn’t stop dancing. Mainly in the
+Bloemendal one. And the DJ was incredibly good!&lt;/p&gt;
+
+&lt;p&gt;All that party of course meant that I didn’t go to the gym for months! I think
+I’ve lost every muscle I had build, but it was more than worth it. Now I should
+come back…when I have time!&lt;/p&gt;
+
+&lt;p&gt;After the summer the routine tried to break through and settle in my life again.
+I could not help but look for new activities to keep my mind in that thrilling
+state. So I started my guitar lessons. Guitar-singing lessons. I found a
+professional guitarist and singer, Joep Berkenbosch, which does exactly what I
+wanted to do: play guitar finger-style and sing at the same time, ala
+songwriter. So I started and we connected immediately. He’s really good
+guitarist and singer, but he’s also really good teacher, which sometimes does
+not have to be true at the same time.&lt;/p&gt;
+
+&lt;p&gt;I’ve been basically learning songs like Bob Marley’s Waiting in vain, Ben E.
+King’s Stand by me or Beatles’s Here comes the sun. All of them beautiful songs,
+with brand new chords I never played before and a special need for being able to
+play the correct rhythm and sing at the same time. Now I’m just planing on going
+wild….sorry live and play some songs in a public place, most likely with my
+flatmate, who is an awesome singer!&lt;/p&gt;
+
+&lt;p&gt;Then, while trying to get my obsession for the gym back I stamped on the most
+exciting and awesome dancing lessons I’ve ever had: Lindyhop!&lt;/p&gt;
+
+&lt;p&gt;Lindyhop is a dance for swing music from the 20s and 30s. It is fresh, funny,
+relaxed and quite entertaining. The name of the dance comes (supposedly) from
+Charles Lindbergh famous Atlantic hop with his plane, the “Lucky Lindy”. On the
+newspaper the headlines read things like “Lindy hops the Atlantic” and from
+there, as the dance was becoming popular, adopted the name Lindyhop. I believe
+not only the dance is really engaging, but the particular lessons I’m taking
+here in Amsterdam. The school is called Lindyspirit and the teachers, Quinten
+and Sarah, are really good at getting you into the Lindyhop during the whole
+lesson. I’m attending now to the second block, 8-count moves, and still love it
+every time I go. I think it is the first time I go to a course and I forget
+completely I’m trying to learn something, and just enjoy it!&lt;/p&gt;
+
+&lt;p&gt;And last, but not least, as usual, this is starting to be a year with a lot of
+plans and trips! Next stop, Japan again, specifically Kioto, during the Sakura
+(Cherry Blossom) and with one of my best friends. The plan: playing some songs
+to the locals in the bar of a friend of my friend, while enjoying the sushi and
+the doriyakis! If everything goes well, this will be the first time I bring my
+guitar on a trip. I’m quite excited!&lt;/p&gt;
+
+&lt;p&gt;And on the long term, the low humming of the stick to the Thailand plan…&lt;/p&gt;
+
+&lt;p&gt;Hope it does not take me that long to update this blog next time!&lt;/p&gt;
+
+&lt;p&gt;(hint: also, in the meantime, I’ve started to learn calligraphy….why not!)&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/lucky-lindy-and-the-biggest-hop-of-all/&quot;&gt;Lucky Lindy and the biggest hop of all&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on January 19, 2014.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Bootstrapping my friend]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/bootstrapping-my-friend/" />
+  <id>http://www.robertocano.es/en/bootstrapping-my-friend</id>
+  <published>2013-05-12T00:00:00+02:00</published>
+  <updated>2013-05-12T00:00:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Het is lang geleden! It’s been a while since I don’t write here and the reason
+is…vacation! I’ve been traveling around the world (almost literally as I’ve
+been enjoying of Cambodia and Japan in less than a month) and I’ve
+been successfully disconnected of my everyday routine. Now that I’m back I’m
+really struggling to get back at work and my OpenGL learning, but as a
+compensation I’ve been toying around with several ideas that I was curious
+about:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;On one hand I’ve been investigating about implementing Wireshark plugins
+through its Lua interface to help analyse DVB Simulcrypt traffic captures,
+which is quite useful in my job. This I did while helping in the integration of
+our systems with one of our customers, and it proved to be extremely helpful.
+The Lua interface for Wireshark is actually not really intuitive, and I needed
+some examples developed by another colleagues to get a grasp on it, but I
+finally I came up with a clean and easily extensible architecture that will
+allow me to add more plugins in the future. If I have enough time I’ll post some
+information on how this works to add my personal bit to the scarce information
+that you can Google around about the topic.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;On the other hand I’ve also had a grasp on FFMPEG filters as a consequence
+of some POC needed for our research about video. In this case I basically
+took the &lt;em&gt;drawtext&lt;/em&gt; filter and I stripped it out of all the unneeded code until
+I had a minimum plugin that I could easily tweak to add, for example, noise to
+the video. Actually there exists a plugin that achieves the same, but this was
+just to have a placeholder in case I need to add some custom filters. In this
+case it wasn’t that difficult as in the Wireshark’s plugins case, but still the
+information I could find googling was not enough and outdated in some cases.
+However I also found this quite interesting and useful for some quick proof of
+concepts as you have all the decoding/encoding power of FFMPEG but you can
+easily implement a &lt;em&gt;man in the middle&lt;/em&gt; attack!&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;On the third hand…yes, whatever! I’ve also been having a look to Twitter’s
+Bootstrap to use it as a web interface to control some of our systems. I
+friend of mine who has been a web developer for Hyves (the Dutch Facebook)
+recommended this to me as an accesible set of web widgets. Basically I didn’t
+want to care too much about the look and feel. While learning it I found quite
+interesting the fact that it is done merely with CSS and JavaScript, which
+allows for an embedded system to have quite a lightweight web server as there is
+no need for any server side support, like PHP. I immediately felt in love with
+Bootstrap because of this but, as always, I had problems to set up the first
+mockup of my project. Luckily I found a beta project called
+&lt;a href=&quot;http://www.divshot.com/&quot;&gt;Divshot&lt;/a&gt; that offers an online WYSIWYG tool to compose
+websites using Bootstrap. As opposed to &lt;a href=&quot;http://www.jetstrap.com/&quot;&gt;Jetstrap&lt;/a&gt;,
+Divshot is still in beta stage and you don’t have to pay for it (although
+Jetstrap allows you to create one website for free, I liked Divshot more). So I
+created my stepping stone through Divshot, got the result and then customised
+it manually to my needs. The result is actually pretty cool and I’m really happy
+with it. Let’s Bootstrap!!&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One last thing I’ve learned on this road trip is about WebSockets. I was
+completely convinced that WebSockets were just plain TCP sockets brought to the
+browser, but they are actually quite different, and although based on TCP
+sockets (of course!) they add an extra layer that you must comply with. So in
+the end to implement a server that provides data to a web interface, you need to
+actually implement a WebSocket server, which is something I don’t like.&lt;/p&gt;
+
+&lt;p&gt;Anyway, it’s been a cool trip and now I continue designing my web interface and
+trying to add some cool animations to it. Later on I’ll ask for the advise of my
+Hyves friend as he’s an expert in usability and design, to let him criticise my
+first web development attempt!&lt;/p&gt;
+
+&lt;p&gt;Soon, I hope, more on my OpenGL development adventure!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/bootstrapping-my-friend/&quot;&gt;Bootstrapping my friend&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on May 12, 2013.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[OpenGL RedBook 7th edition and the price to pay]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/opengl-redbook-7th-edition-and-the-price-to-pay/" />
+  <id>http://www.robertocano.es/en/opengl-redbook-7th-edition-and-the-price-to-pay</id>
+  <published>2013-03-11T00:00:00+01:00</published>
+  <updated>2013-03-11T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;In the last days I’ve formed my own opinion regarding the seventh edition of the
+OpenGL standard, by the Khronos group. I’ve been reading the first chapters of
+the book, consuming every word and trying to put in practice every example, to
+get a grip on the not-so-new OpenGL 3.3.&lt;/p&gt;
+
+&lt;p&gt;It turned out to be a disaster.&lt;/p&gt;
+
+&lt;p&gt;I thought I lost my touch with technology, and that maybe I was too far away
+from the topic that I couldn’t event get a basic understanding of the API.
+However I did realize that 80% of the functions were deprecated (I remembered
+this after a hundred pages reading…). Then I started wondering myself whether
+the book was going to be able to teach me practical OpenGL. It proved
+impossible.&lt;/p&gt;
+
+&lt;p&gt;Digging into google pool of wisdom to know more about this problem I found two
+things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Everybody agree that the 7th edition of the OpenGL Red Book is good for
+reference, but not for learning&lt;/li&gt;
+  &lt;li&gt;Several of them pointed out this
+&lt;a href=&quot;http://www.arcsynthesis.org/gltut/&quot;&gt;website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After this I learned 2 things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;To read more carefully all the reviews of a book before blindly buying it&lt;/li&gt;
+  &lt;li&gt;That, sometimes, free books are plenty of times better than pay-per-read
+ones&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The mentioned website is one of the best book/tutorial about something that I’ve
+ever seen. Quite comprehensive, easy to follow, with up-to-date examples and an
+easy reading, it is now my north star of the OpenGL books.&lt;/p&gt;
+
+&lt;p&gt;If you are willing to learn modern OpenGL you must definitely try it. Then, when
+the basic concepts sick, you can go through the OpenGL Bible (beware the 5th
+edition as it is not as good the previous ones)  or the GLSL Cookbook than can
+complement this basic knowledge with more advance techniques. But first is
+first!&lt;/p&gt;
+
+&lt;p&gt;Hope to have saved you some time!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/opengl-redbook-7th-edition-and-the-price-to-pay/&quot;&gt;OpenGL RedBook 7th edition and the price to pay&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on March 11, 2013.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Camera movement and premature optimization]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/camera-movement-and-premature-optimization/" />
+  <id>http://www.robertocano.es/en/camera-movement-and-premature-optimization</id>
+  <published>2013-03-11T00:00:00+01:00</published>
+  <updated>2013-03-11T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;While writing the first bits and bytes of my ‘I-want-to-learn-OpenGL’ engine I
+stamped myself against the camera implementation. As a first approach I was
+trying to implement one of those fancy FPS walking cameras.&lt;/p&gt;
+
+&lt;p&gt;I’m currently using the &lt;a href=&quot;http://glm.g-truc.net/&quot;&gt;GLM Library&lt;/a&gt;, which tries to
+add back all the functionality present in previous versions of OpenGL and GLUT
+to the new GLSL pipeline. Things like rotations, translation, perspective and
+orthogonal projections are available in the library.&lt;/p&gt;
+
+&lt;p&gt;When thinking about how to implement the camera movement, my first approach was
+to use a look_at vector that would serve both as the direction of the camera (so
+the view vector) and the direction of the movement when using the forward key.&lt;/p&gt;
+
+&lt;p&gt;Also the control through the mouse would use the typical YAW, PITCH and ROLL
+concepts.&lt;/p&gt;
+
+&lt;p&gt;By this time I was presented to the Gimbal Lock concept that I will try to
+tackle, both in code and blog, in the future.&lt;/p&gt;
+
+&lt;p&gt;But then I ran into a problem. If I wanted the camera to move realistically,
+every time the forward key was pressed I should move the camera in the direction
+of the look_at vector. This meant updating the camera accordingly applying the
+Yaw, Pitch, Roll rotation to the look_at vector before using that vector to
+move forward. So I did so.&lt;/p&gt;
+
+&lt;p&gt;The result: I lost almost a 30% of performance just by calculating the rotation
+every time!!&lt;/p&gt;
+
+&lt;p&gt;I was not surprised by the lost of performance, but I couldn’t believe
+professional applications were spending a 30% of the time in calculating camera
+rotations.&lt;/p&gt;
+
+&lt;p&gt;Finally I decided to cheat a little bit on the user.&lt;/p&gt;
+
+&lt;p&gt;As we are going to update the screen around 60 times per second, and the user
+cannot see the intermediate movements (only the final one), I don’t update
+the look_at vector until the time for the rendering is due. Then I apply the
+rotation to the look_at vector and I apply the movement according to that
+vector.&lt;/p&gt;
+
+&lt;p&gt;This is not exactly accurate, but it works. To understand why it is not accurate
+think about the following scenario:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The user faces the north&lt;/li&gt;
+  &lt;li&gt;Then turns the camera 90 degrees left, to the west, and moves 10 units&lt;/li&gt;
+  &lt;li&gt;Then quickly turns the camera 180 degrees to the right, facing east, and
+moves 10 units&lt;/li&gt;
+  &lt;li&gt;Finally turns 90 degrees left, facing north again&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Net result: no movement at all when the frame is rendered.&lt;/p&gt;
+
+&lt;p&gt;Result with my fake implementation: 20 units of movement towards the
+north!&lt;/p&gt;
+
+&lt;p&gt;However is hardly noticeable, and it saves a lot of time. Maybe when I can
+use Quaternions it could become more realistic…who knows!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/camera-movement-and-premature-optimization/&quot;&gt;Camera movement and premature optimization&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on March 11, 2013.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[CSS, Blogger and Simple template transparency]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/css-blogger-and-simple-template-transparency/" />
+  <id>http://www.robertocano.es/en/css-blogger-and-simple-template-transparency</id>
+  <published>2013-02-25T00:00:00+01:00</published>
+  <updated>2013-02-25T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;It may seem quite obvious for any HTML/CSS developer how to do this, 
+but I struggled for 2 hours to find out how to set a semi-transparent 
+background while using the Simple template of Blogger. Usually websites
+indicate how to do it while using the Dynamic template. My main problem
+was to know how the pane component was called internally. Finally I could
+find the solution in this &lt;a href=&quot;http://www.bloggeries.com/forum/showthread.php?t=26163&quot;&gt;thread&lt;/a&gt;
+from Bloggeries(http://www.bloggeries.com/).&lt;/p&gt;
+
+&lt;p&gt;You must go to your Blogger configuration and click on &lt;strong&gt;Template&lt;/strong&gt;.
+Then click on &lt;strong&gt;Customize. **This will bring the template customization page.
+Click then in **Advance&lt;/strong&gt;, go to the bottom of the new categories pane and
+click on &lt;strong&gt;Add CSS&lt;/strong&gt;. Here you can add the following lines:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Change the &lt;strong&gt;255&lt;/strong&gt; values to the RGB values you want for the background and
+the &lt;strong&gt;0.7&lt;/strong&gt; to the alpha setting you prefer (from &lt;strong&gt;0.0&lt;/strong&gt; to &lt;strong&gt;1.0&lt;/strong&gt;). Click
+on &lt;strong&gt;Apply to Blog&lt;/strong&gt; at the upper right corner and enjoy the benefits of alpha
+blending in your blog!&lt;/p&gt;
+
+&lt;p&gt;Remember this is valid for the &lt;strong&gt;Simple Template&lt;/strong&gt; of Blogger. I didn’t try
+with other templates.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/css-blogger-and-simple-template-transparency/&quot;&gt;CSS, Blogger and Simple template transparency&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 25, 2013.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[PlayStation 4 and the future of videogames]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/playstation-4-and-the-future-of-videogames/" />
+  <id>http://www.robertocano.es/en/playstation-4-and-the-future-of-videogames</id>
+  <published>2013-02-24T00:00:00+01:00</published>
+  <updated>2013-02-24T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;This week Sony presented the next generation of PlayStation videoconsoles.
+While not unveiling the physical device as such, some specs are known.
+It is an AMD based machine, bundled with one of the so famous ATI Radeon
+graphic cards. An increase of memory, form 512MB to 8GB will easy the data
+transaction of the new generation of entertainment devices, being this memory
+of the GDDR5 type.&lt;/p&gt;
+
+&lt;p&gt;Amazing?? No, not really. Nothing that a rather not-so-much bunch of bucks
+cannot buy in the high-end PC market. However it is not the machine itself what
+attracted my attention to the so expected Sony’s new videoconsole: it was the
+technical demos and in-progress videogames I could see during the online
+presentation. Not because these reflect what is coming with the PS4, but
+because they reflect what is coming in the upcoming years for us, the gamers –
+the hardcore gamers – and it is absolutely delicious.&lt;/p&gt;
+
+&lt;p&gt;First, the tech demo from &lt;a href=&quot;http://www.quanticdream.com/&quot;&gt;Quantic Dream&lt;/a&gt;
+showing off the level of quality for character acting. For the first time,
+I was almost convinced about the humanity of the &lt;a href=&quot;http://www.youtube.com/watch?v=MUMOHSL53L8&quot;&gt;old man&lt;/a&gt;
+appearing on the screen. It is not that we’ve reached the singularity already
+– not yet – but we are quite closer now. Looking to the eyes of the character
+you could almost feel his soul, and that’s quite of an experience. It could be,
+of course, that all the horsepower of the PS4 was put to work to achieve only
+that moving head, and that for real production videogames that’s not going to
+be the true experience, but I was glad to see that we are getting there.&lt;/p&gt;
+
+&lt;p&gt;Second, the tech demo from the Unreal team and its &lt;a href=&quot;http://www.unrealengine.com/&quot;&gt;Unreal Engine 4&lt;/a&gt;.
+While still a little bit away form photorealism and with some minor issues I
+could notice (like some unwanted aliasing in some geometry), the &lt;a href=&quot;http://www.youtube.com/watch?v=_o7EsSfOFAQ&quot;&gt;demo&lt;/a&gt;
+has such a quality that it could perfectly be just a trailer for an upcoming
+movie in theaters next month. It is quite impressive, as this is, in my opinion,
+just the tip of the iceberg. I noticed plenty of particle management – ice,
+fire, smoke… – and also several film techniques applied to the &lt;em&gt;filming&lt;/em&gt; of the scene.
+It looks as if you had only to watch at the screen, as it really looks like a
+movie, and not like a game.&lt;/p&gt;
+
+&lt;p&gt;And last, but not least, games like &lt;a href=&quot;http://www.youtube.com/watch?v=IuRwp6aCWRw&quot;&gt;Kill Zone 4&lt;/a&gt;
+with an incredible ala Blade Runner-like city, unbelievable reflections and curved surfaces
+that made the city real and alive. Also master-pieces – if they are not, they will be –
+like &lt;a href=&quot;http://www.youtube.com/watch?v=1WUSv5Ugm9c&quot;&gt;Watch Dogs&lt;/a&gt;, which shows that
+not only awesome graphics are needed to grab the gamer’s attention, but a good
+dosis of freedom, simulation and AI realism. In this game the gameplay seems
+unbounded, unlimited and neverending. It is not the most impressive piece of code
+regarding the graphics area that I’ve seen, but it feels like
+&lt;a href=&quot;http://www.youtube.com/watch?v=Kq5KWLqUewc&quot;&gt;Deus Ex: Human Revolution&lt;/a&gt; to the
+power of ten in the gameplay area.&lt;/p&gt;
+
+&lt;p&gt;Now what? It is obvious: to wait for the counterpart of Sony’s baby, the XBox 720 –
+or whatever Microsoft wants to call it –. Sincerely I expect Microsoft’s proposal
+to be even better than PS4. This way we, the gamers, will win a handful of
+ever-lasting experiences in our minds and our hearts.&lt;/p&gt;
+
+&lt;p&gt;Keep on playing!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/playstation-4-and-the-future-of-videogames/&quot;&gt;PlayStation 4 and the future of videogames&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[OSX and OpenGL 3.2]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/osx-and-opengl-3-2/" />
+  <id>http://www.robertocano.es/en/osx-and-opengl-3-2</id>
+  <published>2013-02-24T00:00:00+01:00</published>
+  <updated>2013-02-24T00:00:00+01:00</updated>
+  <author>
+    <name>Roberto Cano</name>
+    <uri>http://www.robertocano.es</uri>
+    <email>roberto.cano@gmail.com</email>
+  </author>
+  <content type="html">
+    &lt;p&gt;Recently I’ve bought the famous Red Book for OpenGL. This is the 7th
+edition (so OpenGL 3.3). I bought this one because OSX Mountain Lion only
+supports OpenGL 3.2 (by now) and I didn’t want to experiment the
+frustration of trying to setup an example that finally I couldn’t run.&lt;/p&gt;
+
+&lt;p&gt;Anyway the experience is starting to be quite a nightmare. It turns out that
+the resources available on the internet to setup an OpenGL 3.2 example under
+OSX Lion using C++ are scarce. Most of them focus on bringing OpenGL 3.2
+rendering context using Cocoa and ObjectiveC. While good enough for a bit of
+testing, it is not what I wanted to start playing around with OpenGL. I needed
+either C or C++, and even though I saw some examples of how to setup an
+ObjectiveC/C++ binding, I didn’t want to spend time on it.&lt;/p&gt;
+
+&lt;p&gt;Finally it turned out that the solution was named &lt;a href=&quot;http://www.glfw.org/&quot;&gt;GLFW&lt;/a&gt;
+GLFW is the replacement
+of GLUT (the GL Utility Toolkit) that was famous a long time ago. Now GLUT is
+still available but it looks like it doesn’t support window hints for
+OpenGL context creation, which is what is needed to create OpenGL 3.2 contexts.&lt;/p&gt;
+
+&lt;p&gt;I found really nice examples at &lt;a href=&quot;http://www.opengl-tutorials.org/&quot;&gt;www.opengl-tutorials.org&lt;/a&gt;. They setup the
+OpenGL context using GLFW and GLEW. &lt;a href=&quot;http://glew.sourceforge.net/&amp;quot;&quot;&gt;GLEW&lt;/a&gt;
+is the GL Extension Wrangler, a helper library to
+determine which OpenGL extensions are available in run-time. With this two
+libraries OpenGL 3.2 context creation is a piece of cake. First include GLEW
+and GLFW. You must do this in that order as GLEW will complain if &lt;em&gt;gl.h&lt;/em&gt; is
+already included:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// Include GLEW&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;GL/glew.h&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Include GLFW&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;GL/glfw.h&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now it’s time to initialise GLFW and set the hints for the window so the
+created OpenGL context is 3.2:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;glfwInit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;glfwOpenWindowHint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GLFW_OPENGL_VERSION_MAJOR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;glfwOpenWindowHint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GLFW_OPENGL_VERSION_MINOR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;glfwOpenWindowHint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GLFW_OPENGL_PROFILE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GLFW_OPENGL_CORE_PROFILE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;After this a GLFW window can be opened with a OpenGL 3.2 context associated to
+it:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;glfwOpenWindow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;768&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GLFW_WINDOW&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The last step is to initialise GLEW to be able to use the core profile of
+OpenGL 3.2. To do this, the experimental mode of GLEW must be activated:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;glewExperimental&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;glewInit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;There we go. With this an OpenGL 3.2 context is created and we are ready to
+issue OpenGL commands. Remember that OpenGL 3.2 is quite different to OpenGL
+2.1, like for example no more glBegin()/glEnd commands are used to render
+geometry. Instead use VBO (vertex buffer objects) to do it so.&lt;/p&gt;
+
+&lt;p&gt;The last thing to remember is that you must link against GLFW and GLEW, as well
+as against OpenGL. In Mac OS X this is  achieved by adding the following flags
+while linking:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;-lglfw -lglew -framework OpenGL&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Happy OpenGL coding!!&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/osx-and-opengl-3-2/&quot;&gt;OSX and OpenGL 3.2&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[OpenGL 3.2: shaders everywhere!]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/opengl-3-2-shaders-everywhere/" />
+  <id>http://www.robertocano.es/en/opengl-3-2-shaders-everywhere</id>
+  <published>2013-02-24T00:00:00+01:00</published>
+  <updated>2013-02-24T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Now that I’m getting involved into OpenGL 3.2 I realize how different it is
+from OpenGL 1.2 (the last one I learned long time ago). No more glBegin/glEnd
+blocks and only VAOs (vertex array objects) and  VBOs (vertex buffer objects),
+shaders and basically server side structures and processing.&lt;/p&gt;
+
+&lt;p&gt;Today while trying out some demos and writing some example code to understand
+better how all this new structures are working together I found out that I
+really need a deep understanding of GLSL (GL Shading Language) to be able to do
+some cool things.&lt;/p&gt;
+
+&lt;p&gt;After managing to create a color cube using VBOs, I fancy trying to outline the
+3D geometry as I thought it could look cool. However, I struggled doing it as
+the only feasible way, as far as I could understand, is by using shaders. As
+currently my knowledge of shaders is rather low, I couldn’t find a way to
+create the outline.&lt;/p&gt;
+
+&lt;p&gt;Anyhow I feel it is a quite powerful tool to generate really nice effects, but
+I;ll have to wait until I’m confident with the basics of OpenGL 3.2 to be
+prepared to tackle GLSL and understand its deepness.&lt;/p&gt;
+
+&lt;p&gt;Another thing I found about OpenGL3.2 is that it eliminated the fixed pipeline
+by which OpenGL pre 3.1 renderered the primitives (applying transformations,
+rotation, scaling, MVP matrices, etc,,,) and now it is all done through
+shaders. So the next demos I intended to do with VBOs and VAOs is not working
+just because I need a simple shader to be incorporated to the rendering of the
+scene!&lt;/p&gt;
+
+&lt;p&gt;Next step, more VBO, camera and lighting. Set, ready, action!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/opengl-3-2-shaders-everywhere/&quot;&gt;OpenGL 3.2: shaders everywhere!&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Slowing down]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/slowing-down/" />
+  <id>http://www.robertocano.es/en/slowing-down</id>
+  <published>2011-05-25T00:00:00+02:00</published>
+  <updated>2011-05-25T00:00:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Recently all has been slowed down. The life, the earth, my environment, the
+writing of my story…I feel completely stuck at the edge of a waterfall, being
+dragged towards the open space ahead myself. No movements could save me from
+falling away. The only thing I can really do is to prepare myself for flying
+with my own wings. A wings that have never been used before. Made from wood and
+heavy metal, I wonder if they will help me or ‘au contraire’ they’ll push me
+down rapidly. Guess there’s only one way to know it.&lt;/p&gt;
+
+&lt;p&gt;And beneath my feet the clear water runs so free. The memories hit my back
+attempting to crush me down. The ideas vanish away from my head, and the
+feelings are as cold as never before. Calm down the expectations. Listen to the
+white noise coming from the emptiness. Breath deeply. Open your eyes. Feel your
+skin and the blood underneath. Pressure is rising. Pressure is lowering.&lt;/p&gt;
+
+&lt;p&gt;Future? A familiar guy who I’ve never understood completely. Though I always
+play his game. A game of impossibilities, bad decisions, cranky buddies and
+unreachable possibilities. That’s the game. Play it or leave now. Common sense
+can’t be applied. Don’t event try it.&lt;/p&gt;
+
+&lt;p&gt;Kind of english practice….kind of vital essay….&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/slowing-down/&quot;&gt;Slowing down&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on May 25, 2011.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[No les votes]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/es/no-les-votes/" />
+  <id>http://www.robertocano.es/es/no-les-votes</id>
+  <published>2011-05-19T00:00:00+02:00</published>
+  <updated>2011-05-19T00:00:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Es increíble el movimiento social que está despertando en España en estos días.
+¡Estoy emocionado! Creo que por fin la gente se está empezando a dar cuenta de
+que somos todos parte de la misma sociedad, ciudadanos del mismo país, al
+margen de ideologías, motivaciones o gustos personales. Sin colores, sin
+banderas. Solo una, la española, que es la que nos identifica a todos como
+ciudadanos de este país que no está pasando por sus mejores momentos.
+¿Revolución? Quizás no como las que ha habido en otros países en los últimos
+meses, pero si un cambio de mentalidad importante en el pueblo español. Podemos
+unirnos para intentar conseguir un bien común y mayor.&lt;/p&gt;
+
+&lt;p&gt;Todo el movimiento se puede seguir en Twitter a través de los hashtags
+#acampadasol, #spanishrevolution y #nolesvotes (hay muchos más pero esos son
+los más importantes, al menos para la acampada de Madrid). Yo en particular
+también sigo a &lt;a href=&quot;http://www.filmica.com/david_bravo/&quot;&gt;David Bravo&lt;/a&gt; (\@dbravo) abogado especialista en propiedad
+intelectual y derecho informático, que ha estado presente en otros movimientos
+(como las protestas contra la Ley Sinde), y que está ayudando actualmente junto
+con otros colegas (Javier de la Cueva \@jdelacueva y \@bufetalmeida por ejemplo)
+a que el movimiento sea posible de una manera legal.&lt;/p&gt;
+
+&lt;p&gt;El manifiesto de #nolesvotes se puede encontrar en Google Docs &lt;a href=&quot;https://docs.google.com/document/pub?id=139G8EL1OOR-RtfhTstHb7qekZvBoJTz1oCImbGa_I48&amp;amp;pli=1&quot;&gt;aquí&lt;/a&gt;,
+aunque no se hasta cuando estará ahí colgado, así que a continuación copio y
+pego los puntos importantes aparecidos en la version 2 del documento:&lt;/p&gt;
+
+&lt;h2 id=&quot;nolesvotes-por-un-voto-responsable&quot;&gt;#nolesvotes: por un voto responsable&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;OBJETIVO DE #NOLESVOTES. Las personas que apoyamos a la iniciativa
+  #nolesvotes desde sus inicios, a la vista de la catarata de
+tergiversaciones vertidas por políticos y medios de comunicación, queremos
+recordar y subrayar que la iniciativa en ningún modo promueve la abstención, y
+que surgió para hacer una llamada al ejercicio del voto responsable el próximo
+22-M. La iniciativa pide específicamente que no se vote a los partidos que
+responden a intereses distintos a los de la ciudadanía: PP, PSOE y CiU, pero
+recomienda que en su lugar se examinen otras opciones. La iniciativa no pide el
+voto para ninguna opción concreta: el voto es responsabilidad de cada
+ciudadano.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;HAZ DE TU PÁGINA UN CARTEL ELECTORAL. Las calles están llenas de carteles
+  electorales, pero muchas personas no se ven representadas en ellos: la
+intermediación hizo que la política sea cada vez más lejana al ciudadano. Para
+subsanar tal déficit democrático, proponemos que todo ciudadano que así lo
+desee pueda convertir su blog, su web, su muro o su twitter en un &lt;strong&gt;cartel
+electoral&lt;/strong&gt; del movimiento. Si quieres respaldar esta iniciativa,
+convierte tu sitio en Internet en un cartel electoral antes de las 24 horas del
+próximo día 20 de mayo, con el logotipo de #nolesvotes o de las plataformas con
+las que simpatices, y el texto “ni PP, ni PSOE, ni CiU”.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;COLABORACIÓN DISTRIBUIDA. Te invitamos a copiar este texto y construir
+  páginas de enlaces que referencien todos los sitios que dan apoyo a la
+iniciativa. De igual modo, invitamos a los demás colectivos que comparten
+nuestra propuesta a que lleven a cabo acciones similares. La fuerza de la red
+reside en la distribución y colaboración entre sus nodos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;TÚ ERES EL ALTAVOZ. Tan importante es la red como la calle: no te limites a
+  actuar en internet. Levántate y explícaselo a todos tus conocidos,
+especialmente a aquellos más vulnerables a la propaganda en los medios de
+comunicación masivos.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;ACCIÓN. No te quedes en casa el domingo 22. Sal a la calle y ejerce tu
+  derecho al voto. No votes a quienes, actuando abiertamente en contra de la
+voluntad e intereses de los ciudadanos, han convertido la democracia en una
+burla de sí misma. Por la participación democrática activa: ni PP, ni PSOE, ni
+CiU.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;¡TODOS A LA ACAMPADA QUE HAY EN SOL O EN CADA CIUDAD! ¡QUE SE NOS OIGA!&lt;/strong&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/es/no-les-votes/&quot;&gt;No les votes&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on May 19, 2011.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[A'dam]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/es/adam/" />
+  <id>http://www.robertocano.es/es/adam</id>
+  <published>2011-04-13T00:00:00+02:00</published>
+  <updated>2011-04-13T00:00:00+02:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Vertiginoso. No se me ocurre otro término para calificar los tres últimos meses
+de mi vida.&lt;/p&gt;
+
+&lt;p&gt;Han ocurrido tantas cosas que me cuesta seguir la pista de mi propia historia.
+Esta claro que este es un año de cambios, y me pregunto que me deparará el
+futuro. Por ahora parece que algo bastante bueno, ¡así que habrá que prepararse
+para disfrutarlo!&lt;/p&gt;
+
+&lt;p&gt;Hace unas semanas viajé a Amsterdam con unos amigos para conocer la ciudad y
+para visitar a mi amigo Rum que lleva allí ya tres meses viviendo. Estuvimos 4
+días, y fueron los mejores cuatro días que he pasado en muchos años. Fue un
+viaje mágico, lleno de encanto, cargado de esperanzas y completamente
+relajante. Conocer Amsterdam, visitar sus calles, mezclarse con su gente y
+disfrutar relajadamente de unos vinos a la luz del encapotado cielo Neerlandés
+ha sido una experiencia inolvidable.&lt;/p&gt;
+
+&lt;p&gt;No pensara yo que fuese a causar tal efecto sobre mí esta pequeña ciudad del
+norte de Europa, pero el hecho es que me enamoré de ella, de sus canales, de
+sus bicicletas y de su esencia bohemia. He quedado prendado.&lt;/p&gt;
+
+&lt;p&gt;Después de que mucha gente me advirtiera y aconsejara que intentase relativizar
+las sensaciones y sentimientos que allí experimenté, conseguí acallar el ímpetu
+soñador que me había atrapado y esquivar la necesidad imperiosa de vivir de
+primera mano la vida &lt;em&gt;Amsterdamer&lt;/em&gt;. Y sin embargo decidí que era el
+momento perfecto para empezar a enviar curriculums a las ofertas interesantes
+que fuera viendo o que me fuera enviando mi amigo Rum (¡las cuales eran ya
+bastantes!). Finalmente me decidí por dos de ellas, las cuales envié entre la
+semana pasada y esta.&lt;/p&gt;
+
+&lt;p&gt;Pues hete aquí que me hallaba tranquilamente sumergido en mis cotidianidades
+laborales, médicas y gimnásticas cuando de repente han contactado conmigo de
+las dos ofertas ¡¡¡¡¡¡Ñiiiiiicccc!!!!!!!! Era como ir sin frenos, cuesta abajo,
+y con el acelerador pisado. Fue muy interesante porque de una de ellas me
+llamaron por teléfono y así pude practicar un poco mi inglés. Creo que no se me
+dio mal.&lt;/p&gt;
+
+&lt;p&gt;En definitiva, una de las ofertas era para trabajar de forma temporal en
+Amsterdam durante 6 meses para luego pasar a trabajar en UK. Les comenté que no
+me interesaba. Que prefería poder quedarme en Amsterdam más tiempo, así que
+estoy a la espera de que me confirmen si habría posibilidad de quedarse más
+tiempo en ese puesto.&lt;/p&gt;
+
+&lt;p&gt;La otra oferta es para RIPE NCC, en el mismo centro de Amsterdam. Tiene muy
+buena pinta y he concertado una entrevista presencial con ellos allí en
+Amsterdam para el 4 de Mayo. Viendo que me han llamado enseguida, que ya
+conocen mis expectativas salariales y que me van a pagar el viaje hasta allí,
+creo que hay bastante interés, aunque no se si significa mucho o no. Pero
+bueno, intentaré hacerlo lo mejor que pueda ¡y a ver si hay suerte!&lt;/p&gt;
+
+&lt;p&gt;¿De los nervios? Si. ¿Contento? También. Además justo después de la entrevista
+en Amsterdam me quedo unos días allí para disfrutar de la estancia con mi amigo
+y luego me voy a París de viaje de placer. ¡¿Que más se puede pedir?! Lo único
+&lt;em&gt;negativo&lt;/em&gt; es que no se si podré hacer el examen del FCE, que el
+seguro del coche se extendía hasta septiembre, que tengo que vender el vehículo
+y que el contrato con Movistar dura hasta mediados del año que viene. En fin,
+¡nimiedades comparadas con lo que de verdad importa!.&lt;/p&gt;
+
+&lt;p&gt;Tiempos de cambios, nuevos retos, futuros inciertos y muchas ganas de vivirlo
+todo al máximo.&lt;/p&gt;
+
+&lt;p&gt;En fin, una vez que esté allí, invitados quedáis a visitarme.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/es/adam/&quot;&gt;A&#39;dam&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on April 13, 2011.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Pasión y realidad]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/es/pasion-y-realidad/" />
+  <id>http://www.robertocano.es/es/pasion-y-realidad</id>
+  <published>2011-03-09T00:00:00+01:00</published>
+  <updated>2011-03-09T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Recientemente he sabido de dos perlas relacionadas con el mundo de los
+videojuegos que ya me están haciendo salivar y anhelar que el tiempo pase más
+rápido para llegar cuanto antes a finales de década. Recientemente se ha
+celebrado la &lt;a href=&quot;http://www.gdconf.com/&quot;&gt;Game Developer Conference&lt;/a&gt; en San Francisco, California, y
+aparte de todas las novedades en videojuegos que cabía esperar (y manidos
+remakes de antaño), ha aparecido &lt;a href=&quot;http://www.epicgames.com/&quot;&gt;Epic Games&lt;/a&gt; con su maravillosísimo &lt;a href=&quot;http://www.unrealengine.com/&quot;&gt;Unreal
+Engine&lt;/a&gt; y su visión de cómo serán los juegos dentro de unos
+años…gracias por supuesto a su motor líder en ventas. Verdaderas joyas
+como &lt;a href=&quot;http://www.bioshockgame.com/&quot;&gt;BioShock&lt;/a&gt;, &lt;a href=&quot;http://masseffect.bioware.com/&quot;&gt;Mass Effect&lt;/a&gt; o el exitoso &lt;a href=&quot;http://www.epicgames.com/infinityblade/&quot;&gt;Infinity Blade&lt;/a&gt; (al que
+por cierto estoy últimamente muy enganchado), son solo muestras de la potencia
+de este motor en su versión actual para Next Gen y para portátiles/móviles
+(como la versión del motor &lt;a href=&quot;http://www.udk.com/&quot;&gt;UDK&lt;/a&gt; para dispositivos como iPhone).&lt;/p&gt;
+
+&lt;p&gt;En la GDC Epic ha echado una mirada al futuro de los videojuegos a través del
+bisel de su propio motor, y la verdad que el resultado es (teniendo en cuenta
+que es una prueba de concepto) impresionante. Si dentro de 3 o 4 años los
+videojuegos se parecen a lo que se muestra en &lt;a href=&quot;http://uk.ign.com/videos/2011/03/08/see-the-next-generation-of-video-games-in-action&quot;&gt;este video&lt;/a&gt; me voy a hacer
+directamente acólito del Sagrado Motor de Videojuegos. El nivel de realismo me
+parece apabullante, los detalles, las luces, las sombras. Es curioso a lo que
+nos hemos acostumbrado los jugadores habituales de videojuegos (hardcore
+gamers), porque aunque me parece absolutamente delicioso el trailer de casi 3
+minutos, y creo que la experiencia de juego sería increiblemente vívida, aún
+falta para alcanzar el fotorealismo…pero estamos en el camino.&lt;/p&gt;
+
+&lt;p&gt;Solo hay que echar la vista atrás y darse cuenta de lo que ha ocurrido en la
+última década con los videojuegos. El avance ha sido…exponencial. Y si
+sigue así yo creo que a finales de década estaremos cerca del fotorrealismo en
+videojuegos. Supongo que en ese momento los llamaremos Augmented Movies, First
+Person Movies o Immersion Movies, a saber, y me encantará poder estar allí
+cuando ocurra para disfrutar de ello.&lt;/p&gt;
+
+&lt;p&gt;Como guinda final, otra perla de la que he sido consciente hace más bien poco:
+el nuevo juego de &lt;a href=&quot;http://www.rockstargames.com/&quot;&gt;Rockstar Games&lt;/a&gt;, &lt;a href=&quot;http://www.rockstargames.com/lanoire/&quot;&gt;L.A. Noire&lt;/a&gt;, una historia de cine
+negro muy cuidada y con bastante estilo. El gameplay parece bastante similar a
+Grand Theft Auto, aunque salvando las distancias. Los gráficos tienen más
+estilo y la temática es completamente distinta. Sin embargo hay algo que me ha
+llamado gratamente la atención, y es la nueva tecnología de reconocimiento
+facial que han desarrollado para el juego, y que permite incluir hasta el más
+mínimo detalle de la interpretación de los actores en el videojuego. Viendo el
+video, la sensación es un poco extraña: entre &lt;em&gt;¡Wow, parecen personas de
+verdad!&lt;/em&gt; y &lt;em&gt;Mmmm, aunque en realidad se nota que son
+muñecos&lt;/em&gt;. Partiendo de que es la primera vez que se hace esto y que ya
+llegarán versiones mejoradas de la misma tecnología, me parece que estamos ante
+una técnica revolucionara que cambiará la manera en la que vemos los
+videojuegos a medio plazo: ¡ya estoy viendo nuevas estrellas surgidas
+directamente de los píxeles de la pantalla!&lt;/p&gt;
+
+&lt;p&gt;El video de L.A. Noire &lt;a href=&quot;http://www.youtube.com/rockstargames#p/a/u/1/q2EG5J05048&quot;&gt;aquí&lt;/a&gt;.&lt;/p&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/es/pasion-y-realidad/&quot;&gt;Pasión y realidad&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on March 09, 2011.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Llévame a la luna]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/es/llevame-a-la-luna/" />
+  <id>http://www.robertocano.es/es/llevame-a-la-luna</id>
+  <published>2011-03-01T00:00:00+01:00</published>
+  <updated>2011-03-01T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;¡Calentando motores y preparando el despegue! Últimamente ando configurando mi
+vida (si, configurando, como si fuera un ordenador) para preparar mi particular
+vuelo hacia la luna. Concienciándome para apartarme de la relajante
+cotidianeidad de mi vida y emprender un pequeño viaje a la periferia de mi
+mundo. No tan difícil. No tan fácil. Siempre parece haber etapas. A mi me ha
+tocado vivir de nuevo un fin de etapa y un nuevo comienzo. Quizás sea la edad,
+pero simplemente me parece &lt;em&gt;correcto&lt;/em&gt;, como diría un gran amigo
+mío. ¿Me gusta? ¿Es peor? ¿Quizás sea necesario? Ya no lo se, ni me importa
+realmente. No me malinterpretéis: no estoy enfadado con la vida ni nada por el
+estilo. En realidad casi estoy agradecido por la oportunidad de poder cambiar.
+Y no solo por este último cambio. En general, por todos los cambios que
+vinieron y por los que vendrán. Simplemente porque me dan la oportunidad de
+probarme a mi mismo: probar mi voluntad, mi desidia, mi ánimo y desánimo, mi
+fortaleza, mi mente y mi cuerpo. Y por ahora me gusto, estoy contento con cómo
+soy. No al cien por cien, por supuesto, pero si en un alto grado y teniendo en
+cuenta la edad que tengo. Ya habrá más cuando sea mayor…y menos,
+obviamente.&lt;/p&gt;
+
+&lt;p&gt;Mis clases de inglés, mi entrenamiento de gimnasio, mi trabajo con
+decodificadores y C++, mi pequeño repunte musical, el inevitable escarceo hacia
+un país extranjero, incluso hasta quizás algo de teatro son las cosas que
+ocupan mi mente hoy por hoy. Disfrutar y aprender: ¿qué más podría pedir?&lt;/p&gt;
+
+&lt;p&gt;Mmmmm, un poco más de salud, que últimamente mis achaques óseos y musculares me
+están dando un poco por donde Gollum perdió el anillo. Nada que no solucione un
+poco de ejercicio, un poco de Ibuprofeno y alguna visita esporádica al médico.&lt;/p&gt;
+
+&lt;p&gt;Hoy: Ensalada para comer, ejercicio de espalda en el gym, 20 minutos
+corriendo…&lt;em&gt;and english classes to end the day&lt;/em&gt;. ¡A disfrutar
+del menu!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/es/llevame-a-la-luna/&quot;&gt;Llévame a la luna&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on March 01, 2011.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Meme]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/es/meme/" />
+  <id>http://www.robertocano.es/es/meme</id>
+  <published>2011-02-20T00:00:00+01:00</published>
+  <updated>2011-02-20T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;Ayer me llegó a través de facebook un nuevo meme que se está extendiendo por
+esta red social. El meme reza lo siguiente:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Entra en la wikipedia y dale a “Página Aleatoria”.  El título del primer
+artículo es el nombre de tu Grupo de música.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ve a la página Quotationspage.com y dale al botón “Random Quotes”.  Las
+últimas cuatro o cinco palabras de la última cita de esa página es el tíulo de
+tu primer álbum.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ve a Flickr y dale al botón “Explorar últimos 7 días”.  La tercera imagen
+que aparezca será la portada de tu álbum.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Usa un editor para ponerlo todo junto (photoshop, gimp..).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Súbelo con este texto en la anotación y etiqueta a tus colegas.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Normalmente no me adhiero a estas campañas, pero esta me hizo gracia y terminé
+haciendo la portada de mi disco. ¡Aquí tenéis el resultado!:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.robertocano.es/images/ianblack.jpg&quot; alt=&quot;Ian Black&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/es/meme/&quot;&gt;Meme&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 20, 2011.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Diferentes etapas]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/es/diferentes-etapas/" />
+  <id>http://www.robertocano.es/es/diferentes-etapas</id>
+  <published>2011-02-19T00:00:00+01:00</published>
+  <updated>2011-02-19T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;em&gt;Veinticinco balas malgastadas&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Apunté hacia el cielo&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;y conseguí matar a un dios&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Veinticinco almas devastadas&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;y no he conseguido ser yo&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Cariño, he venido a decirte&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;que he perdido el sentido&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;No te asustes si no sientes mi latir&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Mi prisión se ha vuelto espesa&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Me atraganta y me indaga&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Ninguna otra me conoce mejor&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Veinticinco dagas bien clavadas&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;en un mismo corazón&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Ahógame entre tus brazos&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Y ámame&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Ayúdame a controlar la ansiedad&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Discúlpame si no he de cambiar&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Solo otra bala más…&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;¿Para qué son&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;si no son para matar?&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Mi alma probó el sabor de la pólvora&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;pero el dulce aroma a victoria&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;nunca más caerá en mis manos&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Ahora solo me quedan tus labios&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;y el susurro de alguna canción&lt;/em&gt;  &lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/es/diferentes-etapas/&quot;&gt;Diferentes etapas&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 19, 2011.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Canciones de una vida ajetreada]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/es/canciones-de-una-vida-ajetreada/" />
+  <id>http://www.robertocano.es/es/canciones-de-una-vida-ajetreada</id>
+  <published>2011-02-15T00:00:00+01:00</published>
+  <updated>2011-02-15T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;He decidido añadir una nueva sección a este renovado blog. Una sección que
+habla de mi vida de una manera un tanto diferente. Habla de lo que fui y de lo
+que soy y, sobre todo, de como he llegado a ser el de hoy. La sección se llama
+&lt;strong&gt;Poesías cantadas&lt;/strong&gt; y es una recopilación de canciones que escribía
+hace algunos años. A fecha de hoy no están todas las que conservo, pero aún no
+las he encontrado todas.&lt;/p&gt;
+
+&lt;p&gt;El objetivo principal es no perder esas letras. El secundario recordar lo que
+fui y entender mejor el camino que he recorrido hasta el presente. Y el
+terciario intentar presionarme para plasmar esas letras como canción de una vez
+por todas. Los dos primeros ya están cubiertos. Veremos cuanto tardo en cumplir
+el tercero. Mientras tanto tendré que seguir escarbando entre papeles añejos
+para encontrar el resto de poesías cantadas.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/es/canciones-de-una-vida-ajetreada/&quot;&gt;Canciones de una vida ajetreada&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 15, 2011.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Revolución]]></title>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/es/revolucion/" />
+  <id>http://www.robertocano.es/es/revolucion</id>
+  <published>2011-02-13T00:00:00+01:00</published>
+  <updated>2011-02-13T00:00:00+01:00</updated>
+  <author>
+    <name></name>
+    <uri>http://www.robertocano.es</uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;&lt;em&gt;De la rabia entre mis manos hablo&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Con ira entiendo las cuerdas que me atan, esclavo&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Quiero surgir de entre ahogos inhumanos&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;No puedo…de la rabia entre mis manos hablo&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;De la importancia ante mi alma callo&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Sugiero tranquilos escarceos&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;La mano que miente me duele y me tiene&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Y cedo…por la impotencia ante mi alma muero&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Escudriño internos sentimientos de revuelo&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Rebelión sobre el infierno eterno&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Del que vive por muerte en su propio cementerio&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;No estoy preparado para aunar mi libertad&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Y gritar con fuerza: ¡Basta ya!&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Bastará un ahogo más&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Entiendo peones en rededor&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;que bailan cada uno a su son&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;a un ritmo frenético que no&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;pertecene a mi fuero interior&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;La red se estrecha&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;¡A mí legión!&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;No deseo&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;ser otro&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;peón&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;No&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Ya no&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Yo no&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;No, porque soy el que mece las palabras en mi propia conclusión&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Y he decidido que más que vivir por estar&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;quiero estar para vivir&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;Y es así como quiero seguir&lt;/em&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;De la rabia entre mis manos callo&lt;/em&gt;  &lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/es/revolucion/&quot;&gt;Revolución&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 13, 2011.&lt;/p&gt;
+
+  </content>
+</entry>
+
+</feed>

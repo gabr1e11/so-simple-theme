@@ -1,0 +1,326 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<title>Roberto Cano Blog</title>
+<meta name="description" content="While writing the first bits and bytes of my ‘I-want-to-learn-OpenGL’ engine I
+stamped myself against the camera implementation. As a first approach I was
+trying to implement one of those fancy FPS walking cameras.
+
+">
+<meta name="keywords" content="Programming">
+
+  
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Roberto Cano Blog">
+<meta name="twitter:description" content="While writing the first bits and bytes of my ‘I-want-to-learn-OpenGL’ engine I
+stamped myself against the camera implementation. As a first approach I was
+trying to implement one of those fancy FPS walking cameras.
+
+">
+<meta name="twitter:site" content="@robersoca">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://www.robertocano.es/images/Unreal-Engine_logo.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Roberto Cano Blog">
+<meta property="og:description" content="While writing the first bits and bytes of my ‘I-want-to-learn-OpenGL’ engine I
+stamped myself against the camera implementation. As a first approach I was
+trying to implement one of those fancy FPS walking cameras.
+
+">
+<meta property="og:url" content="http://www.robertocano.es/en/camera-movement-and-premature-optimization/">
+<meta property="og:site_name" content="Roberto Cano Blog">
+
+
+
+
+
+
+<link rel="canonical" href="http://www.robertocano.es/en/camera-movement-and-premature-optimization/">
+<link href="http://www.robertocano.es/feed.xml" type="application/atom+xml" rel="alternate" title="Roberto Cano Blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://www.robertocano.es/assets/css/main.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="http://www.robertocano.es/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="http://www.robertocano.es/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://www.robertocano.es/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<!-- Icons -->
+<link rel="shortcut icon" href="http://www.robertocano.es/favicon.ico">
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop">
+	    <ul>
+      	  
+		    
+		        
+		    
+		    <li><a href="http://www.robertocano.es/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://www.robertocano.es/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://www.robertocano.es/search/" >Search</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="http://www.robertocano.es/es/" >Español</a></li>
+		  
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+
+<div id="main" role="main">
+ 	<article class="hentry">
+
+		<!-- Heading section of the web including the page featured image
+     and in case of the main page, the logo, title and description -->
+
+<!-- Featured image -->
+
+<div class="entry-feature-header">
+	<img src="http://www.robertocano.es/images/Unreal-Engine_logo.jpg" class="entry-feature-image animated fadeIn" alt="">
+	
+
+	
+</div>
+
+
+	
+		<div class="entry-wrapper">
+			<!-- Page title for main page and posts -->
+
+<header class="entry-header">
+	<h1 class="entry-title">
+		
+			Camera movement and premature optimization
+		
+	</h1>
+</header>
+
+
+			<!-- Post information -->
+			<footer class="entry-meta">
+				<!-- Avatar -->
+				<img src="http://www.robertocano.es/images/bio-photo.jpg" class="bio-photo" alt="Roberto Cano bio photo"></a>
+
+				<!-- Author name -->
+				<span class="author vcard">
+					by
+					<span class="fn">
+						Roberto Cano
+					</span>
+				</span>
+
+				<!-- Publish date -->
+				<span class="entry-date date published">
+					<time datetime="2013-03-11T00:00:00+01:00">
+						<i class="fa fa-calendar-o"></i>
+						
+						march
+						 11, 2013
+					</time>
+				</span>
+
+				<!-- Modified date -->
+				
+
+				<!-- Comments section -->
+				
+					<span class="entry-comments">
+						<i class="fa fa-comment-o"></i>
+						<a href="#disqus_thread">Comment</a>
+					</span>
+				
+
+				<!-- Social sharing -->
+				<span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=Programming&amp;text=&amp;url=http://www.robertocano.es/en/camera-movement-and-premature-optimization/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.robertocano.es/en/camera-movement-and-premature-optimization/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=http://www.robertocano.es/en/camera-movement-and-premature-optimization/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+
+			</footer>
+
+			<!-- Post content -->
+			<div class="entry-content">
+				<p>While writing the first bits and bytes of my ‘I-want-to-learn-OpenGL’ engine I
+stamped myself against the camera implementation. As a first approach I was
+trying to implement one of those fancy FPS walking cameras.</p>
+
+<p>I’m currently using the <a href="http://glm.g-truc.net/">GLM Library</a>, which tries to
+add back all the functionality present in previous versions of OpenGL and GLUT
+to the new GLSL pipeline. Things like rotations, translation, perspective and
+orthogonal projections are available in the library.</p>
+
+<p>When thinking about how to implement the camera movement, my first approach was
+to use a look_at vector that would serve both as the direction of the camera (so
+the view vector) and the direction of the movement when using the forward key.</p>
+
+<p>Also the control through the mouse would use the typical YAW, PITCH and ROLL
+concepts.</p>
+
+<p>By this time I was presented to the Gimbal Lock concept that I will try to
+tackle, both in code and blog, in the future.</p>
+
+<p>But then I ran into a problem. If I wanted the camera to move realistically,
+every time the forward key was pressed I should move the camera in the direction
+of the look_at vector. This meant updating the camera accordingly applying the
+Yaw, Pitch, Roll rotation to the look_at vector before using that vector to
+move forward. So I did so.</p>
+
+<p>The result: I lost almost a 30% of performance just by calculating the rotation
+every time!!</p>
+
+<p>I was not surprised by the lost of performance, but I couldn’t believe
+professional applications were spending a 30% of the time in calculating camera
+rotations.</p>
+
+<p>Finally I decided to cheat a little bit on the user.</p>
+
+<p>As we are going to update the screen around 60 times per second, and the user
+cannot see the intermediate movements (only the final one), I don’t update
+the look_at vector until the time for the rendering is due. Then I apply the
+rotation to the look_at vector and I apply the movement according to that
+vector.</p>
+
+<p>This is not exactly accurate, but it works. To understand why it is not accurate
+think about the following scenario:</p>
+
+<ul>
+  <li>The user faces the north</li>
+  <li>Then turns the camera 90 degrees left, to the west, and moves 10 units</li>
+  <li>Then quickly turns the camera 180 degrees to the right, facing east, and
+moves 10 units</li>
+  <li>Finally turns 90 degrees left, facing north again</li>
+</ul>
+
+<p>Net result: no movement at all when the frame is rendered.</p>
+
+<p>Result with my fake implementation: 20 units of movement towards the
+north!</p>
+
+<p>However is hardly noticeable, and it saves a lot of time. Maybe when I can
+use Quaternions it could become more realistic…who knows!</p>
+
+
+				<!-- Show comments -->
+				
+					<div id="disqus_thread"></div><!-- /#disqus_thread -->
+					
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'robertocano'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+				
+		  	</div><!-- /.entry-content -->
+		</div><!-- /.entry-wrapper -->
+
+		<!-- Pagination -->
+    	<nav class="pagination" role="navigation">
+      		
+        		<a href="http://www.robertocano.es/en/css-blogger-and-simple-template-transparency/" class="btn" title="CSS, Blogger and Simple template transparency">Previous</a>
+      		
+      		
+        		<a href="http://www.robertocano.es/en/opengl-redbook-7th-edition-and-the-price-to-pay/" class="btn" title="OpenGL RedBook 7th edition and the price to pay">Next</a>
+      		
+    	</nav><!-- /.pagination -->
+	</article>
+</div><!-- /#main -->
+
+<!-- Page footer -->
+<div class="footer-wrapper">
+	<footer role="contentinfo" class="entry-wrapper">
+		<span>
+			&copy; 2015 Roberto Cano. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/so-simple/" rel="nofollow">So Simple Theme</a>.
+		</span>
+		<div class="social-icons">
+			
+				<a href="http://twitter.com/robersoca" title="Roberto Cano on Twitter" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+			
+			
+			
+			
+				<a href="http://linkedin.com/in/robertocano" title="Roberto Cano on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+			
+			
+			
+			
+			
+				<a href="http://github.com/gabr1e11" title="Roberto Cano on Github" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+			
+			
+			
+			<a href="http://www.robertocano.es/feed.xml" title="Atom/RSS feed"><i class="fa fa-rss-square fa-2x"></i></a>
+		</div><!-- /.social-icons -->
+	</footer>
+</div><!-- /.footer-wrapper -->
+
+<script type="text/javascript">
+  var BASE_URL = 'http://www.robertocano.es';
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://www.robertocano.es/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://www.robertocano.es/assets/js/scripts.min.js"></script>
+
+
+
+
+</body>
+</html>
