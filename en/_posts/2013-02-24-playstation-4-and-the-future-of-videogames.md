@@ -48,8 +48,8 @@ with an incredible ala Blade Runner-like city, unbelievable reflections and curv
 that made the city real and alive. Also master-pieces -- if they are not, they will be --
 like [Watch Dogs](http://www.youtube.com/watch?v=1WUSv5Ugm9c), which shows that
 not only awesome graphics are needed to grab the gamer's attention, but a good
-dosis of freedom, simulation and AI realism. In this game the gameplay seems
-unbounded, unlimited and neverending. It is not the most impressive piece of code
+doses of freedom, simulation and AI realism. In this game the gameplay seems
+unbounded, unlimited and never ending. It is not the most impressive piece of code
 regarding the graphics area that I've seen, but it feels like
 [Deus Ex: Human Revolution](http://www.youtube.com/watch?v=Kq5KWLqUewc) to the
 power of ten in the gameplay area.

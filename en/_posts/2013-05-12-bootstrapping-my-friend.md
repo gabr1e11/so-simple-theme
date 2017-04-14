@@ -17,7 +17,7 @@ compensation I've been toying around with several ideas that I was curious
 about:
 
   * On one hand I've been investigating about implementing Wireshark plugins
-    through its Lua interface to help analyse DVB Simulcrypt traffic captures,
+    through its Lua interface to help analyze DVB Simulcrypt traffic captures,
 which is quite useful in my job. This I did while helping in the integration of
 our systems with one of our customers, and it proved to be extremely helpful.
 The Lua interface for Wireshark is actually not really intuitive, and I needed
@@ -42,7 +42,7 @@ easily implement a *man in the middle* attack!
   * On the third hand...yes, whatever! I've also been having a look to Twitter's
     Bootstrap to use it as a web interface to control some of our systems. I
 friend of mine who has been a web developer for Hyves (the Dutch Facebook)
-recommended this to me as an accesible set of web widgets. Basically I didn't
+recommended this to me as an accessible set of web widgets. Basically I didn't
 want to care too much about the look and feel. While learning it I found quite
 interesting the fact that it is done merely with CSS and JavaScript, which
 allows for an embedded system to have quite a lightweight web server as there is
@@ -53,7 +53,7 @@ mockup of my project. Luckily I found a beta project called
 websites using Bootstrap. As opposed to [Jetstrap](http://www.jetstrap.com/),
 Divshot is still in beta stage and you don't have to pay for it (although
 Jetstrap allows you to create one website for free, I liked Divshot more). So I
-created my stepping stone through Divshot, got the result and then customised
+created my stepping stone through Divshot, got the result and then customized
 it manually to my needs. The result is actually pretty cool and I'm really happy
 with it. Let's Bootstrap!!
 
@@ -66,7 +66,7 @@ actually implement a WebSocket server, which is something I don't like.
 
 Anyway, it's been a cool trip and now I continue designing my web interface and
 trying to add some cool animations to it. Later on I'll ask for the advise of my
-Hyves friend as he's an expert in usability and design, to let him criticise my
+Hyves friend as he's an expert in usability and design, to let him criticize my
 first web development attempt!
 
 Soon, I hope, more on my OpenGL development adventure!

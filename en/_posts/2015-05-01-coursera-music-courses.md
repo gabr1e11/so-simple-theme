@@ -36,14 +36,14 @@ I mistook it by the Berkley university.
 So I checked out the prices and, to my surprise, the courses were quite expensive!
 Don't get me wrong, from what I've learned since then, the prices are really worth it. In the
 end you are paying for the equivalent of a master in music, but that was not what I
-had in mind. 
+had in mind.
 
 Nevertheless I kept digging and searching, and crawling the web, and couldn't help but
 try to search something similar to Berklee. So I started using search terms like
 *similar to Berklee*. And then *Coursera* popped up. And bite me! They had some
 Berklee courses!
 
-Berklee is currently offering the [Modern Musician][3] specialitation through 3 different
+Berklee is currently offering the [Modern Musician][3] specialization through 3 different
 courses:
 
 * **Developing your musicianship**: Introductory course about harmony, intervals and chord structure of a song
@@ -52,13 +52,13 @@ courses:
 
 You can enroll in these courses completely for free, and you can actually do it at your own pace
 if you are not interested in the peer review process, or doing the assignments. However to earn
-the *Modern Musician* certificate you must enroll in the *Signature Track* offered by coursera
+the *Modern Musician* certificate you must enroll in the *Signature Track* offered by Coursera
 that authenticates your submissions and gives you a completion certificate after each course. The
-Signature Track costs 43$ each course. Once the 3 courses are finished you can enroll in the 
+Signature Track costs 43$ each course. Once the 3 courses are finished you can enroll in the
 *Modern Musician Capstone* which is the final course to earn the Modern Musician certificate.
 
 I got to the *Music Production* course a little bit late and I had missed some of the lessons and
-assignments, so I decided to just follow the course at my own pace, without submitting my assigments
+assignments, so I decided to just follow the course at my own pace, without submitting my assignments
 and just get a taste of the courses. I really liked it, and although I, having 18 years of
 amateur experience in music, knew most of the concepts explained in the course, felt it was
 worth it.

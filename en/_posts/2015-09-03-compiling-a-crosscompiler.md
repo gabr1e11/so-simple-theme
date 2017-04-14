@@ -29,7 +29,7 @@ Good question! TLDR: I work on Mac, and couldn't find any.
 
 Well, yeah, that's it. No longer version of the answer[^2]
 
-# How en earth do you do that?[^3]
+# How on earth do you do that?[^3]
 
 How do you compile a compiler? How do you compile a cross-compiler? How do you manage to get on your blog's visitors nerves?
 For the first two keep on reading. For the third....well, keep on reading.....
@@ -48,12 +48,12 @@ the most famous ones is GCC, the GNU C compiler, which was written originally in
 The GCC collection of compilers is the biggest and greatest ever thanks to its layered architecture. This allows
 GCC to be compiled using GCC to generate any compiler for almost any known CPU architecture.
 
-And that is what the next setion is about: how to compile GCC for the SH architecture.
+And that is what the next section is about: how to compile GCC for the SH architecture.
 
 # So, please, how do you compile the GCC cross-compiler for SH?[^6]
 
 Well, here it goes. First of all, disclaimer: I've tried this method in both Mac OS X Yosemite 10.10.5 and Ubuntu 14.04LTS
-and steps or instructions may vary for your own OS flavour.
+and steps or instructions may vary for your own OS flavor.
 
 ## Install the normal version of GCC for your machine
 
@@ -145,7 +145,7 @@ In Mac you can use sysctl:
 
 Now, the three packages we've downloaded make use of the *configure* tool to generate the compilation scripts
 for the machine where the package will be compiled. To do this we switch to the corresponding build
-directory and generate the scripts there: 
+directory and generate the scripts there:
 
     cd /opt/cross/src/binutils-build
     ../binutils-2.24/configure --target=sh-elf --prefix=$PREFIX --disable-nls --disable-werror
@@ -174,7 +174,7 @@ And finally compile the full GCC with C and C++ support:
     ../gcc-4.8.2/configure --target=sh-elf --prefix=$PREFIX --with-newlib --without-headers --enable-languages=c,c++ --disable-nls --disable-libssp
     make -j8 all install
 
-Voilá! We have a full GCC cross-compiler
+Voilà! We have a full GCC cross-compiler
 
 ## Why so serious?
 
@@ -189,18 +189,9 @@ Next time I will talk about the Dreamcast emulation, interpreters, dynarec and s
 
  [^1]: Watch me digress across this section. For the real stuff, go to next section
  [^2]: For a longer version of the answer, read it twice.
- [^3]: Watch me introduct you to a brief history of the compiler while I continue digressing. For the real real stuff, go to next section
+ [^3]: Watch me introduce you to a brief history of the compiler while I continue digressing. For the real real stuff, go to next section
  [^4]: Yeah, well, our own galaxy was far far away long time ago, right?
  [^5]: Strictly speaking the tool that translated assembly to machine code was called assembler, not compiler
  [^6]: For real, Jo!
  [^7]: See what I did there! :D
  [^8]: For real, Jo?
-
-
-
-
-
-
-
-
-

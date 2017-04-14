@@ -25,11 +25,11 @@ currently my knowledge of shaders is rather low, I couldn't find a way to
 create the outline.
 
 Anyhow I feel it is a quite powerful tool to generate really nice effects, but
-I;ll have to wait until I'm confident with the basics of OpenGL 3.2 to be
+I'll have to wait until I'm confident with the basics of OpenGL 3.2 to be
 prepared to tackle GLSL and understand its deepness.
 
 Another thing I found about OpenGL3.2 is that it eliminated the fixed pipeline
-by which OpenGL pre 3.1 renderered the primitives (applying transformations,
+by which OpenGL pre 3.1 rendered the primitives (applying transformations,
 rotation, scaling, MVP matrices, etc,,,) and now it is all done through
 shaders. So the next demos I intended to do with VBOs and VAOs is not working
 just because I need a simple shader to be incorporated to the rendering of the

@@ -10,7 +10,7 @@ tags:
 # Losing my virginity
 
 Yeah, you are in the right blog, don't worry. I just happen to have a rather quirky sense
-of humour. I'm gonna tell you the story of how I lost my virginity and won a golden award.
+of humor. I'm gonna tell you the story of how I lost my virginity and won a golden award.
 Oh yeah!
 
 Recently I was sailing the internet stopping at islands of unspeakable names, when I ran
@@ -33,7 +33,7 @@ And I was the chosen one, erected to tackle the Titanium Challenge!
 
 # Baby steps
 
-So what was all this fuzz about? 
+So what was all this fuzz about?
 
 [THIS][2].
 
@@ -114,7 +114,7 @@ void markedMatched(string &S)
             st.push(S[i]);
             pos.push(i);
         } else if (st.top() == '(') {
-            S[i] = 'X'; 
+            S[i] = 'X';
             S[pos.top()] = 'X';
 
             st.pop();
@@ -269,7 +269,7 @@ Yeah! Wow! So you were wondering, did this awarded me my golden Codility award..
 > Why?
 
 Well, problem were cycles! Not like the cycles problem found in graph algorithms. But rather
-CPU cycles. My program was too slow for codility to award me a golden thingy. Dear reader,
+CPU cycles. My program was too slow for Codility to award me a golden thingy. Dear reader,
 come with me for the final journey into the realm of the pure fast. Let's optimize this shit
 together!
 

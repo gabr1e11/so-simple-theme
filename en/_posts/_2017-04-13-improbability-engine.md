@@ -18,14 +18,16 @@ But finally I'm back and I will try to get regular! [^2]
 I'm doing so many things lately that I don't actually have much time to edit this blog as often as it
 deserves, but I will try to at least update it ever 2 or 3 months, just so you know.
 
-First of all, if you want to go to the meaty stuff, jump here
+This post is about how to get a job in the videogame industry when you are a complete outsider. If you prefer
+to skip my usual digression, you can jump directly [here](#how-to-become-a-videogame-developer-when-you-are-already-35)
+First of all, if you want to go to the meaty stuff,
 
 # Preface[^6]
 
 As life wants it, this post was originally destined to be a "How to write your own 3D engine in
 OpenGL for dummies" post. I was gonna rant about the challenges and subtleties of writing an engine
 in C++ for the OpenGL API while keeping it multi-platform and multi-API. It was also going to showcase
-some nice techiques I had learned in the process.
+some nice techniques I had learned in the process.
 
 However I'm not going to do it. No sir. No, no, no, no.
 
@@ -45,16 +47,16 @@ song of the father of Miley Cyrus[^3], introduced Country music to a whole new g
 And Aladdin, the Disney movie, taught us how to find our true love by lying, deceiving and using a secret dark
 power hidden in a lamp. Neat!
 
-At the same time, me, a young underdevelop developer, was made the recipient of a wonderful present: a Spectrum 128K +2A
+At the same time, me, a young underdeveloped developer, was made the recipient of a wonderful present: a Spectrum 128K +2A
 computer with incorporated tape reader!! I was ecstatic. Since I was 10 I wanted one of those fancy machines for me, after
 using one from one of my cousins.
 
 When I got it, the first thing I tried was a game[^4]. Then another game[^5]. And then, after learning a bit of BASIC programming,
 I tried to write my own game!! In BASIC. Using ASCII. Never heard of system routines, graphic mode or assembler.
 
-> Wow, master! Did you succeed in such a grandious task?
+> Wow, master! Did you succeed in such a grandiose task?
 
-No. But remember Timmy, I'm the elocuent fella around here.
+No. But remember Timmy, I'm the eloquent fella around here.
 
 > Yup!
 
@@ -64,9 +66,9 @@ like used chewing gum sticks to a shoe sole after you step on it on the street.
 > Yuck!
 
 Let's fast forward many years into the future. Let's time travel to 1998! I started university at the *Universidad Autónoma de
-Madrid*, and during the 3rd year I picked one really interesting course: graphics programming. With a couple of friends we 
+Madrid*, and during the 3rd year I picked one really interesting course: graphics programming. With a couple of friends we
 started writing a software 3D engine. Those were really good times. Just with access to the frame buffer we started
-implementing polygon rendering, flat and gouraud lighting, and even texture mapping! It was lovely. We even managed to import
+implementing polygon rendering, flat and Gouraud lighting, and even texture mapping! It was lovely. We even managed to import
 Quake3 world models and navigate through them in our engine! It was amazing!! Later on we tried to implement a BSP compiler[^6]
 
 However pressure with all the other courses and the need to finish the career to start working and start earning good money
@@ -134,7 +136,7 @@ subscribing to videogame jobs websites, contacting people to see what kind of op
 
 I was incredibly excited. I had worked hard for a long time, almost every day in the evening sitting for a couple of hours
 writing my engine, learning about techniques, reading papers, etc... And finally I had the interview of my life!! This interview,
-by the way, came through somebody I new at GDC Europe. Neve underestimate the power of networking!
+by the way, came through somebody I new at GDC Europe. Never underestimate the power of networking!
 
 I prepared for the interview as best as I could and there I went, not knowing exactly what to expect.
 
@@ -164,14 +166,14 @@ After almost 1 month considering my options, the idea of learning Unity so I cou
 I was afraid that learning Unity could dilute my C++ expertise, and that I would be competing against a myriad of other developers
 and designers. However it seemed really appealing to at least being able to develop a full videogame. Compared to doing everything
 from scratch, using Unity (or Unreal) could allow me to learn another levels of videogame programming, and not focus anymore on
-the little nitty gritty details only.
+the little nitty-gritty details only.
 
 So I decided to do so. Fortunately at the same time, a friend of mine that had never done anything with videogames, discovered a
 passion for pixel art and started to groom the idea of developing a rogue-like game. We discussed about it, and an idea started to
 form in our minds. At that moment I decided that having a project was the best thing to really learn what is needed to develop a
 game with Unity. Otherwise it can turn into a theoretical exercise on how to develop a game.
 
-We started in January 2017 and have been advacing at quite a good pace, until the event happened!!
+We started in January 2017 and have been advancing at quite a good pace, until the event happened!!
 
 > The event? The end of the world? The new House of Cards season was released?
 
@@ -206,7 +208,7 @@ some generic advise here.
 
 For me the first and most important thing before, during and after becoming a game developer is: socialize. Make friends, meet people,
 go places. Get out of your comfort zone and try to get new experiences. Experiences are invaluable. Even the bad ones. Be curious
-about other people work, lifes and opinions. Go to conferences. Go to conferences. Yeah, go to conferences. Not only the big techie
+about other people work, lives and opinions. Go to conferences. Go to conferences. Yeah, go to conferences. Not only the big techie
 ones like GDC. Also the alternative ones. The ones that open your mind and fuck your brain...in a good way.
 
 By the way, one last tip to go social. If you go to conferences, go alone. Or if you go with somebody else, split and go different
@@ -222,8 +224,8 @@ learn about it. Then pick the next. There is no other way. You could be surprise
 in handy during an interview or test.
 
 For example during one of my other interviews there was a test with 2 exercises: writing a shader to draw some kind of procedural
-character and emulating an ARM instruction in C. Because I had been working on my engine with OpenGL and shaders I was able to 
-tackle the first one. Because I took some iterested in emulators some years ago I could tackle the seconds. I never thought my
+character and emulating an ARM instruction in C. Because I had been working on my engine with OpenGL and shaders I was able to
+tackle the first one. Because I took some interested in emulators some years ago I could tackle the seconds. I never thought my
 emulation interest could come in handy!
 
 I have many other interests, completely unrelated. Who knows when they will come in line to help me.
@@ -231,7 +233,7 @@ I have many other interests, completely unrelated. Who knows when they will come
 # Work hard
 
 This last 2 years have been all about working a bit everyday. Some days I was working on my engine from 19:00 to 00:00, some
-other days from 21:00 to 23:00, some days I just went with my friends to have a drink. I neer lost sight of my goal, or the fact
+other days from 21:00 to 23:00, some days I just went with my friends to have a drink. I never lost sight of my goal, or the fact
 that I had to work on it, but I was also conscious about the fact that I'm human and I need space and rest, and people, and fun.
 Never forget that the main purpose of your life is to be happy. You decide how to achieve that, but never lose sight of that very
 true purpose: happiness.
@@ -269,7 +271,7 @@ Things to keep in mind:
 - Spend your energy mostly in things that lead you to be happy
 - Repeat
 
-The last item is very imporant. Happiness is not something you unlock one day and then stays forever: it comes and go. You need to
+The last item is very important. Happiness is not something you unlock one day and then stays forever: it comes and go. You need to
 work hard to keep happiness close to you, and it is not always possible. Something that makes you happy today may not make you
 happy in 20 years time. You need to reconsider and analyze if you want to keep that in your life, or it is costing you too much
 energy. It is a constant process.

@@ -21,7 +21,7 @@ tags:
 
 Well, that saved me a whole paragraph in this post! Couldn't really find better words
 to describe Jekyll. A really interesting and simple tool to build websites from mere
-ASCII files. 
+ASCII files.
 
 > Hey! Like HTML, PHP and Javascript!
 
@@ -38,7 +38,7 @@ However, as always that something related to the web comes into my hands, I foun
 issue: design. I may not be a good designer[^1] but I know how a good design looks like.
 Most importantly, I know how I like my website. Thus the first thing I did was to try
 to find a suitable design for my minimalistic idea of a blog. Googling around I
-stumbled upon a very neat and pretty Jekyll design called [So Simple][4] from desginer
+stumbled upon a very neat and pretty Jekyll design called [So Simple][4] from designer
 [Michael Rose][5]. I fell immediately in love with it and decided that it was going
 to be the new Look&Feel for my site.
 
@@ -77,8 +77,8 @@ Oh, wait. I didn't disclaim that. Let's do it now:
 I feel better now. Let's continue. Now that we have a theme on our hands that we can serve
 from our own machine, what next? Well, it will depend on your theme of choice, but typically
 the first thing you want is to edit the \_config.yml file. This file contains the Jekyll site
-configuartion. Things like the Blog's name, server URL where the site will be hosted, type of
-Markdown languge and other goodies are found here.
+configuration. Things like the Blog's name, server URL where the site will be hosted, type of
+Markdown language and other goodies are found here.
 
 Then you typically have the \_posts directory. This one contains the posts for your blog.
 Inside this directory you may find some more directories: these are the categories of
@@ -89,7 +89,7 @@ at the root level:
 * \_includes - Containing some more HTML files that are directly included in other HTML files (things like headers and footers)
 * \_data - Containing some valuable YAML data that can be used in your site to customize stuff
 
-All this files, and templates, and layouts, and YAML data are mixed and shaked together and then
+All this files, and templates, and layouts, and YAML data are mixed and shaken together and then
 compiled into your final site.
 
 Check out the website you've downloaded, read the instructions and play around with it. You can always

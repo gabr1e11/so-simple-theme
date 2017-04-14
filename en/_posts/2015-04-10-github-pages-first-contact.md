@@ -21,12 +21,12 @@ self-expression and mainly as a way of tracking the things that I've been doing 
 is ephemeral.
 
 Without knowing about the existence of my personal blog a esteemed friend of mine was recently sharing
-with me that he was starting a new blog [Enrique Recarte Blog][6]. He is an acomplished developer and architect
+with me that he was starting a new blog [Enrique Recarte Blog][6]. He is an accomplished developer and architect
 now tasting the goodies and baddies of London's busy life. Our conversation was quite interesting and he introduced
 me to the unknown-until-then GitHub pages service.
 
 I've been often paying for hosting services to host my website, and although it is usually not expensive,
-it is always overpaid for the use I make of it. Besides it always brings a little bit of overengineering as I
+it is always overpaid for the use I make of it. Besides it always brings a little bit of over-engineering as I
 tend to use CMSs (Content Management Systems) like Joomla or more recently WordPress. Although these two
 products are great and have a big and active community around it, it is like using sledgehammers to crack nuts.
 
@@ -42,7 +42,7 @@ that will work on any webserver of the world. No need for PHP, databases or *fan
 "how fancy a database is nowadays" you may say. However I prefer it this way. It is fast, easy to serve and I
 can have a better control of the weight of the site.
 
-In a follow-up post I shall explain how to set up your own Jekyll website with multilanguage and a search engine.
+In a follow-up post I shall explain how to set up your own Jekyll website with multi-language and a search engine.
 
  [1]: http://www.twitter.com
  [2]: http://www.youtube.com
@@ -52,4 +52,3 @@ In a follow-up post I shall explain how to set up your own Jekyll website with m
  [6]: http://www.enriquerecarte.com
  [7]: http://www.jekyllrb.com
  [8]: http://en.wikipedia.org/wiki/Markdown
-

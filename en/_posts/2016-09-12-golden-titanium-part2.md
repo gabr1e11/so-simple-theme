@@ -27,7 +27,7 @@ and a modern CPU should yield similar results, but specifics like CPU speed, cac
 set, etc... can have an impact on the final measured time. For example things like locality of the algorithm
 can speed up things by making a good use of the cache.
 
-We won't go as far as to analyse cache usage, but I definitely had to optimize both the algorithm to
+We won't go as far as to analyze cache usage, but I definitely had to optimize both the algorithm to
 gather information that could reduce the number of iteration in successive passes, and the code to
 make a more efficient use of function calls and memory accesses.
 
@@ -35,7 +35,7 @@ Here we go, you ready?
 
 ## Algorithm optimization
 
-So this was the thing with my algorithm. On first pass I was analysing the input string to find the
+So this was the thing with my algorithm. On first pass I was analyzing the input string to find the
 matched blocks. While doing so I was marking the matched parenthesis with a 'X', remember? Then on the
 second pass I was basically adding up those 'X' together to count the number of consecutive matched
 parenthesis in a block. What if instead I saved directly the amount of matched parenthesis in a block?
@@ -213,14 +213,14 @@ The thing is: no. I mean it is more optimized, for sure, but still not passing f
 Codility Silver award. What else could we do to improve this? Well, as I mentioned
 previously, we've optimized the algorithm. Now we can optimize the code itself.
 
-In order to do that I had to analyse the timing of the different part of the algorithm.
+In order to do that I had to analyze the timing of the different part of the algorithm.
 You can do that using your favourite profiles or instrumenting the code yourself. By doing
 so I learned 2 things: which function of the 2 we have is impacting the performance more[^2],
 and which specifics bits of code are bringing down performance.
 
 # And I was trying to use C++...
 
-Indeed I wanted to use C++ for the solution just to demonstrate my versatility in such 
+Indeed I wanted to use C++ for the solution just to demonstrate my versatility in such
 indomitable language. However after a bit of profiling I realized that using a custom
 implemented stack, which actually can double as a vector without any overhead, improves
 the performance. Implementing a stack manually is quite easy: we just need an array and

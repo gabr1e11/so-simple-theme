@@ -41,7 +41,7 @@ already included:
 #include <GL/glfw.h>
 {% endhighlight %}
 
-Now it's time to initialise GLFW and set the hints for the window so the
+Now it's time to initialize GLFW and set the hints for the window so the
 created OpenGL context is 3.2:
 
 {% highlight c %}
@@ -58,7 +58,7 @@ it:
 glfwOpenWindow( 1024, 768, 0,0,0,0, 32,0, GLFW_WINDOW );
 {% endhighlight %}
 
-The last step is to initialise GLEW to be able to use the core profile of
+The last step is to initialize GLEW to be able to use the core profile of
 OpenGL 3.2. To do this, the experimental mode of GLEW must be activated:
 
 {% highlight c %}
@@ -84,4 +84,3 @@ Happy OpenGL coding!!
  [1]: http://www.glfw.org/
  [2]: http://www.opengl-tutorials.org/
  [3]: http://glew.sourceforge.net/"
-
