@@ -2,32 +2,402 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text"></title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://www.robertocano.es/feed.xml" />
-<link rel="alternate" type="text/html" href="http://www.robertocano.es" />
-<updated>2016-09-12T23:50:47+02:00</updated>
-<id>http://www.robertocano.es/</id>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000" />
+<updated>2017-04-16T16:29:41+02:00</updated>
+<id>http://localhost:4000/</id>
 <author>
   <name>Roberto Cano</name>
-  <uri>http://www.robertocano.es/</uri>
+  <uri>http://localhost:4000/</uri>
   <email>gabr1e11@hotmail.com</email>
 </author>
 
 
 <entry>
+  <title type="html"><![CDATA[Mastering the improbability engine]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/improbability-engine/" />
+  <id>http://localhost:4000/en/improbability-engine</id>
+  <published>2017-04-13T00:00:00+02:00</published>
+  <updated>2017-04-13T00:00:00+02:00</updated>
+  <author>
+    <name>Roberto Cano</name>
+    <uri>http://localhost:4000</uri>
+    <email>gabr1e11@hotmail.com</email>
+  </author>
+  <content type="html">
+    &lt;h1 id=&quot;well-what1&quot;&gt;Well, what?&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h1&gt;
+
+&lt;p&gt;Hey! I’m back! Thanks, thanks, don’t need to applaud. I know, I know. It’s been literally months
+and suddenly I’m publishing more often! I’ve been extremely busy these last months, some good things
+and some bad have happened during this period. Luckily the good ones are kicking the bad ones’ asses!&lt;/p&gt;
+
+&lt;p&gt;But finally I’m back and I will try to get regular! &lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m doing so many things lately that I don’t actually have much time to edit this blog as often as it
+deserves, but I will try to at least update it ever 2 or 3 months, just so you know.&lt;/p&gt;
+
+&lt;p&gt;This post is about how to get a job in the videogame industry when you are a complete outsider. If you prefer
+to skip my usual digression, you can jump directly &lt;a href=&quot;#how-to-become-a-videogame-developer-when-you-are-already-35&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;preface&quot;&gt;Preface&lt;/h1&gt;
+
+&lt;p&gt;As life wants it, this post was originally destined to be a &lt;em&gt;How to write your own 3D engine in
+OpenGL for dummies&lt;/em&gt; post. I was gonna rant about the challenges and subtleties of writing an engine
+in C++ for the OpenGL API while keeping it multi-platform and multi-API. It was also going to showcase
+some nice techniques I had learned in the process.&lt;/p&gt;
+
+&lt;p&gt;However I’m not going to do it. No sir. No, no, no, no.&lt;/p&gt;
+
+&lt;p&gt;And ‘Why?’ would the sharp reader of this blog wonder astonished.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ok, perhaps I’m overestimating the audience of my blog. In any case the reason is simple, although not so
+much my answer which, as usual, will be given in a roundabout manner.&lt;/p&gt;
+
+&lt;h1 id=&quot;when-i-was-a-kid&quot;&gt;When I was a kid&lt;/h1&gt;
+
+&lt;p&gt;Oh, yeah. We are starting from the beginning.&lt;/p&gt;
+
+&lt;p&gt;It was 1992. The year that the Atari 9600, my dear Atari, was finally discontinued. Achy Breaky Heart, the catchy
+song of the father of Miley Cyrus&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;, introduced Country music to a whole new generation. Definitely not mine.
+And Aladdin, the Disney movie, taught us how to find our true love by lying, deceiving and using a secret dark
+power hidden in a lamp. Neat!&lt;/p&gt;
+
+&lt;p&gt;At the same time, me, a young underdeveloped developer, was made the recipient of a wonderful present: a Spectrum 128K +2A
+computer with incorporated tape reader!! I was ecstatic. Since I was 10 I wanted one of those fancy machines for me, after
+seeing my cousin handling one of those beauties!&lt;/p&gt;
+
+&lt;p&gt;When I got it, the first thing I tried was a game&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;. Then another game&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;. And then, after learning a bit of BASIC programming,
+I tried to write my own game!! In BASIC! Using ASCII! Never heard of system routines, graphic mode or assembler. Who figures!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Wow, master! Did you succeed in such a grandiose task?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No. But remember Timmy, I’m the eloquent fella around here.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Yup!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So I tried, but never really managed to make anything interesting. However my passion for videogames stuck with me
+like used chewing gum sticks to a shoe sole after you step on it on the street.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Yuck!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let’s fast forward many years into the future. Let’s time travel to 1998! I started university at the &lt;em&gt;Universidad Autónoma de
+Madrid&lt;/em&gt;, and during the 3rd year I picked a really interesting course: graphics programming. With a couple of friends we
+started writing a software 3D engine. Those were really good times. Just with access to the frame buffer we started
+implementing polygon rendering, flat and Gouraud lighting, and even texture mapping! It was lovely. We even managed to import
+Quake3 world models and navigate through them in our engine! It was amazing!! Later on we tried to implement a BSP compiler&lt;sup id=&quot;fnref:6&quot;&gt;&lt;a href=&quot;#fn:6&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;However the pressure I had with all the other courses and the need to finish the career to start working and start earning good money
+crippled my dream of becoming a game developer. Game developer jobs were sparse in Spain, not well paid, with many working hours,
+barely any recognition…&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;So basically the same as today for any game developer job ever…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Well, yes, but that’s not the point! Things were really bad in Spain at the time, and I didn’t know a single bit of the overwhelmingly
+awesome English I know today, so going abroad to work was out of the question.&lt;/p&gt;
+
+&lt;p&gt;The end result was that I started working in a radar company, I enjoyed myself and the money….and kind of forgot about my
+childhood dream!&lt;/p&gt;
+
+&lt;h1 id=&quot;enter-2015&quot;&gt;Enter 2015&lt;/h1&gt;
+
+&lt;p&gt;Time travel! Again! This is one of the more exciting posts ever!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you say so…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It was 2015, and I was trying to figure out what to do with my professional life. After 12 of years of working with C, C++,
+Linux, embedded environments and stuff like that, I was starting to get a bit bored of the same drill. Security systems were
+starting to catch my attention. However I was always missing something. I’m a very visual person and security systems are
+all about system programming where UI or user interaction is sparse. Also I was missing the feeling of knowing that somebody
+was interacting with my software in a meaningful way. In security, if your product is very good, the user never notices it!
+Then suddenly an idea crossed my mind.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To stop writing annoyingly lengthy post that seem to never end?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No. Good try. But no. Could I, perhaps, in the peak of my game, perform a complete career change and make my childhood dream
+of becoming a game developer come true? I decided I had to try. I had to give myself the opportunity to at least try. So
+I put all my attention into it and started working on a plan.&lt;/p&gt;
+
+&lt;h1 id=&quot;how-to-become-a-videogame-developer-when-you-are-already-35&quot;&gt;How to become a videogame developer when you are already 35&lt;/h1&gt;
+
+&lt;p&gt;The big question for me was: how can I capitalize on my expertise to steer my career into the direction I want? I knew nothing
+about design, professional game engines, UI or monetization. My expertise was in low-level systems, Linux, C++ and a life-long
+passion for programming. I also had some rare qualities:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I love low-level stuff at assembler level as well as very high-level stuff like 3D APIs and complex systems. Give me an engine,
+an OpenGL API and some low-level optimizations to work on and I’m happy!&lt;/li&gt;
+  &lt;li&gt;I’m a developer. I’m social. I’ll say it again: I’m a developer and I’m really social. Apparently I didn’t know but that
+is a rare combination. Anyhow I’d like to think that less and less nowadays. But it is true I can lock myself in a room and write
+code for 3 days and then get out and do a presentation in front of 50 people. I love both things!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With all this in mind I decided that the way to go was the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I need to demonstrate my skills in C++ and low-level knowledge, so I will write an engine in C++ with OpenGL&lt;/li&gt;
+  &lt;li&gt;I need also to demonstrate my multi-platform/multi-architecture skills, so my engine will compile for Windows, Linux and Mac.
+It will also have an architecture that allows different APIs to be added, like DirectX&lt;/li&gt;
+  &lt;li&gt;I need to capitalize on my social skills, so I will attend major or interesting videogame conferences to meet people
+and understand how far I am from becoming a videogame developer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So that is what I did. For year and a half. I started writing my own C++ engine. You can find the sources in my GitHub. It was
+quite a challenge, as I had never done anything like that. But it was an amazing experience, and quite a lot of fun!&lt;/p&gt;
+
+&lt;p&gt;It indeed compiled for Windows, Mac and Linux. I implemented model and texture loading and rendering, Blinn-Phong lighting, HDR,
+procedural geometries, Bloom effect, Shadow mapping and some other shaders effects.&lt;/p&gt;
+
+&lt;p&gt;I also went to several conferences: GDC Europe, Unite, Respawn, Screenshake. I started reading more news about videogame development,
+subscribing to videogame jobs websites, contacting people to see what kind of opportunities were out there. With all this work, and
+1 year and a half into my plan, I got the first tangible outcome: an interview at Guerrilla Games, in Amsterdam. Guerrilla Games!!!!!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Guerrilla Games!!!!!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Guerrilla games!!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I heard you, stop shouting!!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I was incredibly excited. I had worked really hard for a long time, almost every day in the evening sitting for a couple of hours
+writing my engine, learning about techniques, reading papers, etc… And finally I had the interview of my life!! This interview,
+by the way, came through somebody I knew at GDC Europe. Never underestimate the power of networking!&lt;/p&gt;
+
+&lt;p&gt;I prepared for the interview as best as I could and there I went, not knowing exactly what to expect.&lt;/p&gt;
+
+&lt;p&gt;The guys at Guerrilla were really kind to me. They welcomed me and then brought me to the interview room. Two technical leads
+were going to interview me. I was already thinking that I had a real chance to make it into one of the most important AAA studios
+in the world! After 15 minutes of interview we were done: I wasn’t going to make it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What??&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It was eye opening. They were really nice to me and after the first 15 minutes they spent another 45 trying to see if they could
+fit me anywhere in the company, or in any other company in Netherlands, but it didn’t work.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What happened?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The gist of it is that I was lacking a lot of experience for the kind of games they do. AAA games are no joke. The amount of complexity
+in those games is incredibly high. Until then, I never thought about it: 300 people working for about 5 years ON A SINGLE PRODUCT, where
+all parts are interconnected (models, animations, sound, programming, effects, etc…). They definitely liked my attitude, but there
+was no way I could add immediate value to the company.&lt;/p&gt;
+
+&lt;p&gt;After a sad goodbye and an invitation from their side to try again in a couple of years, I went back home and started reconsidering my plan.&lt;/p&gt;
+
+&lt;p&gt;What I had learned was that, in general, my kind of expertise and what I was trying to sell was quite specific. Only studios using
+their own engines or technologies would look for somebody with that expertise. But it is too risky to hire somebody without
+previous videogame experience, so it seemed like I had hit a roadblock. What to do?&lt;/p&gt;
+
+&lt;p&gt;After almost 1 month considering my options, the idea of learning Unity popped into my mind. That way I could access a wider range
+of companies, but I was afraid that learning Unity could dilute my C++ expertise, and that I would be competing against a myriad of
+other developers and designers. However it seemed really appealing to to me the idea of developing a full videogame. Compared to
+doing everything from scratch, using Unity (or Unreal) could allow me to learn another level of videogame programming, and not focus
+only on the little nitty-gritty details only.&lt;/p&gt;
+
+&lt;p&gt;So I decided to do it. Fortunately at the same time, a very good friend of mine that had never done anything with videogames,
+discovered a passion for pixel art and started to groom the idea of developing a rogue-like game. We discussed about it,
+and the idea started to shape in our minds. At that moment I decided that having a project was the best way to learn what is
+needed to develop a game with Unity. Otherwise it can turn into a theoretical exercise on how to develop a game that can
+let you stranded.&lt;/p&gt;
+
+&lt;p&gt;We started in January 2017 and had been advancing at quite a good pace, until the event happened!!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The event? The end of the world? The new House of Cards season was released?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No, my friend. During this time I had sent a lot of CVs to different companies around Amsterdam, and also had some interviews, all of
+them with the same result: they didn’t hire me because I had no experience in videogames. But I kept trying while steering my plan into
+learning Unity. Finally in February another contact I had from GDC Europe/Respawn wrote me to tell me that his company was hiring. Urgently. Urgently meaning more chances for me to perhaps enter without previous videogame experience.&lt;/p&gt;
+
+&lt;p&gt;If I succeeded it would mean to leave the city I love and all my dear friends that live here, in Amsterdam. But it would also mean
+that I could fulfill my life-long dream of becoming a game developer! Choices, choices…&lt;/p&gt;
+
+&lt;p&gt;Finally I decided to apply. After quite a tough selection process including an offline test and a live-test with 2 technical leads,
+they came back to me with the good news: they wanted me there!! I couldn’t believe it!! I think I haven’t been this happy in a long
+time. You know, tears and stuff! I made it! I think the 10 years old kid living inside of me is the happiest kid in the world right now!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Literally?? Do you really have…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;No, no. That would be weird. Really weird! Where did you say you were from, Timmy??&lt;/p&gt;
+
+&lt;p&gt;Never mind. The thing is that I’m moving to Barcelona this month to start working in one of the most amazing companies I’ve known of:
+Social Point. From everything I know about them, I think it is going to be one hell of a life experience. Personally, I’m closing a
+chapter of my life and opening a new one. I’m excited, happy, sad, fearful, full of energy, positive and a lot more of emotions that run through my mind.&lt;/p&gt;
+
+&lt;p&gt;It is good when life taps you on the back.&lt;/p&gt;
+
+&lt;p&gt;Very good.&lt;/p&gt;
+
+&lt;h1 id=&quot;summary-of-good-practices&quot;&gt;Summary of good practices&lt;/h1&gt;
+
+&lt;p&gt;So what steps should you follow to become a game developer? Honestly, I have no clue. I can see that each case is different, and
+your previous expertise, how you are, what you want and many other factors will definitely condition the way you need to
+approach this journey. However I will try to give you some generic advise here.&lt;/p&gt;
+
+&lt;h2 id=&quot;go-social&quot;&gt;Go social&lt;/h2&gt;
+
+&lt;p&gt;For me the first and most important thing before, during and after becoming a game developer is: socialize. Make friends, meet people,
+go places. Get out of your comfort zone and try to experience new things. Experiences are invaluable. Even the bad ones. Be curious
+about other people work, lives and opinions. Go to conferences. Go to conferences. Yeah, go to conferences. Not only the big techie
+ones like GDC. Also the alternative ones. The ones that open your mind and fuck your brain…in a good way.&lt;/p&gt;
+
+&lt;p&gt;By the way, one last tip to go social. If you go to conferences, go alone. Or if you go with somebody else, split and go different
+ways for a while. We, humans, are not made to spend more energy than we need, and having an accomplice at a conference may limit
+your openness.&lt;/p&gt;
+
+&lt;p&gt;Also going social means to keep your friends close. They are the ones that will keep you sane when things go bad, and the ones that
+will encourage you to keep trying.&lt;/p&gt;
+
+&lt;h1 id=&quot;learn-learn-learn&quot;&gt;Learn, learn, learn&lt;/h1&gt;
+
+&lt;p&gt;Never stop learning. Even if it seems it is not very useful at the moment. Don’t get me wrong, you need to reassess what you are
+doing to understand if it is aligned with your goal. But don’t get too overwhelmed with the thousands of things you need to learn
+to make it into the game industry. Pick one. The one that you like most and seems more in line with the kind of work you want to do. And
+learn about it. Then pick the next. There is no other way. You could be surprised sometimes how skills you deemed useless may come
+in handy during an interview or test.&lt;/p&gt;
+
+&lt;p&gt;For example during one of my previous interviews there was a test with 2 exercises: writing a shader to draw some kind of procedural
+character and emulating an ARM instruction in C. Because I had been working on my engine with OpenGL and shaders I was able to
+tackle the first one. Because I took some interest in emulators some years ago I could tackle the second. I never thought my
+emulation interest could come in handy!&lt;/p&gt;
+
+&lt;p&gt;I have many other interests, completely unrelated. Who knows when they will come in line to help me.&lt;/p&gt;
+
+&lt;h1 id=&quot;work-hard&quot;&gt;Work hard&lt;/h1&gt;
+
+&lt;p&gt;This last 2 years have been all about working a bit everyday. Some days I was working on my engine from 19:00 to 00:00, some
+other days from 21:00 to 23:00, some days I just went with my friends to have a drink. I never lost sight of my goal, or the fact
+that I had to work on it, but I was also really conscious that I’m a human being and I need some space and rest, and people, and fun.
+Never forget that the main purpose of your life is to be happy. You decide how to achieve that, but never lose sight of that very
+true purpose: happiness.&lt;/p&gt;
+
+&lt;p&gt;Then try to balance your life so you can work hard on the goals that make you happy, and try to spend less energy on the things
+that are not important. Then never forget that YOU are important. Your friends and family are important. Relationships and love
+are important. And health. Sway things to the side you need, but never replace completely one thing for another.&lt;/p&gt;
+
+&lt;h1 id=&quot;capitalize-in-your-expertise-and-skills&quot;&gt;Capitalize in your expertise and skills&lt;/h1&gt;
+
+&lt;p&gt;Try to realize what your strong points are. We all have things we are good at, and things we are not so good at. Try to understand
+what those things are and try to build upon them. If you are not a good developer but you like music, perhaps you can be a videogame
+musician, or if you like story telling, perhaps you can write videogame scripts. If you like the technical side try to understand which
+of your traits will work better in that environment.&lt;/p&gt;
+
+&lt;h1 id=&quot;be-ready-for-a-negative&quot;&gt;Be ready for a negative&lt;/h1&gt;
+
+&lt;p&gt;One more important thing you need to learn: you may not make it. Ever. I had this emblazoned in my mind. Because it was true. There
+is no law in the universe that says that if you try hard enough you will make it. It may never happen. You may have the right to try&lt;sup id=&quot;fnref:7&quot;&gt;&lt;a href=&quot;#fn:7&quot; class=&quot;footnote&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;,
+but there is no way to know if you will eventually make it. I had given myself a ballpark timeframe to stop trying. Around 4 years to
+understand if I could really make it or not. If things were not going well I would quit and dedicate my efforts to other things.&lt;/p&gt;
+
+&lt;p&gt;Remember it is not about failure. It is about not wasting your energy. If after 4 years, for example, things were looking still not
+clear to me, perhaps there was no point on keep trying. This is very subjective, but the main point is that trying forever, unless
+it makes you happy, may mean that you are not ready to give up. Sometimes giving up is a good thing. It frees your mind to do other
+things that make you happy, which is the main purpose of your life.&lt;/p&gt;
+
+&lt;h1 id=&quot;summarizing-the-summary&quot;&gt;Summarizing the summary&lt;/h1&gt;
+
+&lt;p&gt;Things to keep in mind:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Life is about happiness&lt;/li&gt;
+  &lt;li&gt;Happiness is not a goal, is a temporary state&lt;/li&gt;
+  &lt;li&gt;Find what makes you happy and steer your life towards that&lt;/li&gt;
+  &lt;li&gt;Manage your energy appropriately and never forget about the important things: yourself, friends, family, having fun, resting, living…&lt;/li&gt;
+  &lt;li&gt;Try to achieve your goal. If you keep trying and it does not happen, choose something else: the world is full of amazing things to do&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The second item is very important. Happiness is not something you unlock one day and then stays forever: it comes and go. You need to
+work hard to keep happiness close to you, and it is not always possible. Something that makes you happy today may not make you
+happy in 20 years time, or even 1 month time for that matter. You need to reconsider and analyze if you want to keep that in your life,
+or it is costing you too much energy. It is a constant process.&lt;/p&gt;
+
+&lt;p&gt;But it can be one hell of a ride!&lt;/p&gt;
+
+&lt;h1 id=&quot;lightening-the-mood&quot;&gt;Lightening the mood!&lt;/h1&gt;
+
+&lt;p&gt;Oh, wow! Ok, that was heavy speech back there! I realize that these are more like life-managing tips, rather than how to become
+a game developer tips, but I think they are really inter-related. I’ve seen many people trying to get there in the videogame
+industry, and losing themselves in the process. You cannot dedicate all your time and effort to only one thing, because if
+that thing fails it can let you completely stranded.&lt;/p&gt;
+
+&lt;p&gt;In any case take all this things with a grain of salt. I’m no guru. I’m just sharing what my experience has been while trying
+to get into the game industry, and I think it may be useful to somebody out there!&lt;/p&gt;
+
+&lt;p&gt;See you soon!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;“What” what? &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;Do NOT trust me, I may disappear again like the subtle breeze of summer days that flirts with your naked neck and then flees away &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;Yeah, well, who remembers the father after what his gifted kid has given to the world! &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+      &lt;p&gt;Pictionary &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:5&quot;&gt;
+      &lt;p&gt;Teenage Mutant Ninja Turtles….a classic! &lt;a href=&quot;#fnref:5&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:6&quot;&gt;
+      &lt;p&gt;Binary Spatial Partitioning Trees…a classic! &lt;a href=&quot;#fnref:6&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:7&quot;&gt;
+      &lt;p&gt;Sadly not everybody in the world has this privilege &lt;a href=&quot;#fnref:7&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/improbability-engine/&quot;&gt;Mastering the improbability engine&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on April 13, 2017.&lt;/p&gt;
+
+  </content>
+</entry>
+
+
+<entry>
   <title type="html"><![CDATA[Golden titanium alchemy - Optimization (2/2)]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/golden-titanium-part2/" />
-  <id>http://www.robertocano.es/en/golden-titanium-part2</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/golden-titanium-part2/" />
+  <id>http://localhost:4000/en/golden-titanium-part2</id>
   <published>2016-09-12T00:00:00+02:00</published>
   <updated>2016-09-12T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
     &lt;h1 id=&quot;de-introduction&quot;&gt;De-introduction&lt;/h1&gt;
 
-&lt;p&gt;This is a follow up on &lt;a href=&quot;http://www.robertocano.es/en/golden-titanium-part1/&quot;&gt;this previous article&lt;/a&gt;. Go there if you haven’t yet.&lt;/p&gt;
+&lt;p&gt;This is a follow up on &lt;a href=&quot;http://localhost:4000/en/golden-titanium-part1/&quot;&gt;this previous article&lt;/a&gt;. Go there if you haven’t yet.&lt;/p&gt;
 
 &lt;h1 id=&quot;of-when-i-squeezed-the-jiffies-out-of-my-code&quot;&gt;Of when I squeezed the jiffies out of my code…&lt;/h1&gt;
 
@@ -47,7 +417,7 @@ and a modern CPU should yield similar results, but specifics like CPU speed, cac
 set, etc… can have an impact on the final measured time. For example things like locality of the algorithm
 can speed up things by making a good use of the cache.&lt;/p&gt;
 
-&lt;p&gt;We won’t go as far as to analyse cache usage, but I definitely had to optimize both the algorithm to
+&lt;p&gt;We won’t go as far as to analyze cache usage, but I definitely had to optimize both the algorithm to
 gather information that could reduce the number of iteration in successive passes, and the code to
 make a more efficient use of function calls and memory accesses.&lt;/p&gt;
 
@@ -55,7 +425,7 @@ make a more efficient use of function calls and memory accesses.&lt;/p&gt;
 
 &lt;h2 id=&quot;algorithm-optimization&quot;&gt;Algorithm optimization&lt;/h2&gt;
 
-&lt;p&gt;So this was the thing with my algorithm. On first pass I was analysing the input string to find the
+&lt;p&gt;So this was the thing with my algorithm. On first pass I was analyzing the input string to find the
 matched blocks. While doing so I was marking the matched parenthesis with a ‘X’, remember? Then on the
 second pass I was basically adding up those ‘X’ together to count the number of consecutive matched
 parenthesis in a block. What if instead I saved directly the amount of matched parenthesis in a block?
@@ -235,14 +605,14 @@ a vector:&lt;/p&gt;
 Codility Silver award. What else could we do to improve this? Well, as I mentioned
 previously, we’ve optimized the algorithm. Now we can optimize the code itself.&lt;/p&gt;
 
-&lt;p&gt;In order to do that I had to analyse the timing of the different part of the algorithm.
+&lt;p&gt;In order to do that I had to analyze the timing of the different part of the algorithm.
 You can do that using your favourite profiles or instrumenting the code yourself. By doing
 so I learned 2 things: which function of the 2 we have is impacting the performance more&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;,
 and which specifics bits of code are bringing down performance.&lt;/p&gt;
 
 &lt;h1 id=&quot;and-i-was-trying-to-use-c&quot;&gt;And I was trying to use C++…&lt;/h1&gt;
 
-&lt;p&gt;Indeed I wanted to use C++ for the solution just to demonstrate my versatility in such 
+&lt;p&gt;Indeed I wanted to use C++ for the solution just to demonstrate my versatility in such
 indomitable language. However after a bit of profiling I realized that using a custom
 implemented stack, which actually can double as a vector without any overhead, improves
 the performance. Implementing a stack manually is quite easy: we just need an array and
@@ -504,7 +874,7 @@ that may reflect what I’ve explained here. You can also browse any of my other
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/golden-titanium-part2/&quot;&gt;Golden titanium alchemy - Optimization (2/2)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on September 12, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/golden-titanium-part2/&quot;&gt;Golden titanium alchemy - Optimization (2/2)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on September 12, 2016.&lt;/p&gt;
 
   </content>
 </entry>
@@ -512,20 +882,20 @@ that may reflect what I’ve explained here. You can also browse any of my other
 
 <entry>
   <title type="html"><![CDATA[Golden titanium alchemy - Algorithm (1/2)]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/golden-titanium-part1/" />
-  <id>http://www.robertocano.es/en/golden-titanium-part1</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/golden-titanium-part1/" />
+  <id>http://localhost:4000/en/golden-titanium-part1</id>
   <published>2016-09-08T00:00:00+02:00</published>
   <updated>2016-09-08T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
     &lt;h1 id=&quot;losing-my-virginity&quot;&gt;Losing my virginity&lt;/h1&gt;
 
 &lt;p&gt;Yeah, you are in the right blog, don’t worry. I just happen to have a rather quirky sense
-of humour. I’m gonna tell you the story of how I lost my virginity and won a golden award.
+of humor. I’m gonna tell you the story of how I lost my virginity and won a golden award.
 Oh yeah!&lt;/p&gt;
 
 &lt;p&gt;Recently I was sailing the internet stopping at islands of unspeakable names, when I ran
@@ -632,7 +1002,7 @@ use 2 stacks, one for matching the parenthesis, and the other one to save the po
             &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;pos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'('&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'X'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+            &lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'X'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
             &lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pos&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sc&quot;&gt;'X'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
             &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
@@ -801,7 +1171,7 @@ where matched parenthesis are found.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Well, problem were cycles! Not like the cycles problem found in graph algorithms. But rather
-CPU cycles. My program was too slow for codility to award me a golden thingy. Dear reader,
+CPU cycles. My program was too slow for Codility to award me a golden thingy. Dear reader,
 come with me for the final journey into the realm of the pure fast. Let’s optimize this shit
 together!&lt;/p&gt;
 
@@ -835,7 +1205,7 @@ together!&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/golden-titanium-part1/&quot;&gt;Golden titanium alchemy - Algorithm (1/2)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on September 08, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/golden-titanium-part1/&quot;&gt;Golden titanium alchemy - Algorithm (1/2)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on September 08, 2016.&lt;/p&gt;
 
   </content>
 </entry>
@@ -843,13 +1213,13 @@ together!&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[How to compile a cross-compiler]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/compiling-a-crosscompiler/" />
-  <id>http://www.robertocano.es/en/compiling-a-crosscompiler</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/compiling-a-crosscompiler/" />
+  <id>http://localhost:4000/en/compiling-a-crosscompiler</id>
   <published>2015-09-03T00:00:00+02:00</published>
   <updated>2015-09-03T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
@@ -877,7 +1247,7 @@ to test the emulator with.&lt;/p&gt;
 
 &lt;p&gt;Well, yeah, that’s it. No longer version of the answer&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;h1 id=&quot;how-en-earth-do-you-do-that3&quot;&gt;How en earth do you do that?&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;how-on-earth-do-you-do-that3&quot;&gt;How on earth do you do that?&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/h1&gt;
 
 &lt;p&gt;How do you compile a compiler? How do you compile a cross-compiler? How do you manage to get on your blog’s visitors nerves?
 For the first two keep on reading. For the third….well, keep on reading…..&lt;/p&gt;
@@ -896,12 +1266,12 @@ the most famous ones is GCC, the GNU C compiler, which was written originally in
 &lt;p&gt;The GCC collection of compilers is the biggest and greatest ever thanks to its layered architecture. This allows
 GCC to be compiled using GCC to generate any compiler for almost any known CPU architecture.&lt;/p&gt;
 
-&lt;p&gt;And that is what the next setion is about: how to compile GCC for the SH architecture.&lt;/p&gt;
+&lt;p&gt;And that is what the next section is about: how to compile GCC for the SH architecture.&lt;/p&gt;
 
 &lt;h1 id=&quot;so-please-how-do-you-compile-the-gcc-cross-compiler-for-sh6&quot;&gt;So, please, how do you compile the GCC cross-compiler for SH?&lt;sup id=&quot;fnref:6&quot;&gt;&lt;a href=&quot;#fn:6&quot; class=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/h1&gt;
 
 &lt;p&gt;Well, here it goes. First of all, disclaimer: I’ve tried this method in both Mac OS X Yosemite 10.10.5 and Ubuntu 14.04LTS
-and steps or instructions may vary for your own OS flavour.&lt;/p&gt;
+and steps or instructions may vary for your own OS flavor.&lt;/p&gt;
 
 &lt;h2 id=&quot;install-the-normal-version-of-gcc-for-your-machine&quot;&gt;Install the normal version of GCC for your machine&lt;/h2&gt;
 
@@ -1052,7 +1422,7 @@ make -j8 all install
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Voilá! We have a full GCC cross-compiler&lt;/p&gt;
+&lt;p&gt;Voilà! We have a full GCC cross-compiler&lt;/p&gt;
 
 &lt;h2 id=&quot;why-so-serious&quot;&gt;Why so serious?&lt;/h2&gt;
 
@@ -1072,7 +1442,7 @@ that it may be of help to you, legion of crazy cross-compiler compiling bashtard
       &lt;p&gt;For a longer version of the answer, read it twice. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:3&quot;&gt;
-      &lt;p&gt;Watch me introduct you to a brief history of the compiler while I continue digressing. For the real real stuff, go to next section &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Watch me introduce you to a brief history of the compiler while I continue digressing. For the real real stuff, go to next section &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:4&quot;&gt;
       &lt;p&gt;Yeah, well, our own galaxy was far far away long time ago, right? &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
@@ -1092,7 +1462,7 @@ that it may be of help to you, legion of crazy cross-compiler compiling bashtard
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/compiling-a-crosscompiler/&quot;&gt;How to compile a cross-compiler&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on September 03, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/compiling-a-crosscompiler/&quot;&gt;How to compile a cross-compiler&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on September 03, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1100,13 +1470,13 @@ that it may be of help to you, legion of crazy cross-compiler compiling bashtard
 
 <entry>
   <title type="html"><![CDATA[Coursera music courses]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/coursera-music-courses/" />
-  <id>http://www.robertocano.es/en/coursera-music-courses</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/coursera-music-courses/" />
+  <id>http://localhost:4000/en/coursera-music-courses</id>
   <published>2015-05-01T00:00:00+02:00</published>
   <updated>2015-05-01T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
@@ -1148,7 +1518,7 @@ try to search something similar to Berklee. So I started using search terms like
 &lt;em&gt;similar to Berklee&lt;/em&gt;. And then &lt;em&gt;Coursera&lt;/em&gt; popped up. And bite me! They had some
 Berklee courses!&lt;/p&gt;
 
-&lt;p&gt;Berklee is currently offering the &lt;a href=&quot;https://www.coursera.org/specialization/modernmusician/5&quot;&gt;Modern Musician&lt;/a&gt; specialitation through 3 different
+&lt;p&gt;Berklee is currently offering the &lt;a href=&quot;https://www.coursera.org/specialization/modernmusician/5&quot;&gt;Modern Musician&lt;/a&gt; specialization through 3 different
 courses:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1159,13 +1529,13 @@ courses:&lt;/p&gt;
 
 &lt;p&gt;You can enroll in these courses completely for free, and you can actually do it at your own pace
 if you are not interested in the peer review process, or doing the assignments. However to earn
-the &lt;em&gt;Modern Musician&lt;/em&gt; certificate you must enroll in the &lt;em&gt;Signature Track&lt;/em&gt; offered by coursera
+the &lt;em&gt;Modern Musician&lt;/em&gt; certificate you must enroll in the &lt;em&gt;Signature Track&lt;/em&gt; offered by Coursera
 that authenticates your submissions and gives you a completion certificate after each course. The
-Signature Track costs 43$ each course. Once the 3 courses are finished you can enroll in the 
+Signature Track costs 43$ each course. Once the 3 courses are finished you can enroll in the
 &lt;em&gt;Modern Musician Capstone&lt;/em&gt; which is the final course to earn the Modern Musician certificate.&lt;/p&gt;
 
 &lt;p&gt;I got to the &lt;em&gt;Music Production&lt;/em&gt; course a little bit late and I had missed some of the lessons and
-assignments, so I decided to just follow the course at my own pace, without submitting my assigments
+assignments, so I decided to just follow the course at my own pace, without submitting my assignments
 and just get a taste of the courses. I really liked it, and although I, having 18 years of
 amateur experience in music, knew most of the concepts explained in the course, felt it was
 worth it.&lt;/p&gt;
@@ -1201,7 +1571,7 @@ are lots and they are free!!&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/coursera-music-courses/&quot;&gt;Coursera music courses&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on May 01, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/coursera-music-courses/&quot;&gt;Coursera music courses&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on May 01, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1209,13 +1579,13 @@ are lots and they are free!!&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[My own multilanguage Jekyll website (I)]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/multilanguage-jekyll-website_I/" />
-  <id>http://www.robertocano.es/en/multilanguage-jekyll-website_I</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/multilanguage-jekyll-website_I/" />
+  <id>http://localhost:4000/en/multilanguage-jekyll-website_I</id>
   <published>2015-04-17T00:00:00+02:00</published>
   <updated>2015-04-17T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
@@ -1254,7 +1624,7 @@ custom static pages that can be trimmed down to a minimum if needed. Piece of ca
 issue: design. I may not be a good designer&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; but I know how a good design looks like.
 Most importantly, I know how I like my website. Thus the first thing I did was to try
 to find a suitable design for my minimalistic idea of a blog. Googling around I
-stumbled upon a very neat and pretty Jekyll design called &lt;a href=&quot;https://mmistakes.github.io/so-simple-theme/&quot;&gt;So Simple&lt;/a&gt; from desginer
+stumbled upon a very neat and pretty Jekyll design called &lt;a href=&quot;https://mmistakes.github.io/so-simple-theme/&quot;&gt;So Simple&lt;/a&gt; from designer
 &lt;a href=&quot;https://mademistakes.com/about/&quot;&gt;Michael Rose&lt;/a&gt;. I fell immediately in love with it and decided that it was going
 to be the new Look&amp;amp;Feel for my site.&lt;/p&gt;
 
@@ -1319,8 +1689,8 @@ to the shell and Ctrl-C it.&lt;/p&gt;
 &lt;p&gt;I feel better now. Let’s continue. Now that we have a theme on our hands that we can serve
 from our own machine, what next? Well, it will depend on your theme of choice, but typically
 the first thing you want is to edit the _config.yml file. This file contains the Jekyll site
-configuartion. Things like the Blog’s name, server URL where the site will be hosted, type of
-Markdown languge and other goodies are found here.&lt;/p&gt;
+configuration. Things like the Blog’s name, server URL where the site will be hosted, type of
+Markdown language and other goodies are found here.&lt;/p&gt;
 
 &lt;p&gt;Then you typically have the _posts directory. This one contains the posts for your blog.
 Inside this directory you may find some more directories: these are the categories of
@@ -1333,7 +1703,7 @@ at the root level:&lt;/p&gt;
   &lt;li&gt;_data - Containing some valuable YAML data that can be used in your site to customize stuff&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;All this files, and templates, and layouts, and YAML data are mixed and shaked together and then
+&lt;p&gt;All this files, and templates, and layouts, and YAML data are mixed and shaken together and then
 compiled into your final site.&lt;/p&gt;
 
 &lt;p&gt;Check out the website you’ve downloaded, read the instructions and play around with it. You can always
@@ -1360,7 +1730,7 @@ in GitHub pages, how to add a custom domain and how to cook the best beef stew&l
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/multilanguage-jekyll-website_I/&quot;&gt;My own multilanguage Jekyll website (I)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on April 17, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/multilanguage-jekyll-website_I/&quot;&gt;My own multilanguage Jekyll website (I)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on April 17, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1368,13 +1738,13 @@ in GitHub pages, how to add a custom domain and how to cook the best beef stew&l
 
 <entry>
   <title type="html"><![CDATA[GitHub pages first contact]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/github-pages-first-contact/" />
-  <id>http://www.robertocano.es/en/github-pages-first-contact</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/github-pages-first-contact/" />
+  <id>http://localhost:4000/en/github-pages-first-contact</id>
   <published>2015-04-10T00:00:00+02:00</published>
   <updated>2015-04-10T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
@@ -1392,12 +1762,12 @@ self-expression and mainly as a way of tracking the things that I’ve been doin
 is ephemeral.&lt;/p&gt;
 
 &lt;p&gt;Without knowing about the existence of my personal blog a esteemed friend of mine was recently sharing
-with me that he was starting a new blog &lt;a href=&quot;http://www.enriquerecarte.com&quot;&gt;Enrique Recarte Blog&lt;/a&gt;. He is an acomplished developer and architect
+with me that he was starting a new blog &lt;a href=&quot;http://www.enriquerecarte.com&quot;&gt;Enrique Recarte Blog&lt;/a&gt;. He is an accomplished developer and architect
 now tasting the goodies and baddies of London’s busy life. Our conversation was quite interesting and he introduced
 me to the unknown-until-then GitHub pages service.&lt;/p&gt;
 
 &lt;p&gt;I’ve been often paying for hosting services to host my website, and although it is usually not expensive,
-it is always overpaid for the use I make of it. Besides it always brings a little bit of overengineering as I
+it is always overpaid for the use I make of it. Besides it always brings a little bit of over-engineering as I
 tend to use CMSs (Content Management Systems) like Joomla or more recently WordPress. Although these two
 products are great and have a big and active community around it, it is like using sledgehammers to crack nuts.&lt;/p&gt;
 
@@ -1413,10 +1783,10 @@ that will work on any webserver of the world. No need for PHP, databases or &lt;
 “how fancy a database is nowadays” you may say. However I prefer it this way. It is fast, easy to serve and I
 can have a better control of the weight of the site.&lt;/p&gt;
 
-&lt;p&gt;In a follow-up post I shall explain how to set up your own Jekyll website with multilanguage and a search engine.&lt;/p&gt;
+&lt;p&gt;In a follow-up post I shall explain how to set up your own Jekyll website with multi-language and a search engine.&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/github-pages-first-contact/&quot;&gt;GitHub pages first contact&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on April 10, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/github-pages-first-contact/&quot;&gt;GitHub pages first contact&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on April 10, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1424,13 +1794,13 @@ can have a better control of the weight of the site.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Lucky Lindy and the biggest hop of all]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/lucky-lindy-and-the-biggest-hop-of-all/" />
-  <id>http://www.robertocano.es/en/lucky-lindy-and-the-biggest-hop-of-all</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/lucky-lindy-and-the-biggest-hop-of-all/" />
+  <id>http://localhost:4000/en/lucky-lindy-and-the-biggest-hop-of-all</id>
   <published>2014-01-19T00:00:00+01:00</published>
   <updated>2014-01-19T00:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -1500,7 +1870,7 @@ guitar on a trip. I’m quite excited!&lt;/p&gt;
 
 &lt;p&gt;(hint: also, in the meantime, I’ve started to learn calligraphy….why not!)&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/lucky-lindy-and-the-biggest-hop-of-all/&quot;&gt;Lucky Lindy and the biggest hop of all&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on January 19, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/lucky-lindy-and-the-biggest-hop-of-all/&quot;&gt;Lucky Lindy and the biggest hop of all&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on January 19, 2014.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1508,13 +1878,13 @@ guitar on a trip. I’m quite excited!&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Bootstrapping my friend]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/bootstrapping-my-friend/" />
-  <id>http://www.robertocano.es/en/bootstrapping-my-friend</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/bootstrapping-my-friend/" />
+  <id>http://localhost:4000/en/bootstrapping-my-friend</id>
   <published>2013-05-12T00:00:00+02:00</published>
   <updated>2013-05-12T00:00:00+02:00</updated>
   <author>
     <name></name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -1529,7 +1899,7 @@ about:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;On one hand I’ve been investigating about implementing Wireshark plugins
-through its Lua interface to help analyse DVB Simulcrypt traffic captures,
+through its Lua interface to help analyze DVB Simulcrypt traffic captures,
 which is quite useful in my job. This I did while helping in the integration of
 our systems with one of our customers, and it proved to be extremely helpful.
 The Lua interface for Wireshark is actually not really intuitive, and I needed
@@ -1556,7 +1926,7 @@ easily implement a &lt;em&gt;man in the middle&lt;/em&gt; attack!&lt;/p&gt;
     &lt;p&gt;On the third hand…yes, whatever! I’ve also been having a look to Twitter’s
 Bootstrap to use it as a web interface to control some of our systems. I
 friend of mine who has been a web developer for Hyves (the Dutch Facebook)
-recommended this to me as an accesible set of web widgets. Basically I didn’t
+recommended this to me as an accessible set of web widgets. Basically I didn’t
 want to care too much about the look and feel. While learning it I found quite
 interesting the fact that it is done merely with CSS and JavaScript, which
 allows for an embedded system to have quite a lightweight web server as there is
@@ -1567,7 +1937,7 @@ mockup of my project. Luckily I found a beta project called
 websites using Bootstrap. As opposed to &lt;a href=&quot;http://www.jetstrap.com/&quot;&gt;Jetstrap&lt;/a&gt;,
 Divshot is still in beta stage and you don’t have to pay for it (although
 Jetstrap allows you to create one website for free, I liked Divshot more). So I
-created my stepping stone through Divshot, got the result and then customised
+created my stepping stone through Divshot, got the result and then customized
 it manually to my needs. The result is actually pretty cool and I’m really happy
 with it. Let’s Bootstrap!!&lt;/p&gt;
   &lt;/li&gt;
@@ -1582,12 +1952,12 @@ actually implement a WebSocket server, which is something I don’t like.&lt;/p&
 
 &lt;p&gt;Anyway, it’s been a cool trip and now I continue designing my web interface and
 trying to add some cool animations to it. Later on I’ll ask for the advise of my
-Hyves friend as he’s an expert in usability and design, to let him criticise my
+Hyves friend as he’s an expert in usability and design, to let him criticize my
 first web development attempt!&lt;/p&gt;
 
 &lt;p&gt;Soon, I hope, more on my OpenGL development adventure!&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/bootstrapping-my-friend/&quot;&gt;Bootstrapping my friend&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on May 12, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/bootstrapping-my-friend/&quot;&gt;Bootstrapping my friend&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on May 12, 2013.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1595,13 +1965,13 @@ first web development attempt!&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[OpenGL RedBook 7th edition and the price to pay]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/opengl-redbook-7th-edition-and-the-price-to-pay/" />
-  <id>http://www.robertocano.es/en/opengl-redbook-7th-edition-and-the-price-to-pay</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/opengl-redbook-7th-edition-and-the-price-to-pay/" />
+  <id>http://localhost:4000/en/opengl-redbook-7th-edition-and-the-price-to-pay</id>
   <published>2013-03-11T00:00:00+01:00</published>
   <updated>2013-03-11T00:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -1649,7 +2019,7 @@ first!&lt;/p&gt;
 
 &lt;p&gt;Hope to have saved you some time!&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/opengl-redbook-7th-edition-and-the-price-to-pay/&quot;&gt;OpenGL RedBook 7th edition and the price to pay&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on March 11, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/opengl-redbook-7th-edition-and-the-price-to-pay/&quot;&gt;OpenGL RedBook 7th edition and the price to pay&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on March 11, 2013.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1657,13 +2027,13 @@ first!&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Camera movement and premature optimization]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/camera-movement-and-premature-optimization/" />
-  <id>http://www.robertocano.es/en/camera-movement-and-premature-optimization</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/camera-movement-and-premature-optimization/" />
+  <id>http://localhost:4000/en/camera-movement-and-premature-optimization</id>
   <published>2013-03-11T00:00:00+01:00</published>
   <updated>2013-03-11T00:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -1726,7 +2096,7 @@ north!&lt;/p&gt;
 &lt;p&gt;However is hardly noticeable, and it saves a lot of time. Maybe when I can
 use Quaternions it could become more realistic…who knows!&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/camera-movement-and-premature-optimization/&quot;&gt;Camera movement and premature optimization&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on March 11, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/camera-movement-and-premature-optimization/&quot;&gt;Camera movement and premature optimization&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on March 11, 2013.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1734,13 +2104,13 @@ use Quaternions it could become more realistic…who knows!&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[CSS, Blogger and Simple template transparency]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/css-blogger-and-simple-template-transparency/" />
-  <id>http://www.robertocano.es/en/css-blogger-and-simple-template-transparency</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/css-blogger-and-simple-template-transparency/" />
+  <id>http://localhost:4000/en/css-blogger-and-simple-template-transparency</id>
   <published>2013-02-25T00:00:00+01:00</published>
   <updated>2013-02-25T00:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -1767,7 +2137,7 @@ blending in your blog!&lt;/p&gt;
 &lt;p&gt;Remember this is valid for the &lt;strong&gt;Simple Template&lt;/strong&gt; of Blogger. I didn’t try
 with other templates.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/css-blogger-and-simple-template-transparency/&quot;&gt;CSS, Blogger and Simple template transparency&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 25, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/css-blogger-and-simple-template-transparency/&quot;&gt;CSS, Blogger and Simple template transparency&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on February 25, 2013.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1775,13 +2145,13 @@ with other templates.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[PlayStation 4 and the future of videogames]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/playstation-4-and-the-future-of-videogames/" />
-  <id>http://www.robertocano.es/en/playstation-4-and-the-future-of-videogames</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/playstation-4-and-the-future-of-videogames/" />
+  <id>http://localhost:4000/en/playstation-4-and-the-future-of-videogames</id>
   <published>2013-02-24T00:00:00+01:00</published>
   <updated>2013-02-24T00:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -1825,8 +2195,8 @@ with an incredible ala Blade Runner-like city, unbelievable reflections and curv
 that made the city real and alive. Also master-pieces – if they are not, they will be –
 like &lt;a href=&quot;http://www.youtube.com/watch?v=1WUSv5Ugm9c&quot;&gt;Watch Dogs&lt;/a&gt;, which shows that
 not only awesome graphics are needed to grab the gamer’s attention, but a good
-dosis of freedom, simulation and AI realism. In this game the gameplay seems
-unbounded, unlimited and neverending. It is not the most impressive piece of code
+doses of freedom, simulation and AI realism. In this game the gameplay seems
+unbounded, unlimited and never ending. It is not the most impressive piece of code
 regarding the graphics area that I’ve seen, but it feels like
 &lt;a href=&quot;http://www.youtube.com/watch?v=Kq5KWLqUewc&quot;&gt;Deus Ex: Human Revolution&lt;/a&gt; to the
 power of ten in the gameplay area.&lt;/p&gt;
@@ -1838,7 +2208,7 @@ ever-lasting experiences in our minds and our hearts.&lt;/p&gt;
 
 &lt;p&gt;Keep on playing!&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/playstation-4-and-the-future-of-videogames/&quot;&gt;PlayStation 4 and the future of videogames&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/playstation-4-and-the-future-of-videogames/&quot;&gt;PlayStation 4 and the future of videogames&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1846,13 +2216,13 @@ ever-lasting experiences in our minds and our hearts.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[OSX and OpenGL 3.2]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/osx-and-opengl-3-2/" />
-  <id>http://www.robertocano.es/en/osx-and-opengl-3-2</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/osx-and-opengl-3-2/" />
+  <id>http://localhost:4000/en/osx-and-opengl-3-2</id>
   <published>2013-02-24T00:00:00+01:00</published>
   <updated>2013-02-24T00:00:00+01:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
@@ -1888,7 +2258,7 @@ already included:&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// Include GLFW
 &lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;GL/glfw.h&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Now it’s time to initialise GLFW and set the hints for the window so the
+&lt;p&gt;Now it’s time to initialize GLFW and set the hints for the window so the
 created OpenGL context is 3.2:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;glfwInit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
@@ -1901,7 +2271,7 @@ it:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;glfwOpenWindow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;768&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GLFW_WINDOW&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;The last step is to initialise GLEW to be able to use the core profile of
+&lt;p&gt;The last step is to initialize GLEW to be able to use the core profile of
 OpenGL 3.2. To do this, the experimental mode of GLEW must be activated:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c&quot; data-lang=&quot;c&quot;&gt;&lt;span class=&quot;n&quot;&gt;glewExperimental&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -1921,7 +2291,7 @@ while linking:&lt;/p&gt;
 &lt;p&gt;Happy OpenGL coding!!&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/osx-and-opengl-3-2/&quot;&gt;OSX and OpenGL 3.2&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/osx-and-opengl-3-2/&quot;&gt;OSX and OpenGL 3.2&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1929,13 +2299,13 @@ while linking:&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[OpenGL 3.2: shaders everywhere!]]></title>
-  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/opengl-3-2-shaders-everywhere/" />
-  <id>http://www.robertocano.es/en/opengl-3-2-shaders-everywhere</id>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/en/opengl-3-2-shaders-everywhere/" />
+  <id>http://localhost:4000/en/opengl-3-2-shaders-everywhere</id>
   <published>2013-02-24T00:00:00+01:00</published>
   <updated>2013-02-24T00:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://www.robertocano.es</uri>
+    <uri>http://localhost:4000</uri>
     
   </author>
   <content type="html">
@@ -1956,11 +2326,11 @@ currently my knowledge of shaders is rather low, I couldn’t find a way to
 create the outline.&lt;/p&gt;
 
 &lt;p&gt;Anyhow I feel it is a quite powerful tool to generate really nice effects, but
-I;ll have to wait until I’m confident with the basics of OpenGL 3.2 to be
+I’ll have to wait until I’m confident with the basics of OpenGL 3.2 to be
 prepared to tackle GLSL and understand its deepness.&lt;/p&gt;
 
 &lt;p&gt;Another thing I found about OpenGL3.2 is that it eliminated the fixed pipeline
-by which OpenGL pre 3.1 renderered the primitives (applying transformations,
+by which OpenGL pre 3.1 rendered the primitives (applying transformations,
 rotation, scaling, MVP matrices, etc,,,) and now it is all done through
 shaders. So the next demos I intended to do with VBOs and VAOs is not working
 just because I need a simple shader to be incorporated to the rendering of the
@@ -1968,7 +2338,7 @@ scene!&lt;/p&gt;
 
 &lt;p&gt;Next step, more VBO, camera and lighting. Set, ready, action!&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/opengl-3-2-shaders-everywhere/&quot;&gt;OpenGL 3.2: shaders everywhere!&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/opengl-3-2-shaders-everywhere/&quot;&gt;OpenGL 3.2: shaders everywhere!&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
 
   </content>
 </entry>
