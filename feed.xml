@@ -2,26 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text"></title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2017-04-16T16:29:41+02:00</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="http://www.robertocano.es/feed.xml" />
+<link rel="alternate" type="text/html" href="http://www.robertocano.es" />
+<updated>2017-04-16T16:32:12+02:00</updated>
+<id>http://www.robertocano.es/</id>
 <author>
   <name>Roberto Cano</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>http://www.robertocano.es/</uri>
   <email>gabr1e11@hotmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Mastering the improbability engine]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/improbability-engine/" />
-  <id>http://localhost:4000/en/improbability-engine</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/improbability-engine/" />
+  <id>http://www.robertocano.es/en/improbability-engine</id>
   <published>2017-04-13T00:00:00+02:00</published>
   <updated>2017-04-13T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
@@ -377,7 +377,7 @@ to get into the game industry, and I think it may be useful to somebody out ther
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/improbability-engine/&quot;&gt;Mastering the improbability engine&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on April 13, 2017.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/improbability-engine/&quot;&gt;Mastering the improbability engine&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on April 13, 2017.&lt;/p&gt;
 
   </content>
 </entry>
@@ -385,19 +385,19 @@ to get into the game industry, and I think it may be useful to somebody out ther
 
 <entry>
   <title type="html"><![CDATA[Golden titanium alchemy - Optimization (2/2)]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/golden-titanium-part2/" />
-  <id>http://localhost:4000/en/golden-titanium-part2</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/golden-titanium-part2/" />
+  <id>http://www.robertocano.es/en/golden-titanium-part2</id>
   <published>2016-09-12T00:00:00+02:00</published>
   <updated>2016-09-12T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
     &lt;h1 id=&quot;de-introduction&quot;&gt;De-introduction&lt;/h1&gt;
 
-&lt;p&gt;This is a follow up on &lt;a href=&quot;http://localhost:4000/en/golden-titanium-part1/&quot;&gt;this previous article&lt;/a&gt;. Go there if you haven’t yet.&lt;/p&gt;
+&lt;p&gt;This is a follow up on &lt;a href=&quot;http://www.robertocano.es/en/golden-titanium-part1/&quot;&gt;this previous article&lt;/a&gt;. Go there if you haven’t yet.&lt;/p&gt;
 
 &lt;h1 id=&quot;of-when-i-squeezed-the-jiffies-out-of-my-code&quot;&gt;Of when I squeezed the jiffies out of my code…&lt;/h1&gt;
 
@@ -874,7 +874,7 @@ that may reflect what I’ve explained here. You can also browse any of my other
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/golden-titanium-part2/&quot;&gt;Golden titanium alchemy - Optimization (2/2)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on September 12, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/golden-titanium-part2/&quot;&gt;Golden titanium alchemy - Optimization (2/2)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on September 12, 2016.&lt;/p&gt;
 
   </content>
 </entry>
@@ -882,13 +882,13 @@ that may reflect what I’ve explained here. You can also browse any of my other
 
 <entry>
   <title type="html"><![CDATA[Golden titanium alchemy - Algorithm (1/2)]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/golden-titanium-part1/" />
-  <id>http://localhost:4000/en/golden-titanium-part1</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/golden-titanium-part1/" />
+  <id>http://www.robertocano.es/en/golden-titanium-part1</id>
   <published>2016-09-08T00:00:00+02:00</published>
   <updated>2016-09-08T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
@@ -1205,7 +1205,7 @@ together!&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/golden-titanium-part1/&quot;&gt;Golden titanium alchemy - Algorithm (1/2)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on September 08, 2016.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/golden-titanium-part1/&quot;&gt;Golden titanium alchemy - Algorithm (1/2)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on September 08, 2016.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1213,13 +1213,13 @@ together!&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[How to compile a cross-compiler]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/compiling-a-crosscompiler/" />
-  <id>http://localhost:4000/en/compiling-a-crosscompiler</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/compiling-a-crosscompiler/" />
+  <id>http://www.robertocano.es/en/compiling-a-crosscompiler</id>
   <published>2015-09-03T00:00:00+02:00</published>
   <updated>2015-09-03T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
@@ -1462,7 +1462,7 @@ that it may be of help to you, legion of crazy cross-compiler compiling bashtard
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/compiling-a-crosscompiler/&quot;&gt;How to compile a cross-compiler&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on September 03, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/compiling-a-crosscompiler/&quot;&gt;How to compile a cross-compiler&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on September 03, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1470,13 +1470,13 @@ that it may be of help to you, legion of crazy cross-compiler compiling bashtard
 
 <entry>
   <title type="html"><![CDATA[Coursera music courses]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/coursera-music-courses/" />
-  <id>http://localhost:4000/en/coursera-music-courses</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/coursera-music-courses/" />
+  <id>http://www.robertocano.es/en/coursera-music-courses</id>
   <published>2015-05-01T00:00:00+02:00</published>
   <updated>2015-05-01T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
@@ -1571,7 +1571,7 @@ are lots and they are free!!&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/coursera-music-courses/&quot;&gt;Coursera music courses&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on May 01, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/coursera-music-courses/&quot;&gt;Coursera music courses&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on May 01, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1579,13 +1579,13 @@ are lots and they are free!!&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[My own multilanguage Jekyll website (I)]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/multilanguage-jekyll-website_I/" />
-  <id>http://localhost:4000/en/multilanguage-jekyll-website_I</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/multilanguage-jekyll-website_I/" />
+  <id>http://www.robertocano.es/en/multilanguage-jekyll-website_I</id>
   <published>2015-04-17T00:00:00+02:00</published>
   <updated>2015-04-17T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
@@ -1730,7 +1730,7 @@ in GitHub pages, how to add a custom domain and how to cook the best beef stew&l
   &lt;/ol&gt;
 &lt;/div&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/multilanguage-jekyll-website_I/&quot;&gt;My own multilanguage Jekyll website (I)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on April 17, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/multilanguage-jekyll-website_I/&quot;&gt;My own multilanguage Jekyll website (I)&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on April 17, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1738,13 +1738,13 @@ in GitHub pages, how to add a custom domain and how to cook the best beef stew&l
 
 <entry>
   <title type="html"><![CDATA[GitHub pages first contact]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/github-pages-first-contact/" />
-  <id>http://localhost:4000/en/github-pages-first-contact</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/github-pages-first-contact/" />
+  <id>http://www.robertocano.es/en/github-pages-first-contact</id>
   <published>2015-04-10T00:00:00+02:00</published>
   <updated>2015-04-10T00:00:00+02:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
@@ -1786,7 +1786,7 @@ can have a better control of the weight of the site.&lt;/p&gt;
 &lt;p&gt;In a follow-up post I shall explain how to set up your own Jekyll website with multi-language and a search engine.&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/github-pages-first-contact/&quot;&gt;GitHub pages first contact&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on April 10, 2015.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/github-pages-first-contact/&quot;&gt;GitHub pages first contact&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on April 10, 2015.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1794,13 +1794,13 @@ can have a better control of the weight of the site.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Lucky Lindy and the biggest hop of all]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/lucky-lindy-and-the-biggest-hop-of-all/" />
-  <id>http://localhost:4000/en/lucky-lindy-and-the-biggest-hop-of-all</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/lucky-lindy-and-the-biggest-hop-of-all/" />
+  <id>http://www.robertocano.es/en/lucky-lindy-and-the-biggest-hop-of-all</id>
   <published>2014-01-19T00:00:00+01:00</published>
   <updated>2014-01-19T00:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     
   </author>
   <content type="html">
@@ -1870,7 +1870,7 @@ guitar on a trip. I’m quite excited!&lt;/p&gt;
 
 &lt;p&gt;(hint: also, in the meantime, I’ve started to learn calligraphy….why not!)&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/lucky-lindy-and-the-biggest-hop-of-all/&quot;&gt;Lucky Lindy and the biggest hop of all&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on January 19, 2014.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/lucky-lindy-and-the-biggest-hop-of-all/&quot;&gt;Lucky Lindy and the biggest hop of all&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on January 19, 2014.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1878,13 +1878,13 @@ guitar on a trip. I’m quite excited!&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Bootstrapping my friend]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/bootstrapping-my-friend/" />
-  <id>http://localhost:4000/en/bootstrapping-my-friend</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/bootstrapping-my-friend/" />
+  <id>http://www.robertocano.es/en/bootstrapping-my-friend</id>
   <published>2013-05-12T00:00:00+02:00</published>
   <updated>2013-05-12T00:00:00+02:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     
   </author>
   <content type="html">
@@ -1957,7 +1957,7 @@ first web development attempt!&lt;/p&gt;
 
 &lt;p&gt;Soon, I hope, more on my OpenGL development adventure!&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/bootstrapping-my-friend/&quot;&gt;Bootstrapping my friend&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on May 12, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/bootstrapping-my-friend/&quot;&gt;Bootstrapping my friend&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on May 12, 2013.&lt;/p&gt;
 
   </content>
 </entry>
@@ -1965,13 +1965,13 @@ first web development attempt!&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[OpenGL RedBook 7th edition and the price to pay]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/opengl-redbook-7th-edition-and-the-price-to-pay/" />
-  <id>http://localhost:4000/en/opengl-redbook-7th-edition-and-the-price-to-pay</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/opengl-redbook-7th-edition-and-the-price-to-pay/" />
+  <id>http://www.robertocano.es/en/opengl-redbook-7th-edition-and-the-price-to-pay</id>
   <published>2013-03-11T00:00:00+01:00</published>
   <updated>2013-03-11T00:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     
   </author>
   <content type="html">
@@ -2019,7 +2019,7 @@ first!&lt;/p&gt;
 
 &lt;p&gt;Hope to have saved you some time!&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/opengl-redbook-7th-edition-and-the-price-to-pay/&quot;&gt;OpenGL RedBook 7th edition and the price to pay&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on March 11, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/opengl-redbook-7th-edition-and-the-price-to-pay/&quot;&gt;OpenGL RedBook 7th edition and the price to pay&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on March 11, 2013.&lt;/p&gt;
 
   </content>
 </entry>
@@ -2027,13 +2027,13 @@ first!&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[Camera movement and premature optimization]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/camera-movement-and-premature-optimization/" />
-  <id>http://localhost:4000/en/camera-movement-and-premature-optimization</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/camera-movement-and-premature-optimization/" />
+  <id>http://www.robertocano.es/en/camera-movement-and-premature-optimization</id>
   <published>2013-03-11T00:00:00+01:00</published>
   <updated>2013-03-11T00:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     
   </author>
   <content type="html">
@@ -2096,7 +2096,7 @@ north!&lt;/p&gt;
 &lt;p&gt;However is hardly noticeable, and it saves a lot of time. Maybe when I can
 use Quaternions it could become more realistic…who knows!&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/camera-movement-and-premature-optimization/&quot;&gt;Camera movement and premature optimization&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on March 11, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/camera-movement-and-premature-optimization/&quot;&gt;Camera movement and premature optimization&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on March 11, 2013.&lt;/p&gt;
 
   </content>
 </entry>
@@ -2104,13 +2104,13 @@ use Quaternions it could become more realistic…who knows!&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[CSS, Blogger and Simple template transparency]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/css-blogger-and-simple-template-transparency/" />
-  <id>http://localhost:4000/en/css-blogger-and-simple-template-transparency</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/css-blogger-and-simple-template-transparency/" />
+  <id>http://www.robertocano.es/en/css-blogger-and-simple-template-transparency</id>
   <published>2013-02-25T00:00:00+01:00</published>
   <updated>2013-02-25T00:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     
   </author>
   <content type="html">
@@ -2137,7 +2137,7 @@ blending in your blog!&lt;/p&gt;
 &lt;p&gt;Remember this is valid for the &lt;strong&gt;Simple Template&lt;/strong&gt; of Blogger. I didn’t try
 with other templates.&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/css-blogger-and-simple-template-transparency/&quot;&gt;CSS, Blogger and Simple template transparency&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on February 25, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/css-blogger-and-simple-template-transparency/&quot;&gt;CSS, Blogger and Simple template transparency&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 25, 2013.&lt;/p&gt;
 
   </content>
 </entry>
@@ -2145,13 +2145,13 @@ with other templates.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[PlayStation 4 and the future of videogames]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/playstation-4-and-the-future-of-videogames/" />
-  <id>http://localhost:4000/en/playstation-4-and-the-future-of-videogames</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/playstation-4-and-the-future-of-videogames/" />
+  <id>http://www.robertocano.es/en/playstation-4-and-the-future-of-videogames</id>
   <published>2013-02-24T00:00:00+01:00</published>
   <updated>2013-02-24T00:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     
   </author>
   <content type="html">
@@ -2208,7 +2208,7 @@ ever-lasting experiences in our minds and our hearts.&lt;/p&gt;
 
 &lt;p&gt;Keep on playing!&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/playstation-4-and-the-future-of-videogames/&quot;&gt;PlayStation 4 and the future of videogames&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/playstation-4-and-the-future-of-videogames/&quot;&gt;PlayStation 4 and the future of videogames&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
 
   </content>
 </entry>
@@ -2216,13 +2216,13 @@ ever-lasting experiences in our minds and our hearts.&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[OSX and OpenGL 3.2]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/osx-and-opengl-3-2/" />
-  <id>http://localhost:4000/en/osx-and-opengl-3-2</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/osx-and-opengl-3-2/" />
+  <id>http://www.robertocano.es/en/osx-and-opengl-3-2</id>
   <published>2013-02-24T00:00:00+01:00</published>
   <updated>2013-02-24T00:00:00+01:00</updated>
   <author>
     <name>Roberto Cano</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     <email>gabr1e11@hotmail.com</email>
   </author>
   <content type="html">
@@ -2291,7 +2291,7 @@ while linking:&lt;/p&gt;
 &lt;p&gt;Happy OpenGL coding!!&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/osx-and-opengl-3-2/&quot;&gt;OSX and OpenGL 3.2&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/osx-and-opengl-3-2/&quot;&gt;OSX and OpenGL 3.2&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
 
   </content>
 </entry>
@@ -2299,13 +2299,13 @@ while linking:&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[OpenGL 3.2: shaders everywhere!]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/en/opengl-3-2-shaders-everywhere/" />
-  <id>http://localhost:4000/en/opengl-3-2-shaders-everywhere</id>
+  <link rel="alternate" type="text/html" href="http://www.robertocano.es/en/opengl-3-2-shaders-everywhere/" />
+  <id>http://www.robertocano.es/en/opengl-3-2-shaders-everywhere</id>
   <published>2013-02-24T00:00:00+01:00</published>
   <updated>2013-02-24T00:00:00+01:00</updated>
   <author>
     <name></name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.robertocano.es</uri>
     
   </author>
   <content type="html">
@@ -2338,7 +2338,7 @@ scene!&lt;/p&gt;
 
 &lt;p&gt;Next step, more VBO, camera and lighting. Set, ready, action!&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;http://localhost:4000/en/opengl-3-2-shaders-everywhere/&quot;&gt;OpenGL 3.2: shaders everywhere!&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://localhost:4000&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.robertocano.es/en/opengl-3-2-shaders-everywhere/&quot;&gt;OpenGL 3.2: shaders everywhere!&lt;/a&gt; was originally published by Roberto Cano at &lt;a href=&quot;http://www.robertocano.es&quot;&gt;&lt;/a&gt; on February 24, 2013.&lt;/p&gt;
 
   </content>
 </entry>
