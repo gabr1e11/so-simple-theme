@@ -46,7 +46,7 @@ song of the father of Miley Cyrus[^3], introduced Country music to a whole new g
 And Aladdin, the Disney movie, taught us how to find our true love by lying, deceiving and using a secret dark
 power hidden in a lamp. Neat!
 
-At the same time, me, a young underdeveloped developer, was made the recipient of a wonderful present: a Spectrum 128K +2A
+At the same time, I, a young underdeveloped developer, was made the recipient of a wonderful present: a Spectrum 128K +2A
 computer with incorporated tape reader!! I was ecstatic. Since I was 10 I wanted one of those fancy machines for me, after
 seeing my cousin handling one of those beauties!
 
@@ -66,9 +66,9 @@ like used chewing gum sticks to a shoe sole after you step on it on the street.
 
 Let's fast forward many years into the future. Let's time travel to 1998! I started university at the *Universidad Autónoma de
 Madrid*, and during the 3rd year I picked a really interesting course: graphics programming. With a couple of friends we
-started writing a software 3D engine. Those were really good times. Just with access to the frame buffer we started
+started writing a software 3D engine. Those were really good times. Just with access to the framebuffer we started
 implementing polygon rendering, flat and Gouraud lighting, and even texture mapping! It was lovely. We even managed to import
-Quake3 world models and navigate through them in our engine! It was amazing!! Later on we tried to implement a BSP compiler[^6]
+Quake 3 world models and navigate through them in our engine! It was amazing!! Later on we tried to implement a BSP compiler[^6]
 
 However the pressure I had with all the other courses and the need to finish the career to start working and start earning good money
 crippled my dream of becoming a game developer. Game developer jobs were sparse in Spain, not well paid, with many working hours,
@@ -84,11 +84,11 @@ childhood dream!
 
 # Enter 2015
 
-Time travel! Again! This is one of the more exciting posts ever!
+Time travel! Again! This is one of the most exciting posts ever!
 
 > If you say so...
 
-It was 2015, and I was trying to figure out what to do with my professional life. After 12 of years of working with C, C++,
+It was 2015, and I was trying to figure out what to do with my professional life. After 12 years of working with C, C++,
 Linux, embedded environments and stuff like that, I was starting to get a bit bored of the same drill. Security systems were
 starting to catch my attention. However I was always missing something. I'm a very visual person and security systems are
 all about system programming where UI or user interaction is sparse. Also I was missing the feeling of knowing that somebody
@@ -109,7 +109,7 @@ passion for programming. I also had some rare qualities:
 
 - I love low-level stuff at assembler level as well as very high-level stuff like 3D APIs and complex systems. Give me an engine,
 an OpenGL API and some low-level optimizations to work on and I'm happy!
-- I'm a developer. I'm social. I'll say it again: I'm a developer and I'm really social. Apparently I didn't know but that
+- I'm a developer. I'm social. I'll say it again: I'm a developer and I'm really social. I didn't know but apparently that
 is a rare combination. Anyhow I'd like to think that less and less nowadays. But it is true I can lock myself in a room and write
 code for 3 days and then get out and do a presentation in front of 50 people. I love both things!
 
@@ -121,7 +121,7 @@ It will also have an architecture that allows different APIs to be added, like D
 - I need to capitalize on my social skills, so I will attend major or interesting videogame conferences to meet people
 and understand how far I am from becoming a videogame developer
 
-So that is what I did. For year and a half. I started writing my own C++ engine. You can find the sources in my GitHub. It was
+So that is what I did. For a year and a half. I started writing my own C++ engine. You can find the sources in my GitHub. It was
 quite a challenge, as I had never done anything like that. But it was an amazing experience, and quite a lot of fun!
 
 It indeed compiled for Windows, Mac and Linux. I implemented model and texture loading and rendering, Blinn-Phong lighting, HDR,
@@ -169,7 +169,7 @@ After almost 1 month considering my options, the idea of learning Unity popped i
 of companies, but I was afraid that learning Unity could dilute my C++ expertise, and that I would be competing against a myriad of
 other developers and designers. However it seemed really appealing to to me the idea of developing a full videogame. Compared to
 doing everything from scratch, using Unity (or Unreal) could allow me to learn another level of videogame programming, and not focus
-only on the little nitty-gritty details only.
+on the little nitty-gritty details only.
 
 So I decided to do it. Fortunately at the same time, a very good friend of mine that had never done anything with videogames,
 discovered a passion for pixel art and started to groom the idea of developing a rogue-like game. We discussed about it,
@@ -198,7 +198,7 @@ No, no. That would be weird. Really weird! Where did you say you were from, Timm
 
 Never mind. The thing is that I'm moving to Barcelona this month to start working in one of the most amazing companies I've known of:
 Social Point. From everything I know about them, I think it is going to be one hell of a life experience. Personally, I'm closing a
-chapter of my life and opening a new one. I'm excited, happy, sad, fearful, full of energy, positive and a lot more of emotions that run through my mind.
+chapter of my life and opening a new one. I'm excited, happy, sad, fearful, full of energy, positive and a lot of other emotions that run through my mind.
 
 It is good when life taps you on the back.
 
@@ -265,7 +265,7 @@ is no law in the universe that says that if you try hard enough you will make it
 but there is no way to know if you will eventually make it. I had given myself a ballpark timeframe to stop trying. Around 4 years to
 understand if I could really make it or not. If things were not going well I would quit and dedicate my efforts to other things.
 
-Remember it is not about failure. It is about not wasting your energy. If after 4 years, for example, things were looking still not
+Remember it is not about failure. It is about not wasting your energy. If after 4 years, for example, things were still not looking
 clear to me, perhaps there was no point on keep trying. This is very subjective, but the main point is that trying forever, unless
 it makes you happy, may mean that you are not ready to give up. Sometimes giving up is a good thing. It frees your mind to do other
 things that make you happy, which is the main purpose of your life.
