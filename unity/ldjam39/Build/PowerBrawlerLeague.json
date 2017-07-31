@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "PowerBrawlerLeague.data.unityweb",
+"asmCodeUrl": "PowerBrawlerLeague.asm.code.unityweb",
+"asmMemoryUrl": "PowerBrawlerLeague.asm.memory.unityweb",
+"asmFrameworkUrl": "PowerBrawlerLeague.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
