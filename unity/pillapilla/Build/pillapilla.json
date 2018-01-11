@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "pillapilla.data.unityweb",
+"asmCodeUrl": "pillapilla.asm.code.unityweb",
+"asmMemoryUrl": "pillapilla.asm.memory.unityweb",
+"asmFrameworkUrl": "pillapilla.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
