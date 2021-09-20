@@ -23,8 +23,8 @@ to skip my usual digression, you can jump directly [here](#how-to-become-a-video
 
 # Preface
 
-As life wants it, this post was originally destined to be a *How to write your own 3D engine in
-OpenGL for dummies* post. I was gonna rant about the challenges and subtleties of writing an engine
+As life wants it, this post was originally destined to be a _How to write your own 3D engine in
+OpenGL for dummies_ post. I was gonna rant about the challenges and subtleties of writing an engine
 in C++ for the OpenGL API while keeping it multi-platform and multi-API. It was also going to showcase
 some nice techniques I had learned in the process.
 
@@ -64,8 +64,8 @@ like used chewing gum sticks to a shoe sole after you step on it on the street.
 
 > Yuck!
 
-Let's fast forward many years into the future. Let's time travel to 1998! I started university at the *Universidad Autónoma de
-Madrid*, and during the 3rd year I picked a really interesting course: graphics programming. With a couple of friends we
+Let's fast forward many years into the future. Let's time travel to 1998! I started university at the _Universidad Autónoma de
+Madrid_, and during the 3rd year I picked a really interesting course: graphics programming. With a couple of friends we
 started writing a software 3D engine. Those were really good times. Just with access to the framebuffer we started
 implementing polygon rendering, flat and Gouraud lighting, and even texture mapping! It was lovely. We even managed to import
 Quake 3 world models and navigate through them in our engine! It was amazing!! Later on we tried to implement a BSP compiler[^6]
@@ -108,18 +108,18 @@ about design, professional game engines, UI or monetization. My expertise was in
 passion for programming. I also had some rare qualities:
 
 - I love low-level stuff at assembler level as well as very high-level stuff like 3D APIs and complex systems. Give me an engine,
-an OpenGL API and some low-level optimizations to work on and I'm happy!
+  an OpenGL API and some low-level optimizations to work on and I'm happy!
 - I'm a developer. I'm social. I'll say it again: I'm a developer and I'm really social. I didn't know but apparently that
-is a rare combination. Anyhow I'd like to think that less and less nowadays. But it is true I can lock myself in a room and write
-code for 3 days and then get out and do a presentation in front of 50 people. I love both things!
+  is a rare combination. Anyhow I'd like to think that less and less nowadays. But it is true I can lock myself in a room and write
+  code for 3 days and then get out and do a presentation in front of 50 people. I love both things!
 
 With all this in mind I decided that the way to go was the following:
 
 - I need to demonstrate my skills in C++ and low-level knowledge, so I will write an engine in C++ with OpenGL
 - I need also to demonstrate my multi-platform/multi-architecture skills, so my engine will compile for Windows, Linux and Mac.
-It will also have an architecture that allows different APIs to be added, like DirectX
+  It will also have an architecture that allows different APIs to be added, like DirectX
 - I need to capitalize on my social skills, so I will attend major or interesting videogame conferences to meet people
-and understand how far I am from becoming a videogame developer
+  and understand how far I am from becoming a videogame developer
 
 So that is what I did. For a year and a half. I started writing my own C++ engine. You can find the sources in my GitHub. It was
 quite a challenge, as I had never done anything like that. But it was an amazing experience, and quite a lot of fun!
@@ -299,15 +299,15 @@ to get into the game industry, and I think it may be useful to somebody out ther
 
 See you soon!
 
-------------------
+---
 
- [1]: http://github.com/gabr1e11/3Dengine/
- [2]: http://www.robertocano.es/en/osx-and-opengl-3-2/
+[1]: http://github.com/robercano/3Dengine/
+[2]: http://www.robertocano.es/en/osx-and-opengl-3-2/
 
- [^1]: "What" what?
- [^2]: Do NOT trust me, I may disappear again like the subtle breeze of summer days that flirts with your naked neck and then flees away
- [^3]: Yeah, well, who remembers the father after what his gifted kid has given to the world!
- [^4]: Pictionary
- [^5]: Teenage Mutant Ninja Turtles....a classic!
- [^6]: Binary Spatial Partitioning Trees...a classic!
- [^7]: Sadly not everybody in the world has this privilege
+[^1]: "What" what?
+[^2]: Do NOT trust me, I may disappear again like the subtle breeze of summer days that flirts with your naked neck and then flees away
+[^3]: Yeah, well, who remembers the father after what his gifted kid has given to the world!
+[^4]: Pictionary
+[^5]: Teenage Mutant Ninja Turtles....a classic!
+[^6]: Binary Spatial Partitioning Trees...a classic!
+[^7]: Sadly not everybody in the world has this privilege

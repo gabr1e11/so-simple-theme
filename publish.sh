@@ -6,11 +6,11 @@ SITE=`pwd`
 
 echo "\n[Updating master...]\n"
 cd /tmp/
-if [ ! -e gabr1e11.github.io ]; then
-    git clone git@github.com:gabr1e11/gabr1e11.github.io.git
+if [ ! -e robercano.github.io ]; then
+    git clone git@github.com:robercano/robercano.github.io.git
 fi
 
-cd gabr1e11.github.io
+cd robercano.github.io
 git checkout master
 git pull
 cp -rf $SITE/_site/* .
