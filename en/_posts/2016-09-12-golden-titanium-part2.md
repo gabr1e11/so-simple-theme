@@ -425,7 +425,7 @@ crushed our very dreams of fame and wonder. Long ago forgotten is our pride and 
 
 Yeah, sorry. Just got lost in my own verbiage. My apologies.
 
-You know what? It was really NOT enough. So I had to use the power of the O! More specifically the *-O3* option that
+You know what? It was really NOT enough. So I had to use the power of the O! More specifically the _-O3_ option that
 comes with the GCC compiler. This is the thing. In Codility, when you choose a language for the challenge, you can
 see at the bottom the compiler used to compile your code. In my case for C/C++ it is GCC 4.8.3 if I recall correctly.
 So I figured I could use some compiler specifics. The question was, of course, how to pass this flag to the compiler
@@ -433,7 +433,7 @@ when I actually didn't have access to the Makefile or compiling script.
 
 > Pragmatism!
 
-Indeed! Did you know there is a *#pragma* directive that allows you to request certain level of optimization in GCC?
+Indeed! Did you know there is a _#pragma_ directive that allows you to request certain level of optimization in GCC?
 Me neither. Here it follows the life saving line:
 
 ```cpp
@@ -450,13 +450,13 @@ that may reflect what I've explained here. You can also browse any of my other p
 
 Keep up the good work!
 
-------------------
+---
 
- [1]: {{site.url}}/en/golden-titanium-part1/
- [2]: http://github.com/gabr1e11/codility/tree/master/titanium
+[1]: {{site.url}}/en/golden-titanium-part1/
+[2]: http://github.com/robercano/codility/tree/master/titanium
 
- [^1]: Cosmic rays can also influence your results! Beware!
- [^2]: Quick answer: the first function, although for certain cases with longer number of swaps, the second is also taking some time.
- [^3]: Sorry, no Gollum joke here!
- [^4]: NO Pun intended....
- [^5]: Whaaaaat!?
+[^1]: Cosmic rays can also influence your results! Beware!
+[^2]: Quick answer: the first function, although for certain cases with longer number of swaps, the second is also taking some time.
+[^3]: Sorry, no Gollum joke here!
+[^4]: NO Pun intended....
+[^5]: Whaaaaat!?
